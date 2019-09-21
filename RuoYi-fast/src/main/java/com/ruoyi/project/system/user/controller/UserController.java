@@ -40,7 +40,7 @@ public class UserController extends BaseController
     private String prefix = "system/user";
 
     @Autowired
-    private TestTDengineData testTDengineData;
+    private TestTDengineData testTDengineData;    //TD数据库
 
     @Autowired
     private IUserService userService;
@@ -65,8 +65,7 @@ public class UserController extends BaseController
     {
         startPage();
         List<User> list = userService.selectUserList(user);
-        System.out.println("__________");
-        testTDengineData.selectTDengine();
+//        testTDengineData.selectTDengine();
         return getDataTable(list);
     }
 
