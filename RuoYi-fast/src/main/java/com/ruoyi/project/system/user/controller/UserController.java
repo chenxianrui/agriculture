@@ -2,7 +2,7 @@ package com.ruoyi.project.system.user.controller;
 
 import java.util.List;
 
-import com.ruoyi.framework.TDengine.sql.TestTDengineData;
+import com.ruoyi.framework.TDengine.sql.TDfirst;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -40,9 +40,6 @@ public class UserController extends BaseController
     private String prefix = "system/user";
 
     @Autowired
-    private TestTDengineData testTDengineData;    //TD数据库
-
-    @Autowired
     private IUserService userService;
 
     @Autowired
@@ -61,11 +58,11 @@ public class UserController extends BaseController
     @RequiresPermissions("system:user:list")
     @PostMapping("/list")
     @ResponseBody
-    public TableDataInfo list(User user)
+    public TableDataInfo list(User user) throws Exception
     {
         startPage();
         List<User> list = userService.selectUserList(user);
-//        testTDengineData.selectTDengine();
+        System.out.println("------");
         return getDataTable(list);
     }
 
