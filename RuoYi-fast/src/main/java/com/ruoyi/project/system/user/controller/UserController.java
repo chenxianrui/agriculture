@@ -58,11 +58,10 @@ public class UserController extends BaseController
     @RequiresPermissions("system:user:list")
     @PostMapping("/list")
     @ResponseBody
-    public TableDataInfo list(User user) throws Exception
+    public TableDataInfo list(User user)
     {
         startPage();
         List<User> list = userService.selectUserList(user);
-        System.out.println("------");
         return getDataTable(list);
     }
 

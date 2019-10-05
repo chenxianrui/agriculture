@@ -60,7 +60,7 @@
 	<th:block th:include="include :: footer" />
 	<script type="text/javascript">
 		var prefix = ctx + "system/dept";
-		
+
 		$("#form-dept-add").validate({
 			onkeyup: false,
 			rules:{
@@ -99,13 +99,13 @@
 		    },
 		    focusCleanup: true
 		});
-		
+
 		function submitHandler() {
 	        if ($.validate.form()) {
 	        	$.operate.save(prefix + "/add", $('#form-dept-add').serialize());
 	        }
 	    }
-	
+
 		/*部门管理-新增-选择父部门树*/
 		function selectDeptTree() {
 			var options = {
@@ -116,7 +116,7 @@
 			};
 			$.modal.openOptions(options);
 		}
-		
+
 		function doSubmit(index, layero){
 			var body = layer.getChildFrame('body', index);
    			$("#treeId").val(body.find('#treeId').val());

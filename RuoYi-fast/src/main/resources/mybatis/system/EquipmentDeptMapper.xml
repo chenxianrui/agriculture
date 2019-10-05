@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.project.system.equipment.mapper.EquipmentDeptMapper">
+
+    <resultMap id="EquipmentDeptResult" type="EquipmentDept">
+        <result property="deptId"      column="dept_id"/>
+        <result property="equipmentId"    column="equipment_id"/>
+    </resultMap>
+
+    <select id="countEquipmentDeptByDeptId" resultType="Integer">
+        select count(1) from sys_equipment_dept where dept_id=#{deptId}
+    </select>
+
+    <select id="selectEquipmentByDeptId" parameterType="EquipmentDept" resultMap="EquipmentDeptResult">
+        select ed.equipment_id from sys_equipment_dept ed
+        left join sys_dept d on d.dept_id = ed.dept_id
+        where d.dept_id = #{dept_id}
+    </select>
+
+    <select id="selectEquipmentList" parameterType="EquipmentDept" resultMap="EquipmentDeptResult">
+        select ed.equipment_id from sys_equipment_dept ed
+        left join sys_dept d on d.dept_id = ed.dept_id
+        where d.dept_id = 100
+    </select>
+
+    <insert id="insertEquipment" parameterType="EquipmentDept" useGeneratedKeys="true" keyProperty="deptId">
+        insert into sys_equipment_dept(
+          <if test="deptId != null and deptId != 0">dept_id,</if>
+          <if test="equipmentId != null and equipmentId != 0">equipment_id,</if>
+        )values(
+          <if test="deptId != null and deptId != ''">#{deptId},</if>
+          <if test="equipmentId != null and equipmentId != ''">#{equipmentId},</if>
+        )
+    </insert>
+
+    <delete id="deleteEquipmentByIds" parameterType="Integer">
+        delete from sys_equipment_dept where equipment_id =
+        <foreach collection="array" item="equipmentId" open="(" separator="," close=")">
+            #{equipmentId}
+        </foreach>
+    </delete>
+
+    <select id="selectEquipmentById" parameterType="Integer" resultMap="EquipmentDeptResult">
+        select * from sys_equipment_dept where equipment_id = #{equipmentId}
+    </select>
+
+    <update id="updateEquipment" parameterType="EquipmentDept">
+        update sys_equipment_dept
+        <set>
+            <if test="deptId != null and deptId != 0">dept_id = #{deptId},</if>
+            <if test="equipmentId != null and deptId != 0">equipment_id = #{equipmentId},</if>
+        </set>
+        where equipment_id = #{equipmentId}
+    </update>
+</mapper>
