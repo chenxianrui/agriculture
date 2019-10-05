@@ -22,21 +22,21 @@
     <select id="selectEquipmentList" parameterType="EquipmentDept" resultMap="EquipmentDeptResult">
         select ed.equipment_id from sys_equipment_dept ed
         left join sys_dept d on d.dept_id = ed.dept_id
-        where d.dept_id = 100
+        where d.dept_id = #{deptId}
     </select>
 
     <insert id="insertEquipment" parameterType="EquipmentDept" useGeneratedKeys="true" keyProperty="deptId">
         insert into sys_equipment_dept(
           <if test="deptId != null and deptId != 0">dept_id,</if>
-          <if test="equipmentId != null and equipmentId != 0">equipment_id,</if>
+          <if test="equipmentId != null and equipmentId != 0">equipment_id</if>
         )values(
           <if test="deptId != null and deptId != ''">#{deptId},</if>
-          <if test="equipmentId != null and equipmentId != ''">#{equipmentId},</if>
+          <if test="equipmentId != null and equipmentId != ''">#{equipmentId}</if>
         )
     </insert>
 
     <delete id="deleteEquipmentByIds" parameterType="Integer">
-        delete from sys_equipment_dept where equipment_id =
+        delete from sys_equipment_dept where equipment_id in
         <foreach collection="array" item="equipmentId" open="(" separator="," close=")">
             #{equipmentId}
         </foreach>
