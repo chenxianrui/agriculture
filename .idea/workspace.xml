@@ -4,10 +4,6 @@
     <list default="true" id="81a1bdb2-8311-4c4f-b3f4-d48e7a556715" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/RuoYi-fast/src/main/resources/mybatis/system/EquipmentDeptMapper.xml" afterPath="$PROJECT_DIR$/RuoYi-fast/src/main/resources/mybatis/system/EquipmentDeptMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/RuoYi-fast/src/main/resources/static/css/login.min.css" afterPath="$PROJECT_DIR$/RuoYi-fast/src/main/resources/static/css/login.min.css" />
-      <change beforePath="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/index.html" afterPath="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/index.html" />
-      <change beforePath="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/equipment/add.html" afterPath="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/equipment/add.html" />
-      <change beforePath="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/equipment/equipment.html" afterPath="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/equipment/equipment.html" />
     </list>
     <ignored path="$PROJECT_DIR$/RuoYi-fast/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,14 +41,14 @@
     <favorites_list name="y_project-RuoYi-fast-master (2) - 副本" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.49476007">
+    <splitter split-orientation="horizontal" split-proportion="0.29453945">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
           <file leaf-file-name="UserMapper.xml" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/mybatis/system/UserMapper.xml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="23">
-                  <caret line="145" column="4" lean-forward="false" selection-start-line="145" selection-start-column="4" selection-end-line="145" selection-end-column="4" />
+                <state relative-caret-position="437">
+                  <caret line="79" column="13" lean-forward="true" selection-start-line="79" selection-start-column="13" selection-end-line="79" selection-end-column="13" />
                   <folding>
                     <marker date="1565432126000" expanded="true" signature="2416:2980" ph="select u.use... sys_user" />
                     <marker date="1565432126000" expanded="true" signature="3070:4275" ph="select u.use... sys_user" />
@@ -74,8 +70,8 @@
           <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/user/controller/UserController.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="759">
-                  <caret line="62" column="20" lean-forward="false" selection-start-line="62" selection-start-column="20" selection-end-line="62" selection-end-column="20" />
+                <state relative-caret-position="184">
+                  <caret line="57" column="44" lean-forward="true" selection-start-line="57" selection-start-column="44" selection-end-line="57" selection-end-column="44" />
                   <folding>
                     <element signature="e#7461#7462#0" expanded="true" />
                     <element signature="e#7518#7519#0" expanded="true" />
@@ -131,18 +127,19 @@
           <file leaf-file-name="EquipmentDeptMapper.xml" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/mybatis/system/EquipmentDeptMapper.xml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="391">
-                  <caret line="17" column="52" lean-forward="false" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
+                <state relative-caret-position="161">
+                  <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
                   <folding>
-                    <marker date="1570273422041" expanded="true" signature="526:589" ph="select count... sys_equipment_dept" />
-                    <marker date="1570273422041" expanded="true" signature="717:858" ph="select ed.eq... sys_equipment_dept" />
-                    <marker date="1570273422041" expanded="true" signature="982:1122" ph="select ed.eq... sys_equipment_dept" />
-                    <marker date="1570273422041" expanded="true" signature="1255:1339" ph="insert into sys_equipment_dept... " />
-                    <marker date="1570273422041" expanded="true" signature="1255:1442" ph="insert into sys_equipment_dept... " />
-                    <marker date="1570273422041" expanded="true" signature="1255:1611" ph="insert into sys_equipment_dept... " />
-                    <marker date="1570273422041" expanded="true" signature="2003:2071" ph="select * fro... sys_equipment_dept" />
-                    <marker date="1570273422041" expanded="true" signature="2159:2184" ph="update sys_equipment_dept... " />
-                    <marker date="1570273422041" expanded="true" signature="2159:2432" ph="update sys_equipment_dept... " />
+                    <marker date="1570341262411" expanded="true" signature="526:589" ph="select count... sys_equipment_dept" />
+                    <marker date="1570341262411" expanded="true" signature="713:823" ph="select ed.eq... sys_equipment_dept" />
+                    <marker date="1570341262411" expanded="true" signature="713:947" ph="select ed.eq... sys_equipment_dept" />
+                    <marker date="1570341262411" expanded="true" signature="874:946" ph="SELECT t.dep... sys_dept" />
+                    <marker date="1570341262411" expanded="true" signature="1080:1164" ph="insert into sys_equipment_dept... " />
+                    <marker date="1570341262411" expanded="true" signature="1080:1267" ph="insert into sys_equipment_dept... " />
+                    <marker date="1570341262411" expanded="true" signature="1080:1436" ph="insert into sys_equipment_dept... " />
+                    <marker date="1570341262411" expanded="true" signature="1828:1896" ph="select * fro... sys_equipment_dept" />
+                    <marker date="1570341262411" expanded="true" signature="1984:2009" ph="update sys_equipment_dept... " />
+                    <marker date="1570341262411" expanded="true" signature="1984:2257" ph="update sys_equipment_dept... " />
                   </folding>
                 </state>
               </provider>
@@ -313,7 +310,6 @@
     </navigator>
     <panes>
       <pane id="AndroidView" />
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -371,6 +367,63 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="ruoyi" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
+              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
+              <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ruoyi" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+              <item name="TDengine" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
+              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
+              <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ruoyi" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+              <item name="TDengine" type="462c0819:PsiDirectoryNode" />
+              <item name="connection" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
+              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
+              <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ruoyi" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+              <item name="TDengine" type="462c0819:PsiDirectoryNode" />
+              <item name="Entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
+              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
+              <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ruoyi" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+              <item name="TDengine" type="462c0819:PsiDirectoryNode" />
+              <item name="sql" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
+              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
+              <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ruoyi" type="462c0819:PsiDirectoryNode" />
               <item name="project" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -383,6 +436,18 @@
               <item name="ruoyi" type="462c0819:PsiDirectoryNode" />
               <item name="project" type="462c0819:PsiDirectoryNode" />
               <item name="demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
+              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
+              <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ruoyi" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
@@ -430,6 +495,70 @@
               <item name="ruoyi" type="462c0819:PsiDirectoryNode" />
               <item name="project" type="462c0819:PsiDirectoryNode" />
               <item name="system" type="462c0819:PsiDirectoryNode" />
+              <item name="equipment" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
+              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
+              <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ruoyi" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="system" type="462c0819:PsiDirectoryNode" />
+              <item name="equipment" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
+              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
+              <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ruoyi" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="system" type="462c0819:PsiDirectoryNode" />
+              <item name="equipment" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
+              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
+              <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ruoyi" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="system" type="462c0819:PsiDirectoryNode" />
+              <item name="equipment" type="462c0819:PsiDirectoryNode" />
+              <item name="mysqlDomain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
+              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
+              <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ruoyi" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="system" type="462c0819:PsiDirectoryNode" />
+              <item name="equipment" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
+              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
+              <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ruoyi" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="system" type="462c0819:PsiDirectoryNode" />
               <item name="menu" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -442,7 +571,33 @@
               <item name="ruoyi" type="462c0819:PsiDirectoryNode" />
               <item name="project" type="462c0819:PsiDirectoryNode" />
               <item name="system" type="462c0819:PsiDirectoryNode" />
+              <item name="menu" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
+              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
+              <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ruoyi" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="system" type="462c0819:PsiDirectoryNode" />
               <item name="role" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
+              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
+              <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ruoyi" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="system" type="462c0819:PsiDirectoryNode" />
+              <item name="role" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
@@ -497,6 +652,25 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
+              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
+              <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="system" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
+              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
+              <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -509,10 +683,51 @@
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="system" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
+              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
+              <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="system" type="462c0819:PsiDirectoryNode" />
+              <item name="equipment" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
+              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
+              <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="system" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
+              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
+              <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="system" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="profile" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
+              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
+              <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -701,12 +916,13 @@
       <workItem from="1569801321013" duration="17261000" />
       <workItem from="1570179053215" duration="2738000" />
       <workItem from="1570246538546" duration="19667000" />
-      <workItem from="1570274653888" duration="8000" />
+      <workItem from="1570274653888" duration="66000" />
+      <workItem from="1570334925151" duration="5586000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="275625000" />
+    <option name="totallyTimeSpent" value="281269000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -725,7 +941,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="15" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32939914" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32801822" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.027360516" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -734,16 +950,17 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35193622" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11275627" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11275627" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20501138" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2904328" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.49429038" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33476394" sideWeight="0.49429038" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
@@ -753,7 +970,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -973,6 +1189,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1565432126000" expanded="true" signature="461:510" ph="delete from sys_user_post... " />
+            <marker date="1565432126000" expanded="true" signature="583:641" ph="select count... sys_user_post" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -980,6 +1200,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
           <caret line="71" column="0" lean-forward="true" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -987,6 +1208,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="64" column="4" lean-forward="true" selection-start-line="64" selection-start-column="4" selection-end-line="64" selection-end-column="4" />
+          <folding>
+            <marker date="1565432126000" expanded="true" signature="1047:1381" ph="select disti... sys_role" />
+            <marker date="1565432126000" expanded="true" signature="1428:1568" ph="select r.rol... sys_role" />
+            <marker date="1565432126000" expanded="true" signature="3252:3298" ph="delete from sys_role... " />
+            <marker date="1565432126000" expanded="true" signature="3604:4227" ph="update sys_role... " />
+            <marker date="1565432126000" expanded="true" signature="4338:5454" ph="insert into sys_role... " />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1109,17 +1337,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/user/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="759">
-          <caret line="62" column="20" lean-forward="false" selection-start-line="62" selection-start-column="20" selection-end-line="62" selection-end-column="20" />
-          <folding>
-            <element signature="e#7461#7462#0" expanded="true" />
-            <element signature="e#7518#7519#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/user/user.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2622">
@@ -1148,13 +1365,37 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
           <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+          <folding>
+            <marker date="1566468449509" expanded="true" signature="461:510" ph="delete from sys_user_role... " />
+            <marker date="1566468449509" expanded="true" signature="587:645" ph="select count... sys_user_role" />
+            <marker date="1566468449509" expanded="true" signature="1159:1230" ph="delete from sys_user_role... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/equipment/controller/EquipmentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/user/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="57" column="44" lean-forward="true" selection-start-line="57" selection-start-column="44" selection-end-line="57" selection-end-column="44" />
+          <folding>
+            <element signature="e#7461#7462#0" expanded="true" />
+            <element signature="e#7518#7519#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/mybatis/system/UserMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="145" column="4" lean-forward="false" selection-start-line="145" selection-start-column="4" selection-end-line="145" selection-end-column="4" />
+        <state relative-caret-position="437">
+          <caret line="79" column="13" lean-forward="true" selection-start-line="79" selection-start-column="13" selection-end-line="79" selection-end-column="13" />
           <folding>
             <marker date="1565432126000" expanded="true" signature="2416:2980" ph="select u.use... sys_user" />
             <marker date="1565432126000" expanded="true" signature="3070:4275" ph="select u.use... sys_user" />
@@ -1172,28 +1413,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/equipment/controller/EquipmentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/mybatis/system/EquipmentDeptMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="17" column="52" lean-forward="false" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
+        <state relative-caret-position="161">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
-            <marker date="1570273422041" expanded="true" signature="526:589" ph="select count... sys_equipment_dept" />
-            <marker date="1570273422041" expanded="true" signature="717:858" ph="select ed.eq... sys_equipment_dept" />
-            <marker date="1570273422041" expanded="true" signature="982:1122" ph="select ed.eq... sys_equipment_dept" />
-            <marker date="1570273422041" expanded="true" signature="1255:1339" ph="insert into sys_equipment_dept... " />
-            <marker date="1570273422041" expanded="true" signature="1255:1442" ph="insert into sys_equipment_dept... " />
-            <marker date="1570273422041" expanded="true" signature="1255:1611" ph="insert into sys_equipment_dept... " />
-            <marker date="1570273422041" expanded="true" signature="2003:2071" ph="select * fro... sys_equipment_dept" />
-            <marker date="1570273422041" expanded="true" signature="2159:2184" ph="update sys_equipment_dept... " />
-            <marker date="1570273422041" expanded="true" signature="2159:2432" ph="update sys_equipment_dept... " />
+            <marker date="1570341262411" expanded="true" signature="526:589" ph="select count... sys_equipment_dept" />
+            <marker date="1570341262411" expanded="true" signature="713:823" ph="select ed.eq... sys_equipment_dept" />
+            <marker date="1570341262411" expanded="true" signature="713:947" ph="select ed.eq... sys_equipment_dept" />
+            <marker date="1570341262411" expanded="true" signature="874:946" ph="SELECT t.dep... sys_dept" />
+            <marker date="1570341262411" expanded="true" signature="1080:1164" ph="insert into sys_equipment_dept... " />
+            <marker date="1570341262411" expanded="true" signature="1080:1267" ph="insert into sys_equipment_dept... " />
+            <marker date="1570341262411" expanded="true" signature="1080:1436" ph="insert into sys_equipment_dept... " />
+            <marker date="1570341262411" expanded="true" signature="1828:1896" ph="select * fro... sys_equipment_dept" />
+            <marker date="1570341262411" expanded="true" signature="1984:2009" ph="update sys_equipment_dept... " />
+            <marker date="1570341262411" expanded="true" signature="1984:2257" ph="update sys_equipment_dept... " />
           </folding>
         </state>
       </provider>
