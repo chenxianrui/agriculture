@@ -24,7 +24,7 @@ public class TiotSun5016 {
     private float co;                   //CO
     private float co2;                  //CO2
     private float evaporation;          //蒸发
-    private float pressuer;             //气压
+    private float pressure;             //气压
     private float wind_direction;        //风向
     private float wind_speed;            //风速
     private float average_wind_speed_2;    //2分钟平均风速
@@ -217,12 +217,12 @@ public class TiotSun5016 {
         this.evaporation = evaporation;
     }
 
-    public float getPressuer() {
-        return pressuer;
+    public float getPressure() {
+        return pressure;
     }
 
-    public void setPressuer(float pressuer) {
-        this.pressuer = pressuer;
+    public void setPressure(float pressure) {
+        this.pressure = pressure;
     }
 
     public float getWind_direction() {
@@ -496,7 +496,7 @@ public class TiotSun5016 {
                 ", co=" + co +
                 ", co2=" + co2 +
                 ", evaporation=" + evaporation +
-                ", pressuer=" + pressuer +
+                ", pressure=" + pressure +
                 ", wind_direction=" + wind_direction +
                 ", wind_speed=" + wind_speed +
                 ", average_wind_speed_2=" + average_wind_speed_2 +

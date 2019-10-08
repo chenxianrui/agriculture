@@ -5,7 +5,7 @@ import com.ruoyi.framework.web.domain.BaseEntity;
 public class EquipmentDept extends BaseEntity{
 
     private Integer deptId;
-    private Integer equipmentId;
+    private String equipmentId;
 
     public Integer getDeptId() {
         return deptId;
@@ -15,11 +15,11 @@ public class EquipmentDept extends BaseEntity{
         this.deptId = deptId;
     }
 
-    public Integer getEquipmentId() {
+    public String getEquipmentId() {
         return equipmentId;
     }
 
-    public void setEquipmentId(Integer equipmentId) {
+    public void setEquipmentId(String equipmentId) {
         this.equipmentId = equipmentId;
     }
 

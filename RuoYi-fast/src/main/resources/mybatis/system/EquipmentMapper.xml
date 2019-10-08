@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.project.system.equipment.mapper.EquipmentMapper">
+
+    <resultMap id="EquipmentResult" type="Equipment">
+        <result property="equipmentId"      column="equipment_id"/>
+        <result property="equipmentName"    column="equipment_name"/>
+        <result property="productionTime"      column="production_time"/>
+        <result property="sensorType"    column="sensor_type"/>
+        <result property="longitude"      column="longitude"/>
+        <result property="latitude"    column="latitude"/>
+        <result property="equipmentIpAddress"      column="equipment_ip_address"/>
+        <result property="port"    column="port"/>
+        <result property="createTime"      column="create_time"/>
+    </resultMap>
+
+    <resultMap id="EquipmentDeptResult" type="EquipmentDept">
+        <result property="deptId"      column="dept_id"/>
+        <result property="equipmentId"    column="equipment_id"/>
+    </resultMap>
+
+    <sql id="selectEquipmentContactVo">
+        select e.equipment_id, e.equipment_name, e.production_time, e.sensor_type, e.longitude, e.latitude, e.equipment_ip_address, e.port, e.create_time
+        from sys_equipment e
+        left join sys_equipment_dept ed on ed.equipment_id = e.equipment_id
+        left join sys_dept d on ed.dept_id = d.dept_id
+    </sql>
+
+    <select id="countEquipmentDeptByDeptId" resultType="Integer">
+        select count(1) from sys_equipment_dept where dept_id=#{deptId}
+    </select>
+
+    <select id="selectEquipmentList" parameterType="EquipmentDept" resultMap="EquipmentResult">
+        select e.equipment_id, e.equipment_name, e.production_time, e.sensor_type, e.longitude, e.latitude, e.equipment_ip_address, e.port, e.create_time
+        from sys_equipment e
+        left join sys_equipment_dept ed on ed.equipment_id = e.equipment_id
+        left join sys_dept d on ed.dept_id = d.dept_id
+        where
+        ed.dept_id = #{deptId} OR ed.dept_id IN ( SELECT t.dept_id FROM sys_dept t WHERE FIND_IN_SET (#{deptId},ancestors))
+    </select>
+
+    <insert id="insertEquipment" parameterType="Equipment" useGeneratedKeys="true" keyProperty="equipmentId">
+        insert into sys_equipment(
+          <if test="equipmentId != null">equipment_id,</if>
+          <if test="equipmentName != null">equipment_name,</if>
+          production_time,
+          <if test="sensorType != null">sensor_type,</if>
+          <if test="longitude != null">longitude,</if>
+          <if test="latitude != null">latitude,</if>
+          <if test="equipmentIpAddress != null">equipment_ip_address,</if>
+          <if test="port != null">port,</if>
+          create_time
+        )values(
+          <if test="equipmentId != null">#{equipmentId},</if>
+          <if test="equipmentName != null">#{equipmentName},</if>
+          sysdate(),
+          <if test="sensorType != null">#{sensorType},</if>
+          <if test="longitude != null">#{longitude},</if>
+          <if test="latitude != null">#{latitude},</if>
+          <if test="equipmentIpAddress != null">#{equipmentIpAddress},</if>
+          <if test="port != null">#{port},</if>
+          sysdate()
+        )
+    </insert>
+
+    <delete id="deleteEquipmentByIds" parameterType="String">
+        delete from sys_equipment where equipment_id in
+        <foreach collection="array" item="equipmentId" open="(" separator="," close=")">
+            #{equipmentId}
+        </foreach>
+    </delete>
+
+    <select id="selectEquipmentById" parameterType="String" resultMap="EquipmentResult">
+        select * from sys_equipment where equipment_id = #{equipmentId}
+    </select>
+
+    <update id="updateEquipment" parameterType="Equipment">
+        update sys_equipment
+        <set>
+            <if test="equipmentName != null">equipment_name = #{equipmentName},</if>
+            <if test="sensorType != null">sensor_type = #{sensorType},</if>
+            <if test="longitude != null">longitude = #{longitude},</if>
+            <if test="latitude != null">latitude = #{latitude},</if>
+            <if test="equipmentIpAddress != null">equipment_ip_address = #{equipmentIpAddress},</if>
+            <if test="port != null">port = #{port}</if>
+        </set>
+        where equipment_id = #{equipmentId}
+    </update>
+</mapper>

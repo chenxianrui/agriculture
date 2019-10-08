@@ -9,42 +9,45 @@
         <result property="equipmentId"    column="equipment_id"/>
     </resultMap>
 
-    <select id="countEquipmentDeptByDeptId" resultType="Integer">
-        select count(1) from sys_equipment_dept where dept_id=#{deptId}
-    </select>
+    <resultMap id="deptResult" type="Dept">
+        <id     property="deptId"   column="dept_id"     />
+        <result property="parentId" column="parent_id"   />
+        <result property="deptName" column="dept_name"   />
+        <result property="orderNum" column="order_num"   />
+        <result property="leader"   column="leader"   />
+        <result property="status"   column="dept_status" />
+    </resultMap>
 
-    <select id="selectEquipmentList" parameterType="EquipmentDept" resultMap="EquipmentDeptResult">
-        select ed.equipment_id from sys_equipment_dept ed
-        left join sys_dept d on d.dept_id = ed.dept_id where
-        ed.dept_id = #{deptId} OR ed.dept_id IN ( SELECT t.dept_id FROM sys_dept t WHERE FIND_IN_SET (#{deptId},ancestors))
-    </select>
-
-    <insert id="insertEquipment" parameterType="EquipmentDept" useGeneratedKeys="true" keyProperty="deptId">
-        insert into sys_equipment_dept(
-          <if test="deptId != null and deptId != 0">dept_id,</if>
-          <if test="equipmentId != null and equipmentId != 0">equipment_id</if>
-        )values(
-          <if test="deptId != null and deptId != ''">#{deptId},</if>
-          <if test="equipmentId != null and equipmentId != ''">#{equipmentId}</if>
-        )
-    </insert>
-
-    <delete id="deleteEquipmentByIds" parameterType="Integer">
+    <delete id="deleteEquipmentDeptByIds" parameterType="String">
         delete from sys_equipment_dept where equipment_id in
         <foreach collection="array" item="equipmentId" open="(" separator="," close=")">
             #{equipmentId}
         </foreach>
     </delete>
 
-    <select id="selectEquipmentById" parameterType="Integer" resultMap="EquipmentDeptResult">
-        select * from sys_equipment_dept where equipment_id = #{equipmentId}
+    <insert id="insertEquipmentDept" parameterType="EquipmentDept" useGeneratedKeys="true" keyProperty="equipmentId">
+        insert into sys_equipment_dept(
+        <if test="deptId != null">dept_id,</if>
+        <if test="equipmentId != null">equipment_id</if>
+        )values(
+        <if test="deptId != null">#{deptId},</if>
+        <if test="equipmentId != null">#{equipmentId}</if>
+        )
+    </insert>
+    
+    <select id="selectDeptNameByEquipmentId" resultType="String">
+        select dept_name from sys_dept where dept_id = ( select dept_id from sys_equipment_dept
+        where equipment_id = #{equipmentId})
+    </select>
+    
+    <select id="selectDeptIdByEquipmentId" resultType="Integer">
+        select dept_id from sys_equipment_dept where equipment_id = #{equipmentId}
     </select>
 
-    <update id="updateEquipment" parameterType="EquipmentDept">
+    <update id="updateEquipmentDept" parameterType="EquipmentDept">
         update sys_equipment_dept
         <set>
-            <if test="deptId != null and deptId != 0">dept_id = #{deptId},</if>
-            <if test="equipmentId != null and deptId != 0">equipment_id = #{equipmentId},</if>
+            <if test="deptId != 0">dept_id = #{deptId}</if>
         </set>
         where equipment_id = #{equipmentId}
     </update>

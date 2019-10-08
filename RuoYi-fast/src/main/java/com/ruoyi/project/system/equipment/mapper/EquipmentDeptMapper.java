@@ -7,66 +7,50 @@ import java.util.List;
 public interface EquipmentDeptMapper {
 
     /**
-     * 根据部门ID查询设备列表
-     *
-     * @param deptId
-     * @return
-     */
-    public List<EquipmentDept> selectEquipmentByDeptId(Integer deptId);
-
-    /**
-     * 通过部门ID查询设备使用数量
-     *
-     * @param deptId
-     * @return
-     */
-    public int countEquipmentDeptByDeptId(Integer deptId);
-
-    /**
-     * 根据条件分页查询设备列表
-     *
-     * @param equipmentDept
-     * @return
-     */
-    public List<EquipmentDept> selectEquipmentList(EquipmentDept equipmentDept);
-
-    /**
-     * 通过设备ID删除设备
-     *
-     * @param id 设备ID
-     * @return
-     */
-    public int deleteEquipmentById(Integer equipmentId);
-
-    /**
-     * 批量删除设备信息
-     *
-     * @param ids 需要删除的设备ID
-     * @return
-     */
-    public int deleteEquipmentByIds(Integer[] ids);
-
-    /**
-     * 新增设备信息
-     *
-     * @param equipmentDept 设备信息
-     * @return
-     */
-    public int insertEquipment(EquipmentDept equipmentDept);
-
-    /**
-     * 查询与设备相关的信息
+     * 通过设备ID删除设备和部门的关联
      *
      * @param equipmentId
      * @return
      */
-    public EquipmentDept selectEquipmentById(Integer equipmentId);
+    public int deleteEquipmentDeptByEquipmentId(Integer equipmentId);
 
     /**
-     * 修改保存设备信息
+     * 批量删除设备和部门关联
      *
-     * @param equipmentDept
+     * @param ids
      * @return
      */
-    public int updateEquipment(EquipmentDept equipmentDept);
+    public int deleteEquipmentDeptByIds(String[] ids);
+
+    /**
+     * 新增设备与部门ID信息
+     *
+     * @param equipmentDept 设备与部门ID信息
+     * @return
+     */
+    public int insertEquipmentDept(EquipmentDept equipmentDept);
+
+    /**
+     * 根据设备ID查询部门名称
+     *
+     * @param equipmentId
+     * @return
+     */
+    public String selectDeptNameByEquipmentId(String equipmentId);
+
+    /**
+     * 根据设备ID查询部门ID
+     *
+     * @param equipmentId
+     * @return
+     */
+    public Integer selectDeptIdByEquipmentId(String equipmentId);
+
+    /**
+     * 根据设备ID更新部门信息
+     *
+     * @param equipmentId
+     * @return
+     */
+    public Integer updateEquipmentDept(EquipmentDept equipmentDept);
 }

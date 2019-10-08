@@ -1,18 +1,14 @@
-package com.ruoyi.project.system.equipment.service;
+package com.ruoyi.project.system.equipment.mapper;
 
-import com.ruoyi.project.system.equipment.domain.TiotSun5016;
 import com.ruoyi.project.system.equipment.mysqlDomain.Equipment;
 import com.ruoyi.project.system.equipment.mysqlDomain.EquipmentDept;
-import io.swagger.models.auth.In;
 
 import java.util.List;
 
-public interface IEquipmentService {
-
-
+public interface EquipmentMapper {
 
     /**
-     * 通过部门ID查询设备
+     * 根据部门ID查询设备列表
      *
      * @param deptId
      * @return
@@ -28,9 +24,9 @@ public interface IEquipmentService {
     public int countEquipmentDeptByDeptId(Integer deptId);
 
     /**
-     *根据条件分页查询设备列表
+     * 根据条件分页查询设备列表
      *
-     * @param equipment
+     * @param equipmentDept
      * @return
      */
     public List<Equipment> selectEquipmentList(EquipmentDept equipmentDept);
@@ -38,8 +34,8 @@ public interface IEquipmentService {
     /**
      * 通过设备ID删除设备
      *
-     * @param equipmentId 设备ID
-     * @return 结果
+     * @param id 设备ID
+     * @return
      */
     public int deleteEquipmentById(Integer equipmentId);
 
@@ -49,15 +45,15 @@ public interface IEquipmentService {
      * @param ids 需要删除的设备ID
      * @return
      */
-    public int deleteEquipmentByIds(String ids) throws Exception;
+    public int deleteEquipmentByIds(String[] ids);
 
     /**
      * 新增设备信息
      *
-     * @param equipmentDept 设备信息
+     * @param equipment 设备信息
      * @return
      */
-    public int insertEquipment(Equipment equipment, EquipmentDept equipmentDept);
+    public int insertEquipment(Equipment equipment);
 
     /**
      * 查询与设备相关的信息
@@ -70,25 +66,8 @@ public interface IEquipmentService {
     /**
      * 修改保存设备信息
      *
-     * @param equipment
+     * @param equipmentDept
      * @return
      */
-    public int updateEquipment(Equipment equipment, EquipmentDept equipmentDept);
-
-    /**
-     * 根据设备ID查询部门名称
-     *
-     * @param equipmentId
-     * @return
-     */
-    public String selectDeptNameByEquipmentId(String equipmentId);
-
-    /**
-     * 根据设备ID查询部门ID
-     *
-     * @param equipmentId
-     * @return
-     */
-    public Integer selectDeptIdByEquipmentId(String equipmentId);
-
+    public int updateEquipment(Equipment equipmentDept);
 }

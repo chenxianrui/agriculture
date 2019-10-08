@@ -2,9 +2,11 @@ package com.ruoyi.project.system.equipment.service;
 
 import com.ruoyi.common.exception.BusinessException;
 import com.ruoyi.common.utils.text.Convert;
-import com.ruoyi.project.system.equipment.domain.TiotSun5016;
 import com.ruoyi.project.system.equipment.mapper.EquipmentDeptMapper;
+import com.ruoyi.project.system.equipment.mapper.EquipmentMapper;
+import com.ruoyi.project.system.equipment.mysqlDomain.Equipment;
 import com.ruoyi.project.system.equipment.mysqlDomain.EquipmentDept;
+import io.swagger.models.auth.In;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -13,6 +15,9 @@ import java.util.List;
 @Service
 public class EquipmentServiceImpl implements IEquipmentService {
 
+
+    @Autowired
+    private EquipmentMapper equipmentMapper;
 
     @Autowired
     private EquipmentDeptMapper equipmentDeptMapper;
@@ -24,8 +29,8 @@ public class EquipmentServiceImpl implements IEquipmentService {
      * @return
      */
     @Override
-    public List<EquipmentDept> selectEquipmentByDeptId(Integer deptId) {
-        return equipmentDeptMapper.selectEquipmentByDeptId(deptId);
+    public List<Equipment> selectEquipmentByDeptId(Integer deptId) {
+        return equipmentMapper.selectEquipmentByDeptId(deptId);
     }
 
     /**
@@ -36,7 +41,7 @@ public class EquipmentServiceImpl implements IEquipmentService {
      */
     @Override
     public int countEquipmentDeptByDeptId(Integer deptId) {
-        return equipmentDeptMapper.countEquipmentDeptByDeptId(deptId);
+        return equipmentMapper.countEquipmentDeptByDeptId(deptId);
     }
 
     /**
@@ -46,8 +51,8 @@ public class EquipmentServiceImpl implements IEquipmentService {
      * @return
      */
     @Override
-    public List<EquipmentDept> selectEquipmentList(EquipmentDept equipmentDept) {
-        return equipmentDeptMapper.selectEquipmentList(equipmentDept);
+    public List<Equipment> selectEquipmentList(EquipmentDept equipmentDept) {
+        return equipmentMapper.selectEquipmentList(equipmentDept);
     }
 
     /**
@@ -58,7 +63,7 @@ public class EquipmentServiceImpl implements IEquipmentService {
      */
     @Override
     public int deleteEquipmentById(Integer equipmentId) {
-        return equipmentDeptMapper.deleteEquipmentById(equipmentId);
+        return equipmentMapper.deleteEquipmentById(equipmentId);
     }
 
     /**
@@ -69,19 +74,21 @@ public class EquipmentServiceImpl implements IEquipmentService {
      */
     @Override
     public int deleteEquipmentByIds(String ids) throws BusinessException {
-        Integer[] equipmentIds = Convert.toIntArray(ids);
-        return equipmentDeptMapper.deleteEquipmentByIds(equipmentIds);
+        String[] equipmentIds = Convert.toStrArray(ids);
+        equipmentDeptMapper.deleteEquipmentDeptByIds(equipmentIds);
+        return equipmentMapper.deleteEquipmentByIds(equipmentIds);
     }
 
     /**
      * 新增设备信息
      *
-     * @param equipmentDept 设备信息
+     * @param equipment 设备信息
      * @return
      */
     @Override
-    public int insertEquipment(EquipmentDept equipmentDept) {
-        return equipmentDeptMapper.insertEquipment(equipmentDept);
+    public int insertEquipment(Equipment equipment, EquipmentDept equipmentDept) {
+        equipmentDeptMapper.insertEquipmentDept(equipmentDept);
+        return equipmentMapper.insertEquipment(equipment);
     }
 
     /**
@@ -91,18 +98,41 @@ public class EquipmentServiceImpl implements IEquipmentService {
      * @return
      */
     @Override
-    public EquipmentDept selectEquipmentById(Integer equipmentId) {
-        return equipmentDeptMapper.selectEquipmentById(equipmentId);
+    public Equipment selectEquipmentById(String equipmentId) {
+        return equipmentMapper.selectEquipmentById(equipmentId);
     }
 
     /**
      * 修改保存设备信息
      *
-     * @param equipmentDept
+     * @param equipment
      * @return
      */
     @Override
-    public int updateEquipment(EquipmentDept equipmentDept) {
-        return equipmentDeptMapper.updateEquipment(equipmentDept);
+    public int updateEquipment(Equipment equipment, EquipmentDept equipmentDept) {
+        equipmentDeptMapper.updateEquipmentDept(equipmentDept);
+        return equipmentMapper.updateEquipment(equipment);
+    }
+
+    /**
+     * 根据设备ID查询部门名称
+     *
+     * @param equipmentId
+     * @return
+     */
+    @Override
+    public String selectDeptNameByEquipmentId(String equipmentId) {
+        return equipmentDeptMapper.selectDeptNameByEquipmentId(equipmentId);
+    }
+
+    /**
+     * 根据设备ID查询部门ID
+     *
+     * @param equipmentId
+     * @return
+     */
+    @Override
+    public Integer selectDeptIdByEquipmentId(String equipmentId) {
+        return equipmentDeptMapper.selectDeptIdByEquipmentId(equipmentId);
     }
 }
