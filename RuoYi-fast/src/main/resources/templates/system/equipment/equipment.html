@@ -31,20 +31,14 @@
             <div class="col-sm-12 search-collapse">
                 <form id="user-form">
                     <input type="hidden" id="deptId" name="deptId">
-                    <input type="hidden" id="parentId" name="parentId">
+                    <!--<input type="hidden" id="parentId" name="parentId">-->
                     <div class="select-list">
                         <ul>
                             <li>
-                                登录名称：<input type="text" name="loginName"/>
+                                设备名称：<input type="text" name="equipmentName"/>
                             </li>
                             <li>
-                                手机号码：<input type="text" name="phonenumber"/>
-                            </li>
-                            <li>
-                                用户状态：<select name="status" th:with="type=${@dict.getType('sys_normal_disable')}">
-                                <option value="">所有</option>
-                                <option th:each="dict : ${type}" th:text="${dict.dictLabel}" th:value="${dict.dictValue}"></option>
-                            </select>
+                                传感器种类：<input type="text" name="sensorType"/>
                             </li>
                             <li class="select-time">
                                 <label>创建时间： </label>
@@ -111,6 +105,9 @@
             updateUrl: prefix + "/edit/{id}",
             removeUrl: prefix + "/remove",
             createUrl: prefix + "/add",
+            exportUrl: prefix + "/export",
+            importUrl: prefix + "/importData",
+            importTemplateUrl: prefix + "/importTemplate",
             uniqueId: "equipmentId",
             sortName: "createTime",
             sortOrder: "desc",
@@ -183,7 +180,7 @@
 
         function zOnClick(event, treeId, treeNode) {
             $("#deptId").val(treeNode.id);
-            $("#parentId").val(treeNode.pId);
+            // $("#parentId").val(treeNode.pId);
             $.table.search();
         }
     }

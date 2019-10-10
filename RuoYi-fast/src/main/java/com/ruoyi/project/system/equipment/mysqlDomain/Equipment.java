@@ -1,16 +1,47 @@
 package com.ruoyi.project.system.equipment.mysqlDomain;
 
-public class Equipment {
+import com.ruoyi.framework.aspectj.lang.annotation.Excel;
+import com.ruoyi.framework.web.domain.BaseEntity;
 
+import java.util.Date;
+
+public class Equipment extends BaseEntity{
+
+    /** 设备ID */
+    @Excel(name = "设备序号", cellType = Excel.ColumnType.NUMERIC, prompt = "设备编号")
     private String equipmentId;
+
+    /** 设备名称 */
+    @Excel(name = "设备名称")
     private String equipmentName;
-    private String productionTime;
+
+    /** 生产日期 */
+    @Excel(name = "生产日期", width = 30, dateFormat = "yyyy-MM-dd HH:mm:ss")
+    private Date productionTime;
+
+    /** 传感器种类 */
+    @Excel(name = "传感器种类")
     private String sensorType;
+
+    /** 经度 */
+    @Excel(name = "经度")
     private String longitude;
+
+    /** 纬度 */
+    @Excel(name = "纬度")
     private String latitude;
+
+    /** 设备IP地址 */
+    @Excel(name = "设备IP地址")
     private String equipmentIpAddress;
+
+    /** 端口号 */
+    @Excel(name = "端口号")
     private String port;
-    private String createTime;
+
+    /** 创建时间 */
+    @Excel(name = "创建时间", width = 30, dateFormat = "yyyy-MM-dd HH:mm:ss")
+    private Date createTime;
 
     public String getEquipmentId() {
         return equipmentId;
@@ -28,11 +59,11 @@ public class Equipment {
         this.equipmentName = equipmentName;
     }
 
-    public String getProductionTime() {
+    public Date getProductionTime() {
         return productionTime;
     }
 
-    public void setProductionTime(String productionTime) {
+    public void setProductionTime(Date productionTime) {
         this.productionTime = productionTime;
     }
 
@@ -76,11 +107,11 @@ public class Equipment {
         this.port = port;
     }
 
-    public String getCreateTime() {
+    public Date getCreateTime() {
         return createTime;
     }
 
-    public void setCreateTime(String createTime) {
+    public void setCreateTime(Date createTime) {
         this.createTime = createTime;
     }
 

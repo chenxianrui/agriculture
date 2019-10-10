@@ -91,4 +91,12 @@ public interface IEquipmentService {
      */
     public Integer selectDeptIdByEquipmentId(String equipmentId);
 
+    /**
+     * 导入设备数据
+     *
+     * @param equipmentList 设备数据列表
+     * @param isUpdateSupport 是否更新支持，如果已存在，则进行更新数据
+     * @return 结果
+     */
+    public String importEquipment(List<Equipment> equipmentList, Boolean isUpdateSupport);
 }

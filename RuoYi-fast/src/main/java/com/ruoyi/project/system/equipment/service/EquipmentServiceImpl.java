@@ -1,6 +1,8 @@
 package com.ruoyi.project.system.equipment.service;
 
 import com.ruoyi.common.exception.BusinessException;
+import com.ruoyi.common.utils.StringUtils;
+import com.ruoyi.common.utils.security.ShiroUtils;
 import com.ruoyi.common.utils.text.Convert;
 import com.ruoyi.project.system.equipment.mapper.EquipmentDeptMapper;
 import com.ruoyi.project.system.equipment.mapper.EquipmentMapper;
@@ -134,5 +136,26 @@ public class EquipmentServiceImpl implements IEquipmentService {
     @Override
     public Integer selectDeptIdByEquipmentId(String equipmentId) {
         return equipmentDeptMapper.selectDeptIdByEquipmentId(equipmentId);
+    }
+
+    @Override
+    public String importEquipment(List<Equipment> equipmentList, Boolean isUpdateSupport) {
+        if (StringUtils.isNull(equipmentList) || equipmentList.size() == 0){
+            throw new BusinessException("导入设备数据不能为空！");
+        }
+        int successNum = 0;
+        int failureNum = 0;
+        StringBuilder successMsg = new StringBuilder();
+        StringBuilder failureMsg = new StringBuilder();
+        if (failureNum > 0)
+        {
+            failureMsg.insert(0, "很抱歉，导入失败！共 " + failureNum + " 条数据格式不正确，错误如下：");
+            throw new BusinessException(failureMsg.toString());
+        }
+        else
+        {
+            successMsg.insert(0, "恭喜您，数据已全部导入成功！共 " + successNum + " 条，数据如下：");
+        }
+        return successMsg.toString();
     }
 }
