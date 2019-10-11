@@ -14,6 +14,7 @@
         <result property="equipmentIpAddress"      column="equipment_ip_address"/>
         <result property="port"    column="port"/>
         <result property="createTime"      column="create_time"/>
+        <association property="equipmentDept"    column="dept_id" javaType="EquipmentDept" resultMap="EquipmentDeptResult" />
     </resultMap>
 
     <resultMap id="EquipmentDeptResult" type="EquipmentDept">
@@ -32,13 +33,27 @@
         select count(1) from sys_equipment_dept where dept_id=#{deptId}
     </select>
 
-    <select id="selectEquipmentList" parameterType="EquipmentDept" resultMap="EquipmentResult">
+    <select id="selectEquipmentList" parameterType="Equipment" resultMap="EquipmentResult">
         select e.equipment_id, e.equipment_name, e.production_time, e.sensor_type, e.longitude, e.latitude, e.equipment_ip_address, e.port, e.create_time
         from sys_equipment e
         left join sys_equipment_dept ed on ed.equipment_id = e.equipment_id
         left join sys_dept d on ed.dept_id = d.dept_id
-        where
-        ed.dept_id = #{deptId} OR ed.dept_id IN ( SELECT t.dept_id FROM sys_dept t WHERE FIND_IN_SET (#{deptId},ancestors))
+        where ed.dept_id = #{equipmentDept.deptId} OR ed.dept_id IN ( SELECT t.dept_id FROM sys_dept t WHERE FIND_IN_SET (#{equipmentDept.deptId},ancestors))
+        <if test="equipmentName != null and equipmentName != ''">
+            AND e.equipment_name like concat('%', #{equipmentName}, '%')
+        </if>
+        <if test="sensorType != null and sensorType != ''">
+            AND e.sensor_type like concat('%', #{sensorType}, '%')
+        </if>
+        <if test="params.beginTime != null and params.beginTime != ''"><!-- 开始时间检索 -->
+            AND date_format(e.create_time,'%y%m%d') &gt;= date_format(#{params.beginTime},'%y%m%d')
+        </if>
+        <if test="params.endTime != null and params.endTime != ''"><!-- 结束时间检索 -->
+            AND date_format(e.create_time,'%y%m%d') &lt;= date_format(#{params.endTime},'%y%m%d')
+        </if>
+         <!--<if test="equipmentDept.deptId != null and equipmentDept.deptId != 0">-->
+             <!--AND ed.dept_id = #{equipmentDept.deptId} OR ed.dept_id IN ( SELECT t.dept_id FROM sys_dept t WHERE FIND_IN_SET (#{equipmentDept.deptId},ancestors))-->
+         <!--</if>-->
     </select>
 
     <insert id="insertEquipment" parameterType="Equipment" useGeneratedKeys="true" keyProperty="equipmentId">

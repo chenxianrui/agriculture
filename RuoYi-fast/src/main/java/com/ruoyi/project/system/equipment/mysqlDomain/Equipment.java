@@ -2,6 +2,8 @@ package com.ruoyi.project.system.equipment.mysqlDomain;
 
 import com.ruoyi.framework.aspectj.lang.annotation.Excel;
 import com.ruoyi.framework.web.domain.BaseEntity;
+import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
 
 import java.util.Date;
 
@@ -42,6 +44,8 @@ public class Equipment extends BaseEntity{
     /** 创建时间 */
     @Excel(name = "创建时间", width = 30, dateFormat = "yyyy-MM-dd HH:mm:ss")
     private Date createTime;
+
+    private EquipmentDept equipmentDept;
 
     public String getEquipmentId() {
         return equipmentId;
@@ -115,18 +119,27 @@ public class Equipment extends BaseEntity{
         this.createTime = createTime;
     }
 
+    public EquipmentDept getEquipmentDept() {
+        return equipmentDept;
+    }
+
+    public void setEquipmentDept(EquipmentDept equipmentDept) {
+        this.equipmentDept = equipmentDept;
+    }
+
     @Override
     public String toString() {
-        return "Equipment{" +
-                "equipmentId='" + equipmentId + '\'' +
-                ", equipmentName='" + equipmentName + '\'' +
-                ", productionTime='" + productionTime + '\'' +
-                ", sensorType='" + sensorType + '\'' +
-                ", longitude='" + longitude + '\'' +
-                ", latitude='" + latitude + '\'' +
-                ", equipmentIpAddress='" + equipmentIpAddress + '\'' +
-                ", port='" + port + '\'' +
-                ", createTime='" + createTime + '\'' +
-                '}';
+        return new ToStringBuilder(this, ToStringStyle.MULTI_LINE_STYLE)
+                .append("equipmentId", getEquipmentId())
+                .append("equipmentName", getEquipmentName())
+                .append("productionTime", getProductionTime())
+                .append("sensorType", getSensorType())
+                .append("longitude", getLongitude())
+                .append("latitude", getLatitude())
+                .append("equipmentIpAddress", getEquipmentIpAddress())
+                .append("port", getPort())
+                .append("createTime", getCreateTime())
+                .append("equipmentDept", getEquipmentDept())
+                .toString();
     }
 }

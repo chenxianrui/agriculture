@@ -39,10 +39,11 @@ public class EquipmentController extends BaseController {
     @RequiresPermissions("system:equipment:list")
     @PostMapping("/list")
     @ResponseBody
-    public TableDataInfo select(EquipmentDept equipmentDept)
+    public TableDataInfo select(Equipment equipment,EquipmentDept equipmentDept)
     {
+        equipment.setEquipmentDept(equipmentDept);
         startPage();
-        List<Equipment> list = equipmentService.selectEquipmentList(equipmentDept);
+        List<Equipment> list = equipmentService.selectEquipmentList(equipment);
         return getDataTable(list);
     }
 
@@ -71,9 +72,9 @@ public class EquipmentController extends BaseController {
     @RequiresPermissions("system:equipment:export")
     @PostMapping("/export")
     @ResponseBody
-    public AjaxResult export(EquipmentDept equipmentDept)
+    public AjaxResult export(Equipment equipment)
     {
-        List<Equipment> list = equipmentService.selectEquipmentList(equipmentDept);
+        List<Equipment> list = equipmentService.selectEquipmentList(equipment);
         ExcelUtil<Equipment> util = new ExcelUtil<Equipment>(Equipment.class);
         return util.exportExcel(list, "设备数据");
     }
@@ -115,8 +116,6 @@ public class EquipmentController extends BaseController {
     @ResponseBody
     public AjaxResult addSave(@Validated Equipment equipment, @Validated EquipmentDept equipmentDept)
     {
-        System.out.println(equipment);
-        System.out.println(equipmentDept.getDeptId()+"=============="+equipmentDept.getEquipmentId());
         return toAjax(equipmentService.insertEquipment(equipment, equipmentDept));
     }
 

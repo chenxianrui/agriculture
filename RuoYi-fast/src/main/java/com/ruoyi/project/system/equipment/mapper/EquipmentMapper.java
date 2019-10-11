@@ -29,7 +29,7 @@ public interface EquipmentMapper {
      * @param equipmentDept
      * @return
      */
-    public List<Equipment> selectEquipmentList(EquipmentDept equipmentDept);
+    public List<Equipment> selectEquipmentList(Equipment equipment);
 
     /**
      * 通过设备ID删除设备

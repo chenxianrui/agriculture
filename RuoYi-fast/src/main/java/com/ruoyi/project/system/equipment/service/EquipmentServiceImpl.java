@@ -53,8 +53,8 @@ public class EquipmentServiceImpl implements IEquipmentService {
      * @return
      */
     @Override
-    public List<Equipment> selectEquipmentList(EquipmentDept equipmentDept) {
-        return equipmentMapper.selectEquipmentList(equipmentDept);
+    public List<Equipment> selectEquipmentList(Equipment equipment) {
+        return equipmentMapper.selectEquipmentList(equipment);
     }
 
     /**
