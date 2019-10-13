@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.project.system.screen.mapper.ScreenMapper">
+
+    <resultMap id="EquipmentResult" type="Equipment">
+        <result property="equipmentId"      column="equipment_id"/>
+        <result property="equipmentName"    column="equipment_name"/>
+        <result property="productionTime"      column="production_time"/>
+        <result property="sensorType"    column="sensor_type"/>
+        <result property="longitude"      column="longitude"/>
+        <result property="latitude"    column="latitude"/>
+        <result property="equipmentIpAddress"      column="equipment_ip_address"/>
+        <result property="port"    column="port"/>
+        <result property="createTime"      column="create_time"/>
+    </resultMap>
+
+    <select id="selectEquipmentScreenList" resultMap="EquipmentResult">
+        select * from sys_equipment;
+    </select>
+
+</mapper>
