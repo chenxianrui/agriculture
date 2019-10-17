@@ -7,10 +7,9 @@ import com.ruoyi.project.system.screen.service.ScreenService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Controller
@@ -23,11 +22,15 @@ public class ScreenController extends BaseController{
     private ScreenService screenService;
 
     @GetMapping()
-    public String screen(ModelMap mmap)
+    public String screen()
     {
-        List<Equipment> equipmentList = screenService.selectEquipmentScreenList();
-        System.out.println(equipmentList);
-        mmap.put("equipmentList", equipmentList);
         return prefix + "/screen";
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "/getData", method = RequestMethod.POST)
+    public List<Equipment> getData(){
+        List<Equipment> equipmentList = screenService.selectEquipmentScreenList();
+        return equipmentList;
     }
 }

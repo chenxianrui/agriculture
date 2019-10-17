@@ -28,7 +28,7 @@
 		<div class="sidebar-collapse">
 			<ul class="nav" id="side-menu">
 				<li class="logo">
-					<span class="logo-lg">RuoYi</span>
+					<span class="logo-lg">IOC</span>
 				</li>
 				<li>
 					<div class="user-panel">
@@ -49,13 +49,6 @@
 
 
 
-				<li >
-					<a class="menuItem" th:href="@{/system/dept}"><span class="glyphicon glyphicon-list-alt"/><span class="nav-label">&nbsp;部门管理</span></a>
-				</li>
-				<li>
-					<a class="menuItem" th:href="@{/system/equipment}"><span class="glyphicon glyphicon-signal"/><span class="nav-label">&nbsp;设备管理</span></a>
-				</li>
-				<li class="active"><a class="menuItem" th:href="@{/system/screen}"><span class="glyphicon glyphicon-signal"/>&nbsp;投屏</a></li>
 
 
 
@@ -83,7 +76,12 @@
 
 
 
-
+				<li >
+					<a class="menuItem" th:href="@{/system/dept}"><i class="fa fa-laptop"></i><span class="nav-label">&nbsp;部门管理</span></a>
+				</li>
+				<li>
+					<a class="menuItem" th:href="@{/system/equipment}"><i class="fa fa-align-justify"></i><span class="nav-label">&nbsp;设备管理</span></a>
+				</li>
 
 
 
@@ -192,9 +190,10 @@
 					</a>
 				</div>
 				<ul class="nav navbar-top-links navbar-right welcome-message">
-					<li><a title="视频教程" href="http://doc.ruoyi.vip/#/standard/spjc" target="_blank"><i class="fa fa-video-camera"></i> 视频教程</a></li>
-					<li><a title="开发文档" href="http://doc.ruoyi.vip" target="_blank"><i class="fa fa-question-circle"></i> 开发文档</a></li>
+					<li><a class="menuItem" th:href="@{/system/screen}"><i class="fa fa-video-camera"></i><span class="nav-label">&nbsp;投屏</span></a>
+					</li>
 					<li><a title="全屏显示" href="javascript:void(0)" id="fullScreen"><i class="fa fa-arrows-alt"></i> 全屏显示</a></li>
+
 					<li class="dropdown user-menu">
 						<a href="javascript:void(0)" class="dropdown-toggle" data-hover="dropdown">
 							<img th:src="(${user.avatar} == '') ? @{/img/profile.jpg} : @{${user.avatar}}" class="user-image">
