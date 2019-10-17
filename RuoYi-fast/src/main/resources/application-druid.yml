@@ -2,7 +2,7 @@
 spring:
     datasource:
         redis:
-            host: 127.0.0.1
+            host: 116.62.45.244
             port: 6379
             jedis:
                 pool:
@@ -11,7 +11,7 @@ spring:
                     max-active: 8
                     max-wait: -1
             timeout: 0
-            password:
+            password: password
         type: com.alibaba.druid.pool.DruidDataSource
         driverClassName: com.mysql.cj.jdbc.Driver
         druid:
