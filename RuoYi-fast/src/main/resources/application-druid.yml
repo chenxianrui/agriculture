@@ -11,15 +11,15 @@ spring:
                     max-active: 8
                     max-wait: -1
             timeout: 0
-            password: password
+            password:
         type: com.alibaba.druid.pool.DruidDataSource
         driverClassName: com.mysql.cj.jdbc.Driver
         druid:
             # 主库数据源
             master:
-                url: jdbc:mysql://127.0.0.1:3306/ry?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
+                url: jdbc:mysql://116.62.45.244:3306/ry?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
                 username: root
-                password: 123qwe
+                password: 1511995754
             # 从库数据源
             slave:
                 # 从数据源开关/默认关闭

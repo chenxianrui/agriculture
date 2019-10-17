@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="renderer" content="webkit">
-	<title>若依系统首页</title>
+	<title>IOC首页</title>
 	<!--[if lt IE 9]>
 	<meta http-equiv="refresh" content="0;ie.html"/>
 	<![endif]-->
@@ -46,16 +46,12 @@
 					</div>
 				</li>
 
-
-
-
-
-
-
-
-
-
 				<li class="active">
+					<a class="menuItem" th:href="@{/system/main}"><i class="fa fa-home"></i><span class="nav-label">&nbsp;首页</span></a>
+				</li>
+
+
+				<li>
 					<a href="index.html"><i class="fa fa-home"></i> <span class="nav-label">系统管理</span> <span class="fa arrow"></span></a>
 					<ul class="nav nav-second-level">
 						<li class="active"><a class="menuItem" th:href="@{/system/user}">用户管理</a></li>
