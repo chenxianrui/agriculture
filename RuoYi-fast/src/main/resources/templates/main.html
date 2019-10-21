@@ -10,31 +10,156 @@
 	<link href="../static/css/main/animate.min.css" th:href="@{/css/main/animate.min.css}" rel="stylesheet"/>
 	<link href="../static/css/main/style.min862f.css" th:href="@{/css/main/style.min862f.css}" rel="stylesheet"/>
 </head>
-<body>
-	<div>
-		<div class="weather">
-			<iframe width="800" scrolling="no" height="120" frameborder="0" allowtransparency="true" src="//i.tianqi.com/index.php?c=code&id=19&color=%23&bgc=%23&bdc=%23&icon=1&temp=1&num=5&site=12"></iframe>
-		</div>
-		<div class="time">
-			<span id="time"></span>
-		</div>
-	</div>
-</body>
 <style>
 	.time{
-		width:400px;
-		height: 200px;
-		padding-left: 25px;
-		padding-top: 40px;
-		font-size: 30px;
+		width:470px;
+		height: 70px;
+		padding-left: 17px;
+		padding-top: 7px;
+		font-size: 33px;
+		border:	2px solid #b3b3b3;
+		margin-left: 15px;
+		margin-right: 25px;
+		margin-top: 30px;
+		float: left;
 	}
-	.weather{
-		float: right;
-		border-left: 300px;
+
+	.l_t_line {
+		width: 5px;
+		height: 24px;
+		left: -3px;
+		top: -3px;
 	}
+
+	.t_l_line {
+		height: 5px;
+		width: 26px;
+		left: -3px;
+		top: -3px;
+	}
+
+	.t_line_box {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+	}
+
+	.t_line_box i {
+		background-color: #4788fb;
+		box-shadow: 0px 0px 10px #4788fb;
+		position: absolute;
+	}
+
+	.t_r_line {
+		height: 5px;
+		width: 26px;
+		right: -3px;
+		top: -3px;
+	}
+
+	.r_t_line {
+		width: 5px;
+		height: 24px;
+		right: -3px;
+		top: -3px;
+	}
+
+	.l_b_line {
+		width: 5px;
+		height: 24px;
+		left: -3px;
+		bottom: -3px;
+	}
+
+	.b_l_line {
+		height: 5px;
+		width: 26px;
+		left: -3px;
+		bottom: -3px;
+	}
+
+	.r_b_line {
+		width: 5px;
+		height: 24px;
+		right: -3px;
+		bottom: -3px;
+	}
+
+	.b_r_line {
+		height: 5px;
+		width: 26px;
+		right: -3px;
+		bottom: -3px;
+	}
+
+	.modal-box {
+		position: relative;
+		background-color: white;
+		box-sizing: border-box;
+		border: 1px solid #2C58A6;
+		box-shadow: 0px 0px 10px rgb(59,150,248) inset;
+	}
+
 </style>
+<body>
+
+<div class="modal-box">
+
+	<!--左上边框-->
+
+	<div class="t_line_box">
+
+		<i class="t_l_line"></i>
+
+		<i class="l_t_line"></i>
+
+	</div>
+
+	<!--右上边框-->
+
+	<div class="t_line_box">
+
+		<i class="t_r_line"></i>
+
+		<i class="r_t_line"></i>
+
+	</div>
+	<!--<div>-->
+		<div class="time">
+			<span id="nowTime"></span>
+		</div>
+		<div class="weather">
+			<iframe width="700" scrolling="no" height="120" frameborder="0" allowtransparency="true" src="//i.tianqi.com/index.php?c=code&id=19&color=%23&bgc=%23&bdc=%23&icon=1&temp=1&num=5&site=12"></iframe>
+		</div>
+	<!--</div>-->
+
+</div>
+</body>
 <script>
-    document.getElementById('time').innerHTML=new Date().toLocaleString();
-    setInterval("document.getElementById('time').innerHTML=new Date().toLocaleString();",1000);
+    var newDate = '';
+    getLangDate();
+    function dateFilter(date){ //值小于10时，在前面补0
+        if(date < 10){
+            return "0"+date;
+        }
+        return date;
+    }
+
+    function getLangDate(){
+        var dateObj = new Date(); //表示当前系统时间的Date对象
+        var year = dateObj.getFullYear(); //当前系统时间的完整年份值
+        var month = dateObj.getMonth()+1; //当前系统时间的月份值
+        var date = dateObj.getDate(); //当前系统时间的月份中的日
+        var day = dateObj.getDay(); //当前系统时间中的星期值
+        var weeks = ["星期日","星期一","星期二","星期三","星期四","星期五","星期六"];
+        var week = weeks[day]; //根据星期值，从数组中获取对应的星期字符串
+        var hour = dateObj.getHours(); //当前系统时间的小时值
+        var minute = dateObj.getMinutes(); //当前系统时间的分钟值
+        var second = dateObj.getSeconds(); //当前系统时间的秒钟值
+        var timeValue = "" +((hour >= 12) ? (hour >= 18) ? "晚上" : "下午" : "上午" ); //当前时间属于上午、晚上还是下午
+        newDate = dateFilter(year)+"-"+dateFilter(month)+"-"+dateFilter(date)+" "+dateFilter(hour)+":"+dateFilter(minute)+":"+dateFilter(second);
+        document.getElementById("nowTime").innerHTML = newDate+"　"+week;
+        setTimeout(getLangDate,1000);
+    }
 </script>
 </html>
