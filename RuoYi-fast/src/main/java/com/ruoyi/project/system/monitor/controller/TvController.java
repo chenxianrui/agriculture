@@ -21,6 +21,11 @@ public class TvController {
         return prefix + "/winmonitor/demo/cn/demo-iframe";
     }
 
+    @GetMapping("/iframe")
+    public String iframe(){
+        return prefix + "/winmonitor/demo/cn/iframe";
+    }
+
 
     @Autowired
     Monitor01 monitor01;
@@ -31,7 +36,7 @@ public class TvController {
     @Autowired
     Monitor04 monitor04;
 
-    @PostMapping("/test")
+    @PostMapping("/tv")
     @ResponseBody
     public String getData(String id){
         List<Monitor> monitors = new ArrayList();
@@ -42,27 +47,16 @@ public class TvController {
         Iterator<Monitor> iterator = monitors.iterator();
         while (iterator.hasNext()){
             Monitor temp = iterator.next();
-            System.out.println(temp.getId() + " : " + temp.getJson());
-            System.out.println(temp.getId().equals(id));
             if(temp.getId().equals(id)){
+                System.out.println(temp.getJson());
                 return temp.getJson();
             }
         }
         return "error";
     }
 
-    @GetMapping("/iframe")
-    public String iframe(){
-        return prefix + "/winmonitor/demo/cn/iframe";
-    }
 
-    @GetMapping("/fouriframe")
-    public String fouriFrame(){
-        return prefix + "/sample";
-    }
 
-    @GetMapping("/controllerIframe")
-    public String controllerIframe(){
-        return prefix + "/winmonitor/demo/cn/demo";
-    }
+
+
 }
