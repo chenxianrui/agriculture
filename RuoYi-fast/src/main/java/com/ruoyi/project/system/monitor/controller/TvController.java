@@ -1,19 +1,12 @@
 package com.ruoyi.project.system.monitor.controller;
 
 
-import com.ruoyi.project.system.monitor.entity.Monitor;
-import com.ruoyi.project.system.monitor.entity.Monitor01;
-import com.ruoyi.project.system.user.domain.User;
-import org.apache.ibatis.annotations.Param;
-import org.apache.shiro.authz.annotation.RequiresPermissions;
+import com.ruoyi.project.system.monitor.entity.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
-import javax.servlet.http.HttpServletRequest;
-import java.util.HashMap;
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
@@ -23,13 +16,40 @@ public class TvController {
 
     private String prefix = "system/monitor";
 
-    @RequiresPermissions("system:monitor:TV")
-    @RequestMapping(value="/Tv",method = RequestMethod.POST)
+    @GetMapping()
+    public String fourTv(){
+        return prefix + "/winmonitor/demo/cn/demo-iframe";
+    }
+
+
+    @Autowired
+    Monitor01 monitor01;
+    @Autowired
+    Monitor02 monitor02;
+    @Autowired
+    Monitor03 monitor03;
+    @Autowired
+    Monitor04 monitor04;
+
+    @PostMapping("/test")
     @ResponseBody
-    public String  monitor(@RequestBody HashMap<String, String> map){
-        System.out.println("test01");
-        System.out.printf(map.get("id"));
-        return "test";
+    public String getData(String id){
+        System.out.println(id);
+        List<Monitor> monitors = new ArrayList();
+        monitors.add(monitor01);
+        monitors.add(monitor02);
+        monitors.add(monitor03);
+        monitors.add(monitor04);
+        Iterator<Monitor> iterator = monitors.iterator();
+        while (iterator.hasNext()){
+            Monitor temp = iterator.next();
+            System.out.println(temp.getId() + " : " + temp.getJson());
+            System.out.println(temp.getId().equals(id));
+            if(temp.getId().equals(id)){
+                return temp.getJson();
+            }
+        }
+        return "error";
     }
 
     @GetMapping("/iframe")
@@ -39,6 +59,11 @@ public class TvController {
 
     @GetMapping("/fouriframe")
     public String fouriFrame(){
+        return prefix + "/sample";
+    }
+
+    @GetMapping("/controllerIframe")
+    public String controllerIframe(){
         return prefix + "/winmonitor/demo/cn/demo";
     }
 }

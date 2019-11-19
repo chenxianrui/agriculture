@@ -14,6 +14,11 @@ public class WeatherController {
     private String prefix = "system/td";
 
     @GetMapping()
+    public String echas(){
+        return prefix + "/echas";
+    }
+
+    @GetMapping("/new")
     public String td(){
         return prefix + "/newtddata";
     }

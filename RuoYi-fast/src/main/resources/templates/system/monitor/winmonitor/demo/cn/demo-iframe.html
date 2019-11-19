@@ -8,24 +8,22 @@
     <meta http-equiv="Expires" content="0" />
     <style type="text/css">
         iframe {
-            margin: 0;
-            padding: 0;
-            border: 0;
-            width: 570px;
-            height: 320px;
+            /*margin: 0;*/
+            /*padding: 0;*/
+            /*border: 0;*/
+            width: 600px;
+            height: 303px;
         }
     </style>
 </head>
 <body>
     <div>
-        <!--<iframe th:src="@{/system/iframe}" frameborder="0" onload="iframeLoaded('192.168.0.103');"></iframe>-->
-        <!--<iframe th:src="@{/system/iframe}" frameborder="0" onload="iframeLoaded('192.168.0.105');"></iframe>-->
-        <iframe th:src="@{/system/monitor/iframe}" frameborder="0" onload="iframeLoaded('1');"></iframe>
+        <iframe th:src="@{/system/monitor/iframe}" frameborder="0" onload="iframeLoaded('2');"></iframe>
         <iframe th:src="@{/system/monitor/iframe}" frameborder="0" onload="iframeLoaded('2');"></iframe>
     </div>
     <div>
         <iframe th:src="@{/system/monitor/iframe}" frameborder="0" onload="iframeLoaded('3');"></iframe>
-        <iframe th:src="@{/system/monitor/iframe}" frameborder="0" onload="iframeLoaded('1');"></iframe>
+        <iframe th:src="@{/system/monitor/iframe}" frameborder="0" onload="iframeLoaded('4');"></iframe>
     </div>
 </body>
 <script th:src="@{/js/jquery.min.js}"></script>
@@ -53,32 +51,37 @@ var iLoadedCount = 0;
 function iframeLoaded(id) {
     iLoadedCount++;
     // if (4 === iLoadedCount) {
-    var obj = {
-        id: id
+
+    var oLiveView = {
+        iProtocol: 1,            // protocol 1£ºhttp, 2:https
+        szIP: "",    // protocol ip
+        szPort: 80,            // protocol port
+        szUsername: "",     // device username
+        szPassword: "", // device password
+        iStreamType: 2,          // stream 1：main stream  2：sub-stream  3：third stream  4：transcode stream
+        iChannelID: 1,           // channel no
+        bZeroChannel: false      // zero channel
     };
+
     $.ajax({
         type:"POST",
-        url:"/system/monitor/Tv",
-        data: {"id" : "1"},
-        datatype: 'json',
+        url:"/system/monitor/test",
+        data: {"id":id},
+        datatype: "json",
         async:false,
         success:function (data) {
-            alert("成功！" + data);
+            data = JSON.parse(data);
+            oLiveView.szIP = data.ip;
+            oLiveView.szPort = data.port;
+            oLiveView.szUsername = data.user;
+            oLiveView.szPassword = data.password;
         },
         error:function (data) {
             alert("出错");
         }
     });
-    var oLiveView = {
-        iProtocol: 1,            // protocol 1£ºhttp, 2:https
-        szIP: ip,    // protocol ip
-        szPort: port,            // protocol port
-        szUsername: username,     // device username
-        szPassword: password, // device password
-        iStreamType: 2,          // stream 1：main stream  2：sub-stream  3：third stream  4：transcode stream
-        iChannelID: 1,           // channel no
-        bZeroChannel: false      // zero channel
-    };
+
+    // window.alert(oLiveView.szIP);
 
     $.each(g_aIframe, function (i, oIframe) {
         var oWebVideoCtrl = getWebVideoCtrl(oIframe);

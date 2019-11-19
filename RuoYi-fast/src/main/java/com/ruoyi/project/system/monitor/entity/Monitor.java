@@ -1,8 +1,7 @@
 package com.ruoyi.project.system.monitor.entity;
 
-public interface Monitor {
+public abstract class Monitor {
 
-    public String getId();
-    public String getJson();
-
+    public abstract String getJson();
+    public abstract String getId();
 }
