@@ -145,25 +145,25 @@ monitor1:
   ip: 192.168.0.103
   port: 80
   user: admin
-  password: hkivision01
+  password: hikvision01
 
 monitor2:
   id: 2
   ip: 192.168.0.105
   port: 80
   user: admin
-  password: hkivision01
+  password: hikvision01
 
 monitor3:
   id: 3
   ip: 192.168.0.106
   port: 80
   user: admin
-  password: hkivision01
+  password: hikvision01
 
 monitor4:
   id: 4
   ip: 192.168.0.107
   port: 80
   user: admin
-  password: hkivision01
+  password: hikvision01

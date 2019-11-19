@@ -1,5 +1,5 @@
-<!doctype html>
-<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+<!DOCTYPE html>
+<html  lang="zh" xmlns:th="http://www.thymeleaf.org">
 <head>
     <title></title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -8,106 +8,327 @@
     <meta http-equiv="Expires" content="0" />
     <style type="text/css">
         iframe {
-            /*margin: 0;*/
-            /*padding: 0;*/
-            /*border: 0;*/
+            margin: 0;
+            padding: 0;
+            border: 0;
             width: 600px;
-            height: 303px;
+            height: 330px;
         }
     </style>
 </head>
 <body>
     <div>
-        <iframe th:src="@{/system/monitor/iframe}" frameborder="0" onload="iframeLoaded('2');"></iframe>
-        <iframe th:src="@{/system/monitor/iframe}" frameborder="0" onload="iframeLoaded('2');"></iframe>
+        <iframe id="tv1" th:src="@{/system/monitor/iframe}" frameborder="0" onload="iframeLoaded01();"></iframe>
+        <iframe id="tv2" th:src="@{/system/monitor/iframe}" frameborder="0" onload="iframeLoaded02();"></iframe>
     </div>
     <div>
-        <iframe th:src="@{/system/monitor/iframe}" frameborder="0" onload="iframeLoaded('3');"></iframe>
-        <iframe th:src="@{/system/monitor/iframe}" frameborder="0" onload="iframeLoaded('4');"></iframe>
+        <iframe id="tv3" th:src="@{/system/monitor/iframe}" frameborder="0" onload="iframeLoaded03();"></iframe>
+        <iframe id="tv4" th:src="@{/system/monitor/iframe}" frameborder="0" onload="iframeLoaded04();"></iframe>
     </div>
 </body>
 <script th:src="@{/js/jquery.min.js}"></script>
 <script id="videonode" th:src="@{/js/codebase/webVideoCtrl.js}"></script>
+
+
 <script>
+    var g_aIframe = $("iframe");
+    $(function () {
+        // ¼쳩²彾ˇ·򓑾­°²װ¹� var iRet = WebVideoCtrl.I_CheckPluginInstall();
+        if (-1 == iRet) {
+            alert("ź»¹δ°²װ¹�¬˫»�¢°�ﶄWebComponentsKit.exe°²װ£¡");
+            return;
+        }
 
-var g_aIframe = $("iframe");
+        // ¹ر֤¯@Ƿ
+        $(window).unload(function () {
+            $.each(g_aIframe, function (i, oIframe) {
+                getWebVideoCtrl(oIframe).I_Stop();
+            });
+        });
+    });
 
-$(function () {
-    // ¼쳩²彾ˇ·򓑾­°²װ¹� var iRet = WebVideoCtrl.I_CheckPluginInstall();
-    if (-1 == iRet) {
-        alert("您还未安装过插件，双击开发包目录里的WebComponentsKit.exe安装！");
-        return;
+    function iframeLoaded01() {
+            var oLiveView = {
+                iProtocol: 1,            // protocol 1£ºhttp, 2:https
+                szIP: "192.168.0.103",    // protocol ip
+                szPort: "80",            // protocol port
+                szUsername: "admin",     // device username
+                szPassword: "hikvision01", // device password
+                iStreamType: 1,          // stream 1£ºmain stream  2£ºsub-stream  3£ºthird stream  4£ºtranscode stream
+                iChannelID: 1,           // channel no
+                bZeroChannel: false      // zero channel
+            };
+
+            // $.ajax({
+            //     type:"POST",
+            //     url:"/system/monitor/tv",
+            //     data: {"id":1},
+            //     datatype: "json",
+            //     async:false,
+            //     success:function (data) {
+            //         data = JSON.parse(data);
+            //         console.log("succ : " + data.ip + ":" + data.port);
+            //         oLiveView.szIP = data.ip;
+            //         oLiveView.szPort = data.port;
+            //         oLiveView.szUsername = data.username;
+            //         oLiveView.szPassword = data.password;
+            //     },
+            //     error:function (data) {
+            //         console.log("error : " + data);
+            //     }
+            // });
+
+            var g_window = $("#tv1")
+            $.each(g_window, function (i, oIframe) {
+                var oWebVideoCtrl = getWebVideoCtrl(oIframe);
+                // µȂ¼ʨ±¸
+                oWebVideoCtrl.I_Login(oLiveView.szIP, oLiveView.iProtocol, oLiveView.szPort, oLiveView.szUsername, oLiveView.szPassword, {
+                    success: function (xmlDoc) {
+                        // ¿ªʼԤ@
+                        var szDeviceIdentify = oLiveView.szIP + "_" + oLiveView.szPort;
+                        setTimeout(function () {
+                            oWebVideoCtrl.I_StartRealPlay(oLiveView.szIP, {
+                                iStreamType: oLiveView.iStreamType,
+                                iChannelID: oLiveView.iChannelID,
+                                bZeroChannel: oLiveView.bZeroChannel
+                            });
+                        }, 1000);
+                    }
+                });
+            });
     }
 
-    // ¹ر֤¯@Ƿ
-    $(window).unload(function () {
-        $.each(g_aIframe, function (i, oIframe) {
-            getWebVideoCtrl(oIframe).I_Stop();
-        });
-    });
-});
-
-var iLoadedCount = 0;
-function iframeLoaded(id) {
-    iLoadedCount++;
-    // if (4 === iLoadedCount) {
-
-    var oLiveView = {
-        iProtocol: 1,            // protocol 1£ºhttp, 2:https
-        szIP: "",    // protocol ip
-        szPort: 80,            // protocol port
-        szUsername: "",     // device username
-        szPassword: "", // device password
-        iStreamType: 2,          // stream 1：main stream  2：sub-stream  3：third stream  4：transcode stream
-        iChannelID: 1,           // channel no
-        bZeroChannel: false      // zero channel
-    };
-
-    $.ajax({
-        type:"POST",
-        url:"/system/monitor/test",
-        data: {"id":id},
-        datatype: "json",
-        async:false,
-        success:function (data) {
-            data = JSON.parse(data);
-            oLiveView.szIP = data.ip;
-            oLiveView.szPort = data.port;
-            oLiveView.szUsername = data.user;
-            oLiveView.szPassword = data.password;
-        },
-        error:function (data) {
-            alert("出错");
-        }
-    });
-
-    // window.alert(oLiveView.szIP);
-
-    $.each(g_aIframe, function (i, oIframe) {
-        var oWebVideoCtrl = getWebVideoCtrl(oIframe);
-        // µȂ¼ʨ±¸
-        oWebVideoCtrl.I_Login(oLiveView.szIP, oLiveView.iProtocol, oLiveView.szPort, oLiveView.szUsername, oLiveView.szPassword, {
-            success: function (xmlDoc) {
-                // ¿ªʼԤ@
-                var szDeviceIdentify = oLiveView.szIP + "_" + oLiveView.szPort;
-                setTimeout(function () {
-                    oWebVideoCtrl.I_StartRealPlay(oLiveView.szIP, {
-                        iStreamType: oLiveView.iStreamType,
-                        iChannelID: oLiveView.iChannelID,
-                        bZeroChannel: oLiveView.bZeroChannel
-                    });
-                }, 1000);
-            }
-        });
-    });
-    // }
-}
-
-
-
-function getWebVideoCtrl(oIframe) {
-    return oIframe.contentWindow.WebVideoCtrl;
-}
+    function getWebVideoCtrl(oIframe) {
+        return oIframe.contentWindow.WebVideoCtrl;
+    }
 
 </script>
+
+<script>
+    var g_aIframe = $("iframe");
+    $(function () {
+        // ¼쳩²彾ˇ·򓑾­°²װ¹� var iRet = WebVideoCtrl.I_CheckPluginInstall();
+        if (-1 == iRet) {
+            alert("ź»¹δ°²װ¹�¬˫»�¢°�ﶄWebComponentsKit.exe°²װ£¡");
+            return;
+        }
+
+        // ¹ر֤¯@Ƿ
+        $(window).unload(function () {
+            $.each(g_aIframe, function (i, oIframe) {
+                getWebVideoCtrl(oIframe).I_Stop();
+            });
+        });
+    });
+
+    function iframeLoaded02() {
+        var oLiveView = {
+            iProtocol: 1,            // protocol 1£ºhttp, 2:https
+            szIP: "192.168.0.105",    // protocol ip
+            szPort: "80",            // protocol port
+            szUsername: "admin",     // device username
+            szPassword: "hikvision01", // device password
+            iStreamType: 1,          // stream 1£ºmain stream  2£ºsub-stream  3£ºthird stream  4£ºtranscode stream
+            iChannelID: 1,           // channel no
+            bZeroChannel: false      // zero channel
+        };
+
+        // $.ajax({
+        //     type:"POST",
+        //     url:"/system/monitor/tv",
+        //     data: {"id":2},
+        //     datatype: "json",
+        //     async:false,
+        //     success:function (data) {
+        //         data = JSON.parse(data);
+        //         console.log("succ : " + data.ip + ":" + data.port);
+        //         oLiveView.szIP = data.ip;
+        //         oLiveView.szPort = data.port;
+        //         oLiveView.szUsername = data.username;
+        //         oLiveView.szPassword = data.password;
+        //     },
+        //     error:function (data) {
+        //         console.log("error : " + data);
+        //     }
+        // });
+
+        var g_window = $("#tv2")
+        $.each(g_window, function (i, oIframe) {
+            var oWebVideoCtrl = getWebVideoCtrl(oIframe);
+            // µȂ¼ʨ±¸
+            oWebVideoCtrl.I_Login(oLiveView.szIP, oLiveView.iProtocol, oLiveView.szPort, oLiveView.szUsername, oLiveView.szPassword, {
+                success: function (xmlDoc) {
+                    // ¿ªʼԤ@
+                    var szDeviceIdentify = oLiveView.szIP + "_" + oLiveView.szPort;
+                    setTimeout(function () {
+                        oWebVideoCtrl.I_StartRealPlay(oLiveView.szIP, {
+                            iStreamType: oLiveView.iStreamType,
+                            iChannelID: oLiveView.iChannelID,
+                            bZeroChannel: oLiveView.bZeroChannel
+                        });
+                    }, 1000);
+                }
+            });
+        });
+    }
+
+    function getWebVideoCtrl(oIframe) {
+        return oIframe.contentWindow.WebVideoCtrl;
+    }
+
+</script>
+
+<script>
+
+    var g_aIframe = $("iframe");
+    $(function () {
+        // ¼쳩²彾ˇ·򓑾­°²װ¹� var iRet = WebVideoCtrl.I_CheckPluginInstall();
+        if (-1 == iRet) {
+            alert("ź»¹δ°²װ¹�¬˫»�¢°�ﶄWebComponentsKit.exe°²װ£¡");
+            return;
+        }
+
+        // ¹ر֤¯@Ƿ
+        $(window).unload(function () {
+            $.each(g_aIframe, function (i, oIframe) {
+                getWebVideoCtrl(oIframe).I_Stop();
+            });
+        });
+    });
+
+    function iframeLoaded03() {
+        var oLiveView = {
+            iProtocol: 1,            // protocol 1£ºhttp, 2:https
+            szIP: "192.168.0.106",    // protocol ip
+            szPort: "80",            // protocol port
+            szUsername: "admin",     // device username
+            szPassword: "hikvision01", // device password
+            iStreamType: 1,          // stream 1£ºmain stream  2£ºsub-stream  3£ºthird stream  4£ºtranscode stream
+            iChannelID: 1,           // channel no
+            bZeroChannel: false      // zero channel
+        };
+
+        // $.ajax({
+        //     type:"POST",
+        //     url:"/system/monitor/tv",
+        //     data: {"id":3},
+        //     datatype: "json",
+        //     async:false,
+        //     success:function (data) {
+        //         data = JSON.parse(data);
+        //         console.log("succ : " + data.ip + ":" + data.port);
+        //         oLiveView.szIP = data.ip;
+        //         oLiveView.szPort = data.port;
+        //         oLiveView.szUsername = data.username;
+        //         oLiveView.szPassword = data.password;
+        //     },
+        //     error:function (data) {
+        //         console.log("error : " + data);
+        //     }
+        // });
+
+        var g_window = $("#tv3")
+        $.each(g_window, function (i, oIframe) {
+            var oWebVideoCtrl = getWebVideoCtrl(oIframe);
+            // µȂ¼ʨ±¸
+            oWebVideoCtrl.I_Login(oLiveView.szIP, oLiveView.iProtocol, oLiveView.szPort, oLiveView.szUsername, oLiveView.szPassword, {
+                success: function (xmlDoc) {
+                    // ¿ªʼԤ@
+                    var szDeviceIdentify = oLiveView.szIP + "_" + oLiveView.szPort;
+                    setTimeout(function () {
+                        oWebVideoCtrl.I_StartRealPlay(oLiveView.szIP, {
+                            iStreamType: oLiveView.iStreamType,
+                            iChannelID: oLiveView.iChannelID,
+                            bZeroChannel: oLiveView.bZeroChannel
+                        });
+                    }, 1000);
+                }
+            });
+        });
+    }
+
+    function getWebVideoCtrl(oIframe) {
+        return oIframe.contentWindow.WebVideoCtrl;
+    }
+
+</script>
+
+<script>
+
+    var g_aIframe = $("iframe");
+    $(function () {
+        // ¼쳩²彾ˇ·򓑾­°²װ¹� var iRet = WebVideoCtrl.I_CheckPluginInstall();
+        if (-1 == iRet) {
+            alert("ź»¹δ°²װ¹�¬˫»�¢°�ﶄWebComponentsKit.exe°²װ£¡");
+            return;
+        }
+
+        // ¹ر֤¯@Ƿ
+        $(window).unload(function () {
+            $.each(g_aIframe, function (i, oIframe) {
+                getWebVideoCtrl(oIframe).I_Stop();
+            });
+        });
+    });
+
+    function iframeLoaded04() {
+        var oLiveView = {
+            iProtocol: 1,            // protocol 1£ºhttp, 2:https
+            szIP: "192.168.0.107",    // protocol ip
+            szPort: "80",            // protocol port
+            szUsername: "admin",     // device username
+            szPassword: "hikvision01", // device password
+            iStreamType: 1,          // stream 1£ºmain stream  2£ºsub-stream  3£ºthird stream  4£ºtranscode stream
+            iChannelID: 1,           // channel no
+            bZeroChannel: false      // zero channel
+        };
+
+
+        // $.ajax({
+        //     type:"POST",
+        //     url:"/system/monitor/tv",
+        //     data: {"id":4},
+        //     datatype: "json",
+        //     async:false,
+        //     success:function (data) {
+        //         data = JSON.parse(data);
+        //         console.log("succ : " + data.ip + ":" + data.port);
+        //         oLiveView.szIP = data.ip;
+        //         oLiveView.szPort = data.port;
+        //         oLiveView.szUsername = data.username;
+        //         oLiveView.szPassword = data.password;
+        //     },
+        //     error:function (data) {
+        //         console.log("error : " + data);
+        //     }
+        // });
+
+
+        var g_window = $("#tv4")
+        $.each(g_window, function (i, oIframe) {
+            var oWebVideoCtrl = getWebVideoCtrl(oIframe);
+            // µȂ¼ʨ±¸
+            oWebVideoCtrl.I_Login(oLiveView.szIP, oLiveView.iProtocol, oLiveView.szPort, oLiveView.szUsername, oLiveView.szPassword, {
+                success: function (xmlDoc) {
+                    // ¿ªʼԤ@
+                    var szDeviceIdentify = oLiveView.szIP + "_" + oLiveView.szPort;
+                    setTimeout(function () {
+                        oWebVideoCtrl.I_StartRealPlay(oLiveView.szIP, {
+                            iStreamType: oLiveView.iStreamType,
+                            iChannelID: oLiveView.iChannelID,
+                            bZeroChannel: oLiveView.bZeroChannel
+                        });
+                    }, 1000);
+                }
+            });
+        });
+    }
+
+    function getWebVideoCtrl(oIframe) {
+        return oIframe.contentWindow.WebVideoCtrl;
+    }
+
+</script>
+
+
 </html>

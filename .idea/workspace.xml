@@ -2,23 +2,174 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="81a1bdb2-8311-4c4f-b3f4-d48e7a556715" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/monitor/controller/TvController.java" afterPath="$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/monitor/controller/TvController.java" />
-      <change beforePath="$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/monitor/entity/AllMonitor.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/monitor/entity/Monitor.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/monitor/entity/Monitor01.java" afterPath="$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/monitor/entity/Monitor01.java" />
-      <change beforePath="$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/monitor/entity/Monitor02.java" afterPath="$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/monitor/entity/Monitor02.java" />
-      <change beforePath="$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/monitor/entity/Monitor03.java" afterPath="$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/monitor/entity/Monitor03.java" />
-      <change beforePath="$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/monitor/entity/Monitor04.java" afterPath="$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/monitor/entity/Monitor04.java" />
-      <change beforePath="$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/td/controller/WeatherController.java" afterPath="$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/td/controller/WeatherController.java" />
-      <change beforePath="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/index.html" afterPath="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/index.html" />
-      <change beforePath="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/main.html" afterPath="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/main.html" />
-      <change beforePath="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/monitor/monitorTV.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/monitor/winmonitor/demo/cn/demo-easy.html" afterPath="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/monitor/winmonitor/demo/cn/demo-easy.html" />
-      <change beforePath="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/monitor/winmonitor/demo/cn/demo-iframe.html" afterPath="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/monitor/winmonitor/demo/cn/demo-iframe.html" />
-      <change beforePath="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/monitor/winmonitor/demo/cn/demo.html" afterPath="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/monitor/winmonitor/demo/cn/demo.html" />
-      <change beforePath="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/monitor/winmonitor/demo/cn/iframe.html" afterPath="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/monitor/winmonitor/demo/cn/iframe.html" />
-      <change beforePath="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/td/newtddata.html" afterPath="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/td/newtddata.html" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6691699c-825f-4276-99e4-7025384751a8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6691699c-825f-4276-99e4-7025384751a8.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/860af004-c4b2-4d94-8fdf-2571662638a5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/860af004-c4b2-4d94-8fdf-2571662638a5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e7443422-689d-4ed6-a29d-a78f1b384527.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e7443422-689d-4ed6-a29d-a78f1b384527.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_1_14.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_1_14.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_spring_boot_starter_1_1_14.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_spring_boot_starter_1_1_14.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_35.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_35.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_9_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_9_7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_9_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_9_7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jsqlparser_jsqlparser_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jsqlparser_jsqlparser_1_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_oshi_oshi_core_3_9_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_oshi_oshi_core_3_9_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_5_1_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_5_1_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_spring_boot_autoconfigure_1_2_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_spring_boot_autoconfigure_1_2_5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_spring_boot_starter_1_2_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_spring_boot_starter_1_2_5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_penggle_kaptcha_2_3_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_penggle_kaptcha_2_3_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_theborakompanioni_thymeleaf_extras_shiro_2_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_theborakompanioni_thymeleaf_extras_shiro_2_0_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_virtuald_curvesapi_1_04.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_virtuald_curvesapi_1_04.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_20_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_20_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jhlabs_filters_2_0_235_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jhlabs_filters_2_0_235_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_mchange_mchange_commons_java_0_2_11.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_mchange_mchange_commons_java_0_2_11.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okhttp3_okhttp_3_6_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okhttp3_okhttp_3_6_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okio_okio_1_11_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okio_okio_1_11_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_3_2_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_3_2_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_11.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_11.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_3_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_3_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__eu_bitwalker_UserAgentUtils_1_19.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__eu_bitwalker_UserAgentUtils_1_19.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_lettuce_lettuce_core_5_1_3_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_lettuce_lettuce_core_5_1_3_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_buffer_4_1_31_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_buffer_4_1_31_Final.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_4_1_31_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_4_1_31_Final.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_common_4_1_31_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_common_4_1_31_Final.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_4_1_31_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_4_1_31_Final.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_4_1_31_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_4_1_31_Final.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_4_1_31_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_4_1_31_Final.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_reactor_core_3_2_3_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_reactor_core_3_2_3_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_core_2_9_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_core_2_9_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_schema_2_9_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_schema_2_9_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spi_2_9_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spi_2_9_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spring_web_2_9_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spring_web_2_9_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger2_2_9_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger2_2_9_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_common_2_9_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_common_2_9_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_ui_2_9_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_ui_2_9_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_annotations_1_5_21.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_annotations_1_5_21.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_models_1_5_21.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_models_1_5_21.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_2_0_1_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_2_0_1_Final.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_13.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_13.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_9_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_9_5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_9_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_9_5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_java_dev_jna_jna_4_5_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_java_dev_jna_jna_4_5_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_java_dev_jna_jna_platform_4_5_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_java_dev_jna_jna_platform_4_5_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_ehcache_ehcache_core_2_6_11.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_ehcache_ehcache_core_2_6_11.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_collections4_4_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_collections4_4_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_8_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_8_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_6_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_6_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_11_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_11_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_11_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_11_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_3_17.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_3_17.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_3_17.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_3_17.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_schemas_3_17.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_schemas_3_17.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_cache_1_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_cache_1_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_config_core_1_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_config_core_1_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_config_ogdl_1_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_config_ogdl_1_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_core_1_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_core_1_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_crypto_cipher_1_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_crypto_cipher_1_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_crypto_core_1_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_crypto_core_1_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_crypto_hash_1_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_crypto_hash_1_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_ehcache_1_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_ehcache_1_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_event_1_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_event_1_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_lang_1_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_lang_1_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_spring_1_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_spring_1_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_web_1_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_web_1_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_13.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_13.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_13.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_13.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_13.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_13.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_velocity_velocity_1_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_velocity_velocity_1_7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlbeans_xmlbeans_2_6_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlbeans_xmlbeans_2_6_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_11_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_11_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_attoparser_attoparser_2_0_5_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_attoparser_attoparser_2_0_5_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_crazycake_shiro_redis_2_4_2_1_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_crazycake_shiro_redis_2_4_2_1_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_13_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_13_Final.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_2_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_2_Final.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jsoup_jsoup_1_11_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jsoup_jsoup_1_11_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mapstruct_mapstruct_1_2_0_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mapstruct_mapstruct_1_2_0_Final.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_2_23_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_2_23_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_4_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_4_6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_1_3_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_1_3_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_1_3_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_1_3_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_quartz_scheduler_quartz_2_3_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_quartz_scheduler_quartz_2_3_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_reactivestreams_reactive_streams_1_0_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_reactivestreams_reactive_streams_1_0_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_25.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_25.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_1_1_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_1_1_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_1_1_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_1_1_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_2_1_1_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_2_1_1_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_1_1_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_1_1_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_1_1_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_1_1_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_redis_2_1_1_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_redis_2_1_1_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_1_1_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_1_1_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_1_1_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_1_1_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_1_1_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_1_1_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_1_1_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_1_1_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_2_1_1_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_2_1_1_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_1_1_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_1_1_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_1_1_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_1_1_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_1_1_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_1_1_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_1_1_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_1_1_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_1_3_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_1_3_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_keyvalue_2_1_3_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_keyvalue_2_1_3_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_redis_2_1_3_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_redis_2_1_3_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_core_1_2_0_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_core_1_2_0_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_metadata_1_2_0_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_metadata_1_2_0_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_1_3_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_1_3_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_1_3_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_1_3_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_1_3_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_1_3_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_5_1_3_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_5_1_3_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_1_3_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_1_3_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_1_3_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_1_3_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_1_3_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_1_3_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_1_3_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_1_3_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_oxm_5_1_3_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_oxm_5_1_3_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_1_3_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_1_3_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_1_3_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_1_3_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_1_3_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_1_3_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_1_3_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_1_3_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_extras_thymeleaf_extras_java8time_3_0_2_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_extras_thymeleaf_extras_java8time_3_0_2_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_3_0_11_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_3_0_11_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring5_3_0_11_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring5_3_0_11_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_unbescape_unbescape_1_1_6_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_unbescape_unbescape_1_1_6_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_6_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_6_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_23.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_23.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_9_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_9_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__stax_stax_api_1_0_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__stax_stax_api_1_0_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/monitor/job/util/ScheduleUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/monitor/job/util/ScheduleUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/monitor/controller/TvController.java" beforeDir="false" afterPath="$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/monitor/controller/TvController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RuoYi-fast/src/main/resources/application-druid.yml" beforeDir="false" afterPath="$PROJECT_DIR$/RuoYi-fast/src/main/resources/application-druid.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RuoYi-fast/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/RuoYi-fast/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/monitor/winmonitor/demo/cn/demo-easy.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/monitor/winmonitor/demo/cn/demo-iframe.html" beforeDir="false" afterPath="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/monitor/winmonitor/demo/cn/demo-iframe.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/monitor/winmonitor/demo/cn/demo-iframe.html.bak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/monitor/winmonitor/demo/cn/demo-requirejs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/monitor/winmonitor/demo/cn/demo-seajs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/monitor/winmonitor/demo/cn/demo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/monitor/winmonitor/demo/cn/iframe.html" beforeDir="false" afterPath="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/monitor/winmonitor/demo/cn/iframe.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/RuoYi-fast/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -67,86 +218,7 @@
     <favorites_list name="y_project-RuoYi-fast-master (2) - 副本" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.4833691">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="echas.html" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/td/echas.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="161">
-                  <caret line="16" column="46" lean-forward="true" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
-                  <folding>
-                    <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <marker date="1574151530718" expanded="true" signature="6574:6680" ph="..." />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="user.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/user/user.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="161">
-                  <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="include.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/include.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/static/css/style.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="174">
-                  <caret line="3176" column="86" lean-forward="false" selection-start-line="3176" selection-start-column="74" selection-end-line="3176" selection-end-column="86" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="echas.html" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/td/echas.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="248">
-                  <caret line="267" column="24" lean-forward="true" selection-start-line="267" selection-start-column="24" selection-end-line="267" selection-end-column="24" />
-                  <folding>
-                    <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <marker date="1574151530718" expanded="true" signature="6574:6680" ph="..." />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -160,13 +232,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>search</find>
-      <find>import</find>
-      <find>dept.deptName</find>
-      <find>deptName</find>
-      <find>全</find>
-      <find>全屏显示</find>
-      <find>ctx</find>
       <find>© 2019 RuoYi Copyright</find>
       <find>demo</find>
       <find>请输入有效的电子邮件</find>
@@ -190,20 +255,25 @@
       <find>Monitor</find>
       <find>ip</find>
       <find>ibox-content</find>
+      <find>iRet</find>
+      <find>监控</find>
+      <find>80</find>
+      <find>800</find>
+      <find>hkivision01</find>
+      <find>hikvision01</find>
+      <find>ajax</find>
     </findStrings>
     <replaceStrings>
       <replace>2</replace>
       <replace>3</replace>
       <replace>4</replace>
+      <replace>800</replace>
+      <replace>80</replace>
+      <replace>hikvision01</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GradleLocalSettings">
-    <option name="externalProjectsViewState">
-      <projects_view />
-    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -219,7 +289,6 @@
         <option value="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/monitor/monitorTV.html" />
         <option value="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/monitor/CN_WEB3.0控件开发包V1.1.0_Win32/demo/cn/demo.js" />
         <option value="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/monitor/CN_WEB3.0控件开发包V1.1.0_Win32/demo/cn/demo.html" />
-        <option value="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/monitor/winmonitor/demo/cn/demo-seajs.html" />
         <option value="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/monitor/winmonitor/demo/demo.css" />
         <option value="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/monitor/winmonitor/demo/cn/demo.js" />
         <option value="$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/equipment/domain/RestfulTD.java" />
@@ -228,7 +297,6 @@
         <option value="$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/td/sql/RestfulTD.java" />
         <option value="$PROJECT_DIR$/RuoYi-fast/src/main/resources/static/css/demo.css" />
         <option value="$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/framework/config/IpConfig.java" />
-        <option value="$PROJECT_DIR$/RuoYi-fast/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/monitor/ip/IpK.java" />
         <option value="$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/monitor/entity/monitor01.java" />
         <option value="$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/monitor/entity/monitor02.java" />
@@ -243,7 +311,6 @@
         <option value="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/monitor/winmonitor/demo/cn/demo.html" />
         <option value="$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/monitor/entity/User.java" />
         <option value="$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/monitor/entity/UserTest.java" />
-        <option value="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/index.html" />
         <option value="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/monitor/winmonitor/demo/cn/text.html" />
         <option value="$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/monitor/entity/AllMonitor.java" />
         <option value="$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/monitor/entity/Monitor01.java" />
@@ -252,13 +319,16 @@
         <option value="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/main.html" />
         <option value="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/monitor/sample.html" />
         <option value="$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/td/controller/WeatherController.java" />
-        <option value="$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/monitor/controller/TvController.java" />
         <option value="$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/monitor/entity/Monitor02.java" />
         <option value="$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/monitor/entity/Monitor03.java" />
         <option value="$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/monitor/entity/Monitor04.java" />
-        <option value="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/monitor/winmonitor/demo/cn/iframe.html" />
-        <option value="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/monitor/winmonitor/demo/cn/demo-iframe.html" />
         <option value="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/td/echas.html" />
+        <option value="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/index.html" />
+        <option value="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/monitor/winmonitor/demo/cn/iframe.html" />
+        <option value="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/monitor/winmonitor/demo/cn/demo-seajs.html" />
+        <option value="$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/monitor/controller/TvController.java" />
+        <option value="$PROJECT_DIR$/RuoYi-fast/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/monitor/winmonitor/demo/cn/demo-iframe.html" />
       </list>
     </option>
   </component>
@@ -299,67 +369,61 @@
       <select />
     </treeState>
   </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1938" />
-    <option name="height" value="1048" />
+    <option name="x" value="105" />
+    <option name="y" value="180" />
+    <option name="width" value="1555" />
+    <option name="height" value="840" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
+              <item name="agriculture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agriculture" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
+              <item name="agriculture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agriculture" type="462c0819:PsiDirectoryNode" />
               <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
+              <item name="agriculture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agriculture" type="462c0819:PsiDirectoryNode" />
               <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
+              <item name="agriculture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agriculture" type="462c0819:PsiDirectoryNode" />
               <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
+              <item name="agriculture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agriculture" type="462c0819:PsiDirectoryNode" />
               <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
+              <item name="agriculture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agriculture" type="462c0819:PsiDirectoryNode" />
               <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -367,8 +431,18 @@
               <item name="ruoyi" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
+              <item name="agriculture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agriculture" type="462c0819:PsiDirectoryNode" />
+              <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ruoyi" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="agriculture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agriculture" type="462c0819:PsiDirectoryNode" />
               <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -377,19 +451,8 @@
               <item name="framework" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
-              <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ruoyi" type="462c0819:PsiDirectoryNode" />
-              <item name="framework" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
+              <item name="agriculture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agriculture" type="462c0819:PsiDirectoryNode" />
               <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -399,8 +462,44 @@
               <item name="shiro" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
+              <item name="agriculture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agriculture" type="462c0819:PsiDirectoryNode" />
+              <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ruoyi" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+              <item name="shiro" type="462c0819:PsiDirectoryNode" />
+              <item name="realm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="agriculture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agriculture" type="462c0819:PsiDirectoryNode" />
+              <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ruoyi" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+              <item name="shiro" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="agriculture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agriculture" type="462c0819:PsiDirectoryNode" />
+              <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ruoyi" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+              <item name="shiro" type="462c0819:PsiDirectoryNode" />
+              <item name="session" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="agriculture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agriculture" type="462c0819:PsiDirectoryNode" />
               <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -411,8 +510,71 @@
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
+              <item name="agriculture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agriculture" type="462c0819:PsiDirectoryNode" />
+              <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ruoyi" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+              <item name="shiro" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="filter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="agriculture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agriculture" type="462c0819:PsiDirectoryNode" />
+              <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ruoyi" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+              <item name="shiro" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="filter" type="462c0819:PsiDirectoryNode" />
+              <item name="online" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="agriculture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agriculture" type="462c0819:PsiDirectoryNode" />
+              <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ruoyi" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+              <item name="shiro" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="filter" type="462c0819:PsiDirectoryNode" />
+              <item name="sync" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="agriculture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agriculture" type="462c0819:PsiDirectoryNode" />
+              <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ruoyi" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+              <item name="TDengine" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="agriculture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agriculture" type="462c0819:PsiDirectoryNode" />
+              <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ruoyi" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="agriculture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agriculture" type="462c0819:PsiDirectoryNode" />
               <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -421,8 +583,41 @@
               <item name="project" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
+              <item name="agriculture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agriculture" type="462c0819:PsiDirectoryNode" />
+              <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ruoyi" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="agriculture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agriculture" type="462c0819:PsiDirectoryNode" />
+              <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ruoyi" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="agriculture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agriculture" type="462c0819:PsiDirectoryNode" />
+              <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ruoyi" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="monitor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="agriculture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agriculture" type="462c0819:PsiDirectoryNode" />
               <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -432,33 +627,8 @@
               <item name="system" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
-              <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ruoyi" type="462c0819:PsiDirectoryNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
-              <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ruoyi" type="462c0819:PsiDirectoryNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
+              <item name="agriculture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agriculture" type="462c0819:PsiDirectoryNode" />
               <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -469,8 +639,8 @@
               <item name="monitor" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
+              <item name="agriculture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agriculture" type="462c0819:PsiDirectoryNode" />
               <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -482,8 +652,8 @@
               <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
+              <item name="agriculture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agriculture" type="462c0819:PsiDirectoryNode" />
               <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -495,142 +665,27 @@
               <item name="entity" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
+              <item name="agriculture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agriculture" type="462c0819:PsiDirectoryNode" />
               <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="ruoyi" type="462c0819:PsiDirectoryNode" />
               <item name="project" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
-              <item name="post" type="462c0819:PsiDirectoryNode" />
+              <item name="tool" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
-              <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ruoyi" type="462c0819:PsiDirectoryNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
-              <item name="post" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
-              <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ruoyi" type="462c0819:PsiDirectoryNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
-              <item name="role" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
-              <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ruoyi" type="462c0819:PsiDirectoryNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
-              <item name="role" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
-              <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ruoyi" type="462c0819:PsiDirectoryNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
-              <item name="td" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
-              <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ruoyi" type="462c0819:PsiDirectoryNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
-              <item name="td" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
-              <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ruoyi" type="462c0819:PsiDirectoryNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
-              <item name="td" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
-              <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ruoyi" type="462c0819:PsiDirectoryNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
-              <item name="td" type="462c0819:PsiDirectoryNode" />
-              <item name="sql" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
-              <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ruoyi" type="462c0819:PsiDirectoryNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
-              <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ruoyi" type="462c0819:PsiDirectoryNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
+              <item name="agriculture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agriculture" type="462c0819:PsiDirectoryNode" />
               <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
+              <item name="agriculture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agriculture" type="462c0819:PsiDirectoryNode" />
               <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -638,39 +693,8 @@
               <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
-              <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
-              <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="layui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
-              <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="layui" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
+              <item name="agriculture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agriculture" type="462c0819:PsiDirectoryNode" />
               <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -678,28 +702,8 @@
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
-              <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
-              <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="monitor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
+              <item name="agriculture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agriculture" type="462c0819:PsiDirectoryNode" />
               <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -708,19 +712,19 @@
               <item name="system" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
+              <item name="agriculture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agriculture" type="462c0819:PsiDirectoryNode" />
               <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="system" type="462c0819:PsiDirectoryNode" />
-              <item name="equipment" type="462c0819:PsiDirectoryNode" />
+              <item name="menu" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
+              <item name="agriculture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agriculture" type="462c0819:PsiDirectoryNode" />
               <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -730,8 +734,8 @@
               <item name="monitor" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
+              <item name="agriculture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agriculture" type="462c0819:PsiDirectoryNode" />
               <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -742,8 +746,8 @@
               <item name="demo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
+              <item name="agriculture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agriculture" type="462c0819:PsiDirectoryNode" />
               <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -755,68 +759,57 @@
               <item name="cn" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
+              <item name="agriculture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agriculture" type="462c0819:PsiDirectoryNode" />
               <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="system" type="462c0819:PsiDirectoryNode" />
-              <item name="td" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
-              <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="monitor" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="codebase" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelOrder2" value="2" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RequestMappingsPanelWidth2" value="75" />
+    <property name="SearchEverywhereHistoryKey" value="ibox-content&#9;null&#9;null&#10;Schedule&#9;PSI&#9;JAVA://com.ruoyi.project.monitor.job.util.ScheduleUtils&#10;add&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/resources/templates/system/role/add.html&#10;json&#9;PSI&#9;JAVA://com.fasterxml.jackson.core.io.JsonEOFException&#10;EquipmentCon&#9;PSI&#9;JAVA://com.ruoyi.project.system.equipment.controller.EquipmentController&#10;footer&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/resources/templates/demo/table/footer.html&#10;System/main&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/java/com/ruoyi/project/system/config/domain&#10;Shiro&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/java/com/ruoyi/framework/config/ShiroConfig.java&#10;user&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/resources/templates/system/user/user.html&#10;Screen&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/java/com/ruoyi/project/system/screen/controller/ScreenController.java&#10;equipmen&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/resources/templates/system/equipment/equipment.html&#10;User&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/java/com/ruoyi/project/system/user/service/UserServiceImpl.java&#10;Equipmen&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/resources/mybatis/system/EquipmentMapper.xml&#10;Equipment&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/resources/mybatis/system/EquipmentMapper.xml&#10;RoleMa&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/resources/mybatis/system/RoleMapper.xml&#10;Eq&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/java/com/ruoyi/project/system/equipment/service/EquipmentServiceImpl.java&#10;Equipm&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/java/com/ruoyi/project/system/equipment/controller/EquipmentController.java&#10;equipment&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/resources/templates/system/equipment/equipment.html&#10;Role&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/java/com/ruoyi/project/system/role/controller/RoleController.java&#10;EquipmentS&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/java/com/ruoyi/project/system/equipment/service/EquipmentServiceImpl.java&#10;EquipmenS&#9;PSI&#9;JAVA://com.ruoyi.project.system.equipment.service.IEquipmentService&#10;UserSer&#9;PSI&#9;JAVA://com.ruoyi.project.system.user.service.UserServiceImpl&#10;role&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/resources/templates/system/role/role.html&#10;RoleController&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/java/com/ruoyi/project/system/role/controller/RoleController.java&#10;EquipmentDep&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/java/com/ruoyi/project/system/equipment/mysqlDomain/EquipmentDept.java&#10;edit&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/resources/templates/system/user/edit.html&#10;E&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/java/com/ruoyi/project/system/equipment/service/EquipmentServiceImpl.java&#10;EquipmentD&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/java/com/ruoyi/project/system/equipment/mapper/EquipmentDeptMapper.java&#10;RoleDeptMapper&#9;PSI&#9;JAVA://com.ruoyi.project.system.role.mapper.RoleDeptMapper&#10;RoleDeptMa&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/resources/mybatis/system/RoleDeptMapper.xml&#10;Equ&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/java/com/ruoyi/project/system/equipment/controller/EquipmentController.java&#10;checkEmailUnique&#9;PSI&#9;JAVA://com.ruoyi.project.system.user.controller.UserController#checkEmailUnique&#10;layui-layer-btn&#9;null&#9;null&#10;bootstrap-&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/resources/static/ajax/libs/bootstrap-table/extensions/export/bootstrap-table-export.js&#10;bootstrap&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/resources/static/ajax/libs/bootstrap-table/bootstrap-table.min.js&#10;boo&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/resources/static/ajax/libs/bootstrap-table/extensions/columns/bootstrap-table-fixed-columns.js&#10;RoleCont&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/java/com/ruoyi/project/system/role/controller/RoleController.java&#10;submitHandler&#9;null&#9;null&#10;Equip&#9;PSI&#9;JAVA://com.ruoyi.project.system.equipment.service.IEquipmentService&#10;UserSe&#9;PSI&#9;JAVA://com.ruoyi.project.system.user.service.UserServiceImpl&#10;equip&#9;PSI&#9;JAVA://com.ruoyi.project.system.equipment.mapper.EquipmentDeptMapper&#10;UserM&#9;PSI&#9;JAVA://com.ruoyi.project.system.user.mapper.UserMapper&#10;UserCon&#9;PSI&#9;JAVA://com.ruoyi.project.system.user.controller.UserController&#10;bootstraptable&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/resources/static/ajax/libs/bootstrap-table&#10;include&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/resources/templates/include.html&#10;roleId&#9;null&#9;null&#10;uniqueId&#9;null&#9;null&#10;head&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/resources/templates/demo/table/groupHeader.html&#10;header&#9;null&#9;null&#10;demo/table&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/java/com/ruoyi/project/demo/controller/DemoTableController.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../blog - 副本 - 副本 (2)" />
-    <property name="RequestMappingsPanelWidth0" value="75" />
-    <property name="RequestMappingsPanelOrder0" value="0" />
-    <property name="RequestMappingsPanelWidth1" value="75" />
-    <property name="RequestMappingsPanelOrder1" value="1" />
-    <property name="RequestMappingsPanelWidth2" value="75" />
-    <property name="RequestMappingsPanelOrder2" value="2" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="SearchEverywhereHistoryKey" value="ibox-content&#9;null&#9;null&#10;Schedule&#9;PSI&#9;JAVA://com.ruoyi.project.monitor.job.util.ScheduleUtils&#10;add&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/resources/templates/system/role/add.html&#10;json&#9;PSI&#9;JAVA://com.fasterxml.jackson.core.io.JsonEOFException&#10;EquipmentCon&#9;PSI&#9;JAVA://com.ruoyi.project.system.equipment.controller.EquipmentController&#10;footer&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/resources/templates/demo/table/footer.html&#10;System/main&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/java/com/ruoyi/project/system/config/domain&#10;Shiro&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/java/com/ruoyi/framework/config/ShiroConfig.java&#10;user&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/resources/templates/system/user/user.html&#10;Screen&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/java/com/ruoyi/project/system/screen/controller/ScreenController.java&#10;equipmen&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/resources/templates/system/equipment/equipment.html&#10;User&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/java/com/ruoyi/project/system/user/service/UserServiceImpl.java&#10;Equipmen&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/resources/mybatis/system/EquipmentMapper.xml&#10;Equipment&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/resources/mybatis/system/EquipmentMapper.xml&#10;RoleMa&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/resources/mybatis/system/RoleMapper.xml&#10;Eq&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/java/com/ruoyi/project/system/equipment/service/EquipmentServiceImpl.java&#10;Equipm&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/java/com/ruoyi/project/system/equipment/controller/EquipmentController.java&#10;equipment&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/resources/templates/system/equipment/equipment.html&#10;Role&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/java/com/ruoyi/project/system/role/controller/RoleController.java&#10;EquipmentS&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/java/com/ruoyi/project/system/equipment/service/EquipmentServiceImpl.java&#10;EquipmenS&#9;PSI&#9;JAVA://com.ruoyi.project.system.equipment.service.IEquipmentService&#10;UserSer&#9;PSI&#9;JAVA://com.ruoyi.project.system.user.service.UserServiceImpl&#10;role&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/resources/templates/system/role/role.html&#10;RoleController&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/java/com/ruoyi/project/system/role/controller/RoleController.java&#10;EquipmentDep&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/java/com/ruoyi/project/system/equipment/mysqlDomain/EquipmentDept.java&#10;edit&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/resources/templates/system/user/edit.html&#10;E&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/java/com/ruoyi/project/system/equipment/service/EquipmentServiceImpl.java&#10;EquipmentD&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/java/com/ruoyi/project/system/equipment/mapper/EquipmentDeptMapper.java&#10;RoleDeptMapper&#9;PSI&#9;JAVA://com.ruoyi.project.system.role.mapper.RoleDeptMapper&#10;RoleDeptMa&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/resources/mybatis/system/RoleDeptMapper.xml&#10;Equ&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/java/com/ruoyi/project/system/equipment/controller/EquipmentController.java&#10;checkEmailUnique&#9;PSI&#9;JAVA://com.ruoyi.project.system.user.controller.UserController#checkEmailUnique&#10;layui-layer-btn&#9;null&#9;null&#10;bootstrap-&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/resources/static/ajax/libs/bootstrap-table/extensions/export/bootstrap-table-export.js&#10;bootstrap&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/resources/static/ajax/libs/bootstrap-table/bootstrap-table.min.js&#10;boo&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/resources/static/ajax/libs/bootstrap-table/extensions/columns/bootstrap-table-fixed-columns.js&#10;RoleCont&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/java/com/ruoyi/project/system/role/controller/RoleController.java&#10;submitHandler&#9;null&#9;null&#10;Equip&#9;PSI&#9;JAVA://com.ruoyi.project.system.equipment.service.IEquipmentService&#10;UserSe&#9;PSI&#9;JAVA://com.ruoyi.project.system.user.service.UserServiceImpl&#10;equip&#9;PSI&#9;JAVA://com.ruoyi.project.system.equipment.mapper.EquipmentDeptMapper&#10;UserM&#9;PSI&#9;JAVA://com.ruoyi.project.system.user.mapper.UserMapper&#10;UserCon&#9;PSI&#9;JAVA://com.ruoyi.project.system.user.controller.UserController&#10;bootstraptable&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/resources/static/ajax/libs/bootstrap-table&#10;include&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/resources/templates/include.html&#10;roleId&#9;null&#9;null&#10;uniqueId&#9;null&#9;null&#10;head&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/resources/templates/demo/table/groupHeader.html&#10;header&#9;null&#9;null&#10;demo/table&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/java/com/ruoyi/project/demo/controller/DemoTableController.java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../blog - 副本 - 副本 (2)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\lenovo\IdeaProjects\y_project-RuoYi-fast-master (2) - 副本\RuoYi-fast\src\main\java\com\ruoyi\project\system\monitor\entity" />
-      <recent name="C:\Users\lenovo\IdeaProjects\y_project-RuoYi-fast-master (2) - 副本\RuoYi-fast\src\main\resources\static\js" />
-      <recent name="C:\Users\lenovo\IdeaProjects\y_project-RuoYi-fast-master (2) - 副本\RuoYi-fast\src\main\resources\static\css" />
-      <recent name="C:\Users\lenovo\IdeaProjects\y_project-RuoYi-fast-master (2) - 副本\RuoYi-fast\src\main\resources\static\img" />
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\lenovo\IdeaProjects\y_project-RuoYi-fast-master (2) - 副本\RuoYi-fast\src\main\resources\templates\system\monitor" />
+      <recent name="C:\Users\lenovo\IdeaProjects\y_project-RuoYi-fast-master (2) - 副本\RuoYi-fast\src\main\resources\templates\system" />
+      <recent name="C:\Users\lenovo\IdeaProjects\y_project-RuoYi-fast-master (2) - 副本\RuoYi-fast\src\main\resources\static\ruoyi" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.ruoyi.project.system.screen.controller" />
       <recent name="com.ruoyi.project.system.screen.mapper" />
       <recent name="com.ruoyi.framework.TDengine.Entity" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\lenovo\IdeaProjects\y_project-RuoYi-fast-master (2) - 副本\RuoYi-fast\src\main\resources\templates\system\monitor" />
-      <recent name="C:\Users\lenovo\IdeaProjects\y_project-RuoYi-fast-master (2) - 副本\RuoYi-fast\src\main\resources\templates\system" />
-      <recent name="C:\Users\lenovo\IdeaProjects\y_project-RuoYi-fast-master (2) - 副本\RuoYi-fast\src\main\resources\static\ruoyi" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\java-IDEA\Java-code\agriculture\RuoYi-fast\src\main\resources\static\js" />
+      <recent name="F:\java-IDEA\Java-code\agriculture\RuoYi-fast\src\main\resources\static" />
+      <recent name="F:\java-IDEA\Java-code\agriculture\RuoYi-fast\src\main\resources\templates\system\monitor\winmonitor\demo\cn" />
+      <recent name="F:\java-IDEA\Java-code\agriculture\RuoYi-fast\src\main\resources\static\monitor" />
+      <recent name="C:\Users\lenovo\IdeaProjects\y_project-RuoYi-fast-master (2) - 副本\RuoYi-fast\src\main\java\com\ruoyi\project\system\monitor\entity" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -833,67 +826,34 @@
   </component>
   <component name="RunManager" selected="Spring Boot.RuoYiApplication">
     <configuration default="true" type="Applet" factoryName="Applet">
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <module />
     </configuration>
     <configuration name="GetTime" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+      <option name="MAIN_CLASS_NAME" value="com.ruoyi.project.system.td.sql.GetTime" />
+      <module name="RuoYi" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.ruoyi.project.system.td.sql.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.ruoyi.project.system.td.sql.GetTime" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="RuoYi" />
-      <envs />
     </configuration>
     <configuration name="RestfulTD" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+      <option name="MAIN_CLASS_NAME" value="com.ruoyi.project.system.td.sql.RestfulTD" />
+      <module name="RuoYi" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.ruoyi.project.system.td.sql.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.ruoyi.project.system.td.sql.RestfulTD" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="RuoYi" />
-      <envs />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" />
@@ -903,35 +863,23 @@
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="singleModule" />
       </option>
-      <envs />
       <patterns />
     </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
-    </configuration>
     <configuration name="RuoYiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+      <module name="RuoYi" />
+      <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.ruoyi.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.ruoyi.RuoYiApplication" />
-      <module name="RuoYi" />
-      <envs />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
@@ -944,39 +892,27 @@
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="singleModule" />
       </option>
       <option name="USE_DEFAULT_REPORTERS" value="false" />
       <option name="PROPERTIES_FILE" />
-      <envs />
       <properties />
       <listeners />
     </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-      <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file id="idea.log" enabled="true" />
-    </configuration>
-    <list size="3">
-      <item index="0" class="java.lang.String" itemvalue="Spring Boot.RuoYiApplication" />
-      <item index="1" class="java.lang.String" itemvalue="Application.RestfulTD" />
-      <item index="2" class="java.lang.String" itemvalue="Application.GetTime" />
+    <list>
+      <item itemvalue="Spring Boot.RuoYiApplication" />
+      <item itemvalue="Application.RestfulTD" />
+      <item itemvalue="Application.GetTime" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Spring Boot.RuoYiApplication" />
-        <item index="1" class="java.lang.String" itemvalue="Application.RestfulTD" />
-        <item index="2" class="java.lang.String" itemvalue="Application.GetTime" />
+      <list>
+        <item itemvalue="Spring Boot.RuoYiApplication" />
+        <item itemvalue="Application.RestfulTD" />
+        <item itemvalue="Application.GetTime" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -1054,6 +990,7 @@
       <workItem from="1574033704848" duration="46069000" />
       <workItem from="1574143312053" duration="252000" />
       <workItem from="1574143862173" duration="7530000" />
+      <workItem from="1574158887334" duration="8628000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1574129646002</created>
@@ -1073,7 +1010,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="543262000" />
+    <option name="totallyTimeSpent" value="556198000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1085,45 +1022,85 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="15" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32886267" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2927107" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2918455" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.309795" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25854215" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18792711" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.49429038" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3111588" sideWeight="0.50570965" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="9" weight="0.32886267" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="8" />
+      <window_info anchor="right" id="Database" order="4" weight="0.2918455" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="3" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.309795" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32915717" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.32915717" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
+      <window_info id="Image Layers" order="4" />
+      <window_info anchor="bottom" id="Java Enterprise" order="10" weight="0.32915717" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="11" weight="0.32915717" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.6718529" />
+      <window_info anchor="bottom" id="Spring" order="12" weight="0.32915717" />
+      <window_info anchor="bottom" id="Terminal" order="13" weight="0.18792711" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49429038" visible="true" weight="0.31099194" />
+      <window_info anchor="bottom" id="Problems" order="14" weight="0.32915717" />
+      <window_info anchor="right" id="Bean Validation" order="7" />
+      <window_info id="Web" order="5" side_tool="true" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info id="Favorites" order="7" sideWeight="0.50570965" side_tool="true" weight="0.3111588" />
+      <window_info anchor="bottom" id="JRebel Executor" order="8" visible="true" weight="0.2927107" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info active="true" anchor="bottom" id="Database Console" order="8" visible="true" weight="0.32956153" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info id="JRebel" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="JRebel Console" order="15" side_tool="true" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Designer" order="8" />
+      <window_info active="true" anchor="bottom" id="Database Console" order="8" visible="true" weight="0.32956153" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info id="JRebel" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Spring" order="14" weight="0.32915717" />
+      <window_info id="Image Layers" order="4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.6294201" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Favorites" order="7" sideWeight="0.50570965" side_tool="true" weight="0.3111588" />
+      <window_info anchor="bottom" id="Terminal" order="15" weight="0.18792711" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32915717" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32915717" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Problems" order="16" weight="0.32915717" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32915717" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.32915717" />
+      <window_info anchor="right" id="Maven Projects" order="9" weight="0.32886267" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="JRebel Executor" order="10" visible="true" weight="0.2927107" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49429038" visible="true" weight="0.24664879" />
+      <window_info anchor="bottom" id="JRebel Console" order="17" side_tool="true" />
+      <window_info anchor="right" id="Database" order="4" weight="0.2918455" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info id="Web" order="5" side_tool="true" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.309795" />
+      <window_info anchor="right" id="Bean Validation" order="7" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -1139,52 +1116,12 @@
     <breakpoint-manager>
       <option name="time" value="4" />
     </breakpoint-manager>
-    <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/monitor/winmonitor/demo/cn/demo-seajs.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1268">
-          <caret line="56" column="10" lean-forward="false" selection-start-line="56" selection-start-column="10" selection-end-line="56" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/static/css/font-awesome.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/static/css/demo.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1862">
-          <caret line="403" column="1" lean-forward="false" selection-start-line="403" selection-start-column="1" selection-end-line="403" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/framework/config/ApplicationConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/framework/config/RuoYiConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/framework/config/ShiroConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="667">
-          <caret line="47" column="18" lean-forward="false" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <caret line="47" column="18" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -1192,21 +1129,21 @@
     <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/config/controller/ConfigController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="148">
-          <caret line="28" column="4" lean-forward="false" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
+          <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.3.RELEASE/spring-context-5.1.3.RELEASE.jar!/org/springframework/stereotype/Controller.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
-          <caret line="19" column="14" lean-forward="false" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+          <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.3.RELEASE/spring-context-5.1.3.RELEASE.jar!/org/springframework/stereotype/Component.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
-          <caret line="16" column="8" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -1214,38 +1151,32 @@
     <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/monitor/entity/AllMoniitor.java" />
     <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/screen/controller/ScreenController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="15" column="32" lean-forward="false" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+        <state>
+          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RuoYi-fast/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="337">
-          <caret line="313" column="20" lean-forward="false" selection-start-line="313" selection-start-column="20" selection-end-line="313" selection-end-column="20" />
-          <folding />
+          <caret line="313" column="20" selection-start-line="313" selection-start-column="20" selection-end-line="313" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/user/add.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
-          <caret line="135" column="47" lean-forward="false" selection-start-line="135" selection-start-column="47" selection-end-line="135" selection-end-column="47" />
+          <caret line="135" column="47" selection-start-line="135" selection-start-column="47" selection-end-line="135" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/dict/data/add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/role/controller/RoleController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
           <caret line="86" column="17" lean-forward="true" selection-start-line="86" selection-start-column="17" selection-end-line="86" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1259,55 +1190,30 @@
     <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/common/xss/XssFilter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
-          <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/application-druid.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="18" column="19" lean-forward="true" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
-          <folding />
+          <caret line="65" selection-start-line="65" selection-end-line="65" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/monitor/winmonitor/demo/cn/demo.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-322">
-          <caret line="350" column="87" lean-forward="false" selection-start-line="350" selection-start-column="87" selection-end-line="350" selection-end-column="87" />
+          <caret line="350" column="87" selection-start-line="350" selection-start-column="87" selection-end-line="350" selection-end-column="87" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1311">
-          <caret line="57" column="50" lean-forward="false" selection-start-line="57" selection-start-column="50" selection-end-line="57" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/monitor/winmonitor/demo/cn/text.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="17" column="33" lean-forward="false" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/monitor/winmonitor/demo/cn/text.html" />
     <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/monitor/entity/AllMonitor.java" />
     <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/monitor/entity/UserTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/monitor/job/controller/JobController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-370">
-          <caret line="31" column="13" lean-forward="false" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-          <folding />
+          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1315,47 +1221,28 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="343">
           <caret line="102" column="60" lean-forward="true" selection-start-line="102" selection-start-column="60" selection-end-line="102" selection-end-column="60" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/equipment/add.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2372">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
+        <state relative-caret-position="-2372" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/static/css/adminlte.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/monitor/winmonitor/demo/cn/demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="852">
-          <caret line="701" column="31" lean-forward="false" selection-start-line="701" selection-start-column="31" selection-end-line="701" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/main.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="395">
-          <caret line="133" column="35" lean-forward="false" selection-start-line="133" selection-start-column="35" selection-end-line="133" selection-end-column="35" />
-          <folding />
+          <caret line="133" column="35" selection-start-line="133" selection-start-column="35" selection-end-line="133" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/equipment/equipment.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
-          <caret line="58" column="63" lean-forward="false" selection-start-line="58" selection-start-column="63" selection-end-line="58" selection-end-column="63" />
-          <folding />
+          <caret line="58" column="63" selection-start-line="58" selection-start-column="63" selection-end-line="58" selection-end-column="63" />
         </state>
       </provider>
     </entry>
@@ -1363,127 +1250,52 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-11337">
           <caret line="845" column="14" lean-forward="true" selection-start-line="845" selection-start-column="14" selection-end-line="845" selection-end-column="14" />
-          <folding>
-            <marker date="1569805970723" expanded="true" signature="10969:11009" ph="..." />
-            <marker date="1569805970723" expanded="true" signature="11570:11576" ph="&amp;nbsp;" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/monitor/sample.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="291">
-          <caret line="29" column="19" lean-forward="false" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
-          <folding>
-            <marker date="1574146160376" expanded="false" signature="1251:1279" ph="..." />
-          </folding>
+          <caret line="29" column="19" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/static/js/echarts.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/monitor/entity/Monitor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="165" column="19" lean-forward="false" selection-start-line="165" selection-start-column="19" selection-end-line="165" selection-end-column="19" />
-          <folding />
+        <state relative-caret-position="150">
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/monitor/entity/Monitor02.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="46" column="5" lean-forward="true" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
-          <folding />
+        <state relative-caret-position="300">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/monitor/entity/Monitor03.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="47" column="5" lean-forward="false" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/monitor/entity/Monitor04.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="40" column="43" lean-forward="true" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/monitor/controller/TvController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="43" column="35" lean-forward="true" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#515#516#0" expanded="true" />
-            <element signature="e#580#581#0" expanded="true" />
-            <element signature="e#1495#1496#0" expanded="true" />
-            <element signature="e#1555#1556#0" expanded="true" />
-            <element signature="e#1619#1620#0" expanded="true" />
-            <element signature="e#1660#1661#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="425">
+          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/monitor/entity/Monitor01.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="34" column="13" lean-forward="true" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
-          <folding />
+        <state relative-caret-position="177">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/monitor/winmonitor/demo/cn/demo-easy.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="66" column="44" lean-forward="true" selection-start-line="66" selection-start-column="44" selection-end-line="66" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/monitor/winmonitor/demo/cn/demo-easy.html" />
     <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/td/controller/WeatherController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
-          <caret line="16" column="22" lean-forward="false" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-          <folding>
-            <element signature="e#507#508#0" expanded="true" />
-            <element signature="e#547#548#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/monitor/winmonitor/demo/cn/demo-iframe.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/monitor/winmonitor/demo/cn/iframe.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-          <folding />
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -1491,31 +1303,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3496">
           <caret line="1" column="52" lean-forward="true" selection-start-line="1" selection-start-column="52" selection-end-line="1" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/include.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/user/user.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
           <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/static/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
-          <caret line="3176" column="86" lean-forward="false" selection-start-line="3176" selection-start-column="74" selection-end-line="3176" selection-end-column="86" />
-          <folding />
+          <caret line="3176" column="86" selection-start-line="3176" selection-start-column="74" selection-end-line="3176" selection-end-column="86" />
         </state>
       </provider>
     </entry>
@@ -1523,16 +1327,112 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="248">
           <caret line="267" column="24" lean-forward="true" selection-start-line="267" selection-start-column="24" selection-end-line="267" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/monitor/entity/Monitor04.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/monitor/winmonitor/demo/cn/demo.html" />
+    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/static/monitor/iframe.html" />
+    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/static/monitor/demo-iframe.html" />
+    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/static/demo-seajs.html" />
+    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/static/js/sea-3.0.1.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/monitor/winmonitor/demo/cn/demo-seajs.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="81" column="11" selection-start-line="81" selection-start-column="11" selection-end-line="81" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-21">
+          <caret line="147" column="23" selection-start-line="147" selection-start-column="12" selection-end-line="147" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/application-druid.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-821">
+          <caret line="18" column="19" lean-forward="true" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/monitor/winmonitor/demo/cn/iframe.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-396">
+          <caret line="10" column="12" lean-forward="true" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/monitor/winmonitor/demo/cn/demo-iframe.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="61" column="21" selection-start-line="61" selection-start-column="17" selection-end-line="61" selection-end-column="21" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1574151530718" expanded="true" signature="6574:6680" ph="..." />
+            <element signature="n#head#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
+            <element signature="e#388#522#0" />
+            <element signature="e#1807#1903#0" />
+            <element signature="e#1960#2092#0" />
+            <element signature="e#2014#2080#0" />
+            <element signature="e#3287#3892#0" />
+            <element signature="e#3336#3874#0" />
+            <element signature="e#3506#3844#0" />
+            <element signature="e#3582#3816#0" />
+            <element signature="e#3956#4014#0" />
+            <element signature="e#4697#4793#0" />
+            <element signature="e#4850#4982#0" />
+            <element signature="e#4904#4970#0" />
+            <element signature="e#7408#7504#0" />
+            <element signature="e#7561#7693#0" />
+            <element signature="e#7615#7681#0" />
+            <element signature="e#6266#8316#0" />
+            <element signature="e#6292#6809#0" />
+            <element signature="e#7524#8308#0" />
+            <element signature="e#7739#8296#0" />
+            <element signature="e#7784#8282#0" />
+            <element signature="e#7942#8256#0" />
+            <element signature="e#8014#8232#0" />
+            <element signature="e#8356#8414#0" />
+            <element signature="e#10115#10211#0" />
+            <element signature="e#10268#10400#0" />
+            <element signature="e#10322#10388#0" />
+            <element signature="e#8466#10518#0" />
+            <element signature="e#7124#7908#0" />
+            <element signature="e#7339#7896#0" />
+            <element signature="e#7384#7882#0" />
+            <element signature="e#7542#7856#0" />
+            <element signature="e#7614#7832#0" />
+            <element signature="e#7956#8014#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/monitor/controller/TvController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="925">
+          <caret line="53" column="9" lean-forward="true" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#515#516#0" expanded="true" />
+            <element signature="e#580#581#0" expanded="true" />
+            <element signature="e#636#637#0" expanded="true" />
+            <element signature="e#696#697#0" expanded="true" />
           </folding>
         </state>
       </provider>
