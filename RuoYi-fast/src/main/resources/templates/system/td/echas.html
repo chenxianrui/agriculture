@@ -1,362 +1,1045 @@
 <!DOCTYPE html>
-<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+<html lang="zh" xmlns:th="http://www.thymeleaf.org" xmlns:shiro="http://www.pollix.at/thymeleaf/shiro">
 <head>
-    <th:block th:include="include :: header('echarts')" />
-    <th:block th:include="include :: layout-latest-css" />
-    <th:block th:include="include :: ztree-css" />
+    <th:block th:include="include :: header('百度ECharts')" />
 </head>
-<body>
-<div class="ibox-content" style="float: left">
-    <!-- 为 ECharts 准备一个具备大小（宽高）的 DOM -->
-    <div id="main" style="width: 300px;height:165px;"></div>
-</div>
-<div class="ibox-content" style="float: left">
-    <!-- 为 ECharts 准备一个具备大小（宽高）的 DOM -->
-    <div id="rainfall" style="width: 300px;height:165px;"></div>
-</div>
-<div class="ibox-content" style="float: left">
-     <!--为 ECharts 准备一个具备大小（宽高）的 DOM-->
-    <div id="temperature" style="width: 300px;height:165px;"></div>
-</div>
-<div class="ibox-content" style="float: left">
-    <!-- 为 ECharts 准备一个具备大小（宽高）的 DOM -->
-    <div id="humidity" style="width: 300px;height:165px;"></div>
-</div>
-</body>
-<script th:src="@{/js/echarts.min.js}"></script>
-<script>
-    //
-    <!--风向-->
-    // 基于准备好的dom，初始化echarts实例
-    var myChart = echarts.init(document.getElementById('main'));
-    option = {
-        title: {
-            text: '风向'
-        },
-        tooltip: {},
-        // legend: {
-        //     data: ['预算分配（Allocated Budget）', '实际开销（Actual Spending）']
-        // },
-        radar: {
-            // shape: 'circle',
-            name: {
-                textStyle: {
-                    color: '#fff',
-                    backgroundColor: '#999',
-                    borderRadius: 3,
-                    padding: [3, 5]
-                }
-            },
-            indicator: [
-                { name: '销售（sales）', max: 6500},
-                { name: '管理（Administration）', max: 16000},
-                { name: '信息技术（Information Techology）', max: 30000},
-                { name: '客服（Customer Support）', max: 38000},
-                { name: '研发（Development）', max: 52000},
-                { name: '市场（Marketing）', max: 25000}
-            ]
-        },
-        series: [{
-            name: '预算 vs 开销（Budget vs spending）',
-            type: 'radar',
-            // areaStyle: {normal: {}},
-            data : [
-                {
-                    value : [4300, 10000, 28000, 35000, 50000, 19000],
-                    name : '预算分配（Allocated Budget）'
-                },
-                {
-                    value : [5000, 14000, 28000, 31000, 42000, 21000],
-                    name : '实际开销（Actual Spending）'
-                }
-            ]
-        }]
-    };
-    // 使用刚指定的配置项和数据显示图表。
-    myChart.setOption(option);
+<body class="gray-bg">
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>气温</h5>
+                </div>
+                <div class="ibox-content">
+                    <div class="echarts" id="echarts-line-chart"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>降水量</h5>
+                </div>
+                <div class="ibox-content">
 
-    <!--降雨-->
-    // 基于准备好的dom，初始化echarts实例
-    var rainfall = echarts.init(document.getElementById('rainfall'));
-    var dataAxis = ['点', '击', '柱', '子', '或', '者', '两', '指', '在', '触', '屏', '上', '滑', '动', '能', '够', '自', '动', '缩', '放'];
-    var data = [220, 182, 191, 234, 290, 330, 310, 123, 442, 321, 90, 149, 210, 122, 133, 334, 198, 123, 125, 220];
-    var yMax = 500;
-    var dataShadow = [];
+                    <div class="echarts" id="echarts-bar-chart"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>湿度</h5>
+                </div>
+                <div class="ibox-content">
+                    <div class="echarts" id="humidity"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>光照</h5>
+                </div>
+                <div class="ibox-content">
 
-    for (var i = 0; i < data.length; i++) {
-        dataShadow.push(yMax);
-    }
+                    <div class="echarts" id="illumination"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>光合作用</h5>
+                </div>
+                <div class="ibox-content">
+                    <div class="echarts" id="Photosynthesis"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>风向</h5>
+                </div>
+                <div class="ibox-content">
 
-    option = {
-        title: {
-            text: '特性示例：渐变色 阴影 点击缩放',
-            subtext: 'Feature Sample: Gradient Color, Shadow, Click Zoom'
-        },
-        xAxis: {
-            data: dataAxis,
-            axisLabel: {
-                inside: true,
-                textStyle: {
-                    color: '#fff'
-                }
-            },
-            axisTick: {
-                show: false
-            },
-            axisLine: {
-                show: false
-            },
-            z: 10
-        },
-        yAxis: {
-            axisLine: {
-                show: false
-            },
-            axisTick: {
-                show: false
-            },
-            axisLabel: {
-                textStyle: {
-                    color: '#999'
-                }
-            }
-        },
-        dataZoom: [
-            {
-                type: 'inside'
-            }
-        ],
-        series: [
-            { // For shadow
-                type: 'bar',
-                itemStyle: {
-                    normal: {color: 'rgba(0,0,0,0.05)'}
-                },
-                barGap:'-100%',
-                barCategoryGap:'40%',
-                data: dataShadow,
-                animation: false
-            },
-            {
-                type: 'bar',
-                itemStyle: {
-                    normal: {
-                        color: new echarts.graphic.LinearGradient(
-                            0, 0, 0, 1,
-                            [
-                                {offset: 0, color: '#83bff6'},
-                                {offset: 0.5, color: '#188df0'},
-                                {offset: 1, color: '#188df0'}
-                            ]
-                        )
-                    },
-                    emphasis: {
-                        color: new echarts.graphic.LinearGradient(
-                            0, 0, 0, 1,
-                            [
-                                {offset: 0, color: '#2378f7'},
-                                {offset: 0.7, color: '#2378f7'},
-                                {offset: 1, color: '#83bff6'}
-                            ]
-                        )
+                    <div class="echarts" id="wind_direction"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>二氧化碳含量</h5>
+                </div>
+                <div class="ibox-content">
+                    <div class="echarts" id="co2"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>ph值</h5>
+                </div>
+                <div class="ibox-content">
+
+                    <div class="echarts" id="ph"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>土壤温度01</h5>
+                </div>
+                <div class="ibox-content">
+                    <div class="echarts" id="soil_temperature_1"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>土壤湿度01</h5>
+                </div>
+                <div class="ibox-content">
+
+                    <div class="echarts" id="soil_moisture_1"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>土壤温度02</h5>
+                </div>
+                <div class="ibox-content">
+                    <div class="echarts" id="soil_temperature_2"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>土壤湿度02</h5>
+                </div>
+                <div class="ibox-content">
+
+                    <div class="echarts" id="soil_moisture_2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>土壤温度03</h5>
+                </div>
+                <div class="ibox-content">
+                    <div class="echarts" id="soil_temperature_3"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>土壤湿度03</h5>
+                </div>
+                <div class="ibox-content">
+
+                    <div class="echarts" id="soil_moisture_3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>风速</h5>
+                </div>
+                <div class="ibox-content">
+                    <div class="echarts" id="wind_speed"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>光导</h5>
+                </div>
+                <div class="ibox-content">
+
+                    <div class="echarts" id="conductance"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<th:block th:include="include :: footer" />
+<th:block th:include="include :: echarts-js" />
+<script type="text/javascript">
+    $(function () {
+
+        var dt = getEdata("fengsu");
+
+        function getEdata(str) {
+            var dttime = [];
+            $.ajax({
+                type:"POST",
+                url:"/system/td/ect",
+                data: {"str": str},
+                datatype: "json",
+                async:false,
+                success:function (data) {
+                    data = JSON.parse(data);
+                    for (var i=0; i < data.data.length; i++){
+                        dttime[i] = data.data[i][0];
                     }
                 },
-                data: data
-            }
-        ]
-    };
+                error:function (data) {
+                    alert("error");
+                }
+            });
+            return dttime;
+        }
 
-    // Enable data zoom when user click bar.
-    var zoomSize = 6;
-    myChart.on('click', function (params) {
-        console.log(dataAxis[Math.max(params.dataIndex - zoomSize / 2, 0)]);
-        myChart.dispatchAction({
-            type: 'dataZoom',
-            startValue: dataAxis[Math.max(params.dataIndex - zoomSize / 2, 0)],
-            endValue: dataAxis[Math.min(params.dataIndex + zoomSize / 2, data.length - 1)]
-        });
+        function EData(str) {
+            var eData = [];
+            $.ajax({
+                type:"POST",
+                url:"/system/td/ect",
+                data: {"str": str},
+                datatype: "json",
+                async:false,
+                success:function (data) {
+                    data = JSON.parse(data);
+                    for (var i=0; i < data.data.length; i++){
+                        eData[i] = data.data[i][1];
+                    }
+                },
+                error:function (data) {
+                    alert("error");
+                }
+            });
+            window.alert(eData);
+            return eData;
+        }
+
+        var lineChart = echarts.init(document.getElementById("echarts-line-chart"));
+        var lineoption = {
+            title : {
+                text: '一天气温'
+            },
+            tooltip : {
+                trigger: 'axis'
+            },
+            legend: {
+                data:['气温']
+            },
+            grid:{
+                x:40,
+                x2:40,
+                y2:24
+            },
+            calculable : true,
+            xAxis : [
+                {
+                    type : 'category',
+                    boundaryGap : false,
+                    data : dt
+                }
+            ],
+            yAxis : [
+                {
+                    type : 'value',
+                    axisLabel : {
+                        formatter: '{value} °C'
+                    }
+                }
+            ],
+            series : [
+                {
+                    name:'气温',
+                    type:'line',
+                    data: EData("temperature"),
+                    markPoint : {
+                        data : [
+                            {type : 'max', name: '最大值'},
+                            {type : 'min', name: '最小值'}
+                        ]
+                    },
+                    markLine : {
+                        data : [
+                            {type : 'average', name: '平均值'}
+                        ]
+                    }
+                }
+            ]
+        };
+        lineChart.setOption(lineoption);
+        $(window).resize(lineChart.resize);
+
+        var barChart = echarts.init(document.getElementById("echarts-bar-chart"));
+        var baroption = {
+            title : {
+                text: '某地区蒸发量和降水量'
+            },
+            tooltip : {
+                trigger: 'axis'
+            },
+            legend: {
+                data:['降水量']
+            },
+            grid:{
+                x:30,
+                x2:40,
+                y2:24
+            },
+            calculable : true,
+            xAxis : [
+                {
+                    type : 'category',
+                    data : dt
+                }
+            ],
+            yAxis : [
+                {
+                    type : 'value'
+                }
+            ],
+            series : [
+                {
+                    name:'降水量',
+                    type:'bar',
+                    data:EData("rainfall"),
+                    markPoint : {
+                        data : [
+                            {name : '年最高', value : 182.2, xAxis: 7, yAxis: 183, symbolSize:18},
+                            {name : '年最低', value : 2.3, xAxis: 11, yAxis: 3}
+                        ]
+                    },
+                    markLine : {
+                        data : [
+                            {type : 'average', name : '平均值'}
+                        ]
+                    }
+                }
+            ]
+        };
+        barChart.setOption(baroption);
+
+        window.onresize = barChart.resize;
+
+        var humidity = echarts.init(document.getElementById("humidity"));
+        var humiditytion = {
+            title : {
+                text: '某地区蒸发量和降水量'
+            },
+            tooltip : {
+                trigger: 'axis'
+            },
+            legend: {
+                data:['降水量']
+            },
+            grid:{
+                x:30,
+                x2:40,
+                y2:24
+            },
+            calculable : true,
+            xAxis : [
+                {
+                    type : 'category',
+                    data : dt
+                }
+            ],
+            yAxis : [
+                {
+                    type : 'value'
+                }
+            ],
+            series : [
+                {
+                    name:'降水量',
+                    type:'bar',
+                    data: EData("humidity"),
+                    markPoint : {
+                        data : [
+                            {name : '年最高', value : 182.2, xAxis: 7, yAxis: 183, symbolSize:18},
+                            {name : '年最低', value : 2.3, xAxis: 11, yAxis: 3}
+                        ]
+                    },
+                    markLine : {
+                        data : [
+                            {type : 'average', name : '平均值'}
+                        ]
+                    }
+                }
+            ]
+        };
+        humidity.setOption(humiditytion);
+        $(window).resize(humidity.resize);
+
+        var illumination = echarts.init(document.getElementById("illumination"));
+        var illuminationtion = {
+            title : {
+                text: '某地区蒸发量和降水量'
+            },
+            tooltip : {
+                trigger: 'axis'
+            },
+            legend: {
+                data:['降水量']
+            },
+            grid:{
+                x:30,
+                x2:40,
+                y2:24
+            },
+            calculable : true,
+            xAxis : [
+                {
+                    type : 'category',
+                    data : dt
+                }
+            ],
+            yAxis : [
+                {
+                    type : 'value'
+                }
+            ],
+            series : [
+                {
+                    name:'降水量',
+                    type:'bar',
+                    data:EData("illumination"),
+                    markPoint : {
+                        data : [
+                            {name : '年最高', value : 182.2, xAxis: 7, yAxis: 183, symbolSize:18},
+                            {name : '年最低', value : 2.3, xAxis: 11, yAxis: 3}
+                        ]
+                    },
+                    markLine : {
+                        data : [
+                            {type : 'average', name : '平均值'}
+                        ]
+                    }
+                }
+            ]
+        };
+        illumination.setOption(illuminationtion);
+
+        window.onresize = illumination.resize;
+
+        var Photosynthesis = echarts.init(document.getElementById("Photosynthesis"));
+        var Photosynthesistion = {
+            title : {
+                text: '一天气温'
+            },
+            tooltip : {
+                trigger: 'axis'
+            },
+            legend: {
+                data:['气温']
+            },
+            grid:{
+                x:40,
+                x2:40,
+                y2:24
+            },
+            calculable : true,
+            xAxis : [
+                {
+                    type : 'category',
+                    boundaryGap : false,
+                    data : dt
+                }
+            ],
+            yAxis : [
+                {
+                    type : 'value',
+                    axisLabel : {
+                        formatter: '{value} °C'
+                    }
+                }
+            ],
+            series : [
+                {
+                    name:'气温',
+                    type:'line',
+                    data:EData("Photosynthesis"),
+                    markPoint : {
+                        data : [
+                            {type : 'max', name: '最大值'},
+                            {type : 'min', name: '最小值'}
+                        ]
+                    },
+                    markLine : {
+                        data : [
+                            {type : 'average', name: '平均值'}
+                        ]
+                    }
+                }
+            ]
+        };
+        Photosynthesis.setOption(Photosynthesistion);
+
+        window.onresize = Photosynthesis.resize;
+
+        var co2 = echarts.init(document.getElementById("co2"));
+        var co2tion = {
+            title : {
+                text: '一天气温'
+            },
+            tooltip : {
+                trigger: 'axis'
+            },
+            legend: {
+                data:['气温']
+            },
+            grid:{
+                x:40,
+                x2:40,
+                y2:24
+            },
+            calculable : true,
+            xAxis : [
+                {
+                    type : 'category',
+                    boundaryGap : false,
+                    data : dt
+                }
+            ],
+            yAxis : [
+                {
+                    type : 'value',
+                    axisLabel : {
+                        formatter: '{value} °C'
+                    }
+                }
+            ],
+            series : [
+                {
+                    name:'气温',
+                    type:'line',
+                    data:EData("co2"),
+                    markPoint : {
+                        data : [
+                            {type : 'max', name: '最大值'},
+                            {type : 'min', name: '最小值'}
+                        ]
+                    },
+                    markLine : {
+                        data : [
+                            {type : 'average', name: '平均值'}
+                        ]
+                    }
+                }
+            ]
+        };
+        co2.setOption(co2tion);
+
+        window.onresize = co2.resize;
+
+        window.onresize = Photosynthesis.resize;
+
+        var ph = echarts.init(document.getElementById("ph"));
+        var phtion = {
+            title : {
+                text: '一天气温'
+            },
+            tooltip : {
+                trigger: 'axis'
+            },
+            legend: {
+                data:['气温']
+            },
+            grid:{
+                x:40,
+                x2:40,
+                y2:24
+            },
+            calculable : true,
+            xAxis : [
+                {
+                    type : 'category',
+                    boundaryGap : false,
+                    data : dt
+                }
+            ],
+            yAxis : [
+                {
+                    type : 'value',
+                    axisLabel : {
+                        formatter: '{value} °C'
+                    }
+                }
+            ],
+            series : [
+                {
+                    name:'气温',
+                    type:'line',
+                    data:EData("ph"),
+                    markPoint : {
+                        data : [
+                            {type : 'max', name: '最大值'},
+                            {type : 'min', name: '最小值'}
+                        ]
+                    },
+                    markLine : {
+                        data : [
+                            {type : 'average', name: '平均值'}
+                        ]
+                    }
+                }
+            ]
+        };
+        ph.setOption(phtion);
+
+        window.onresize = ph.resize;
+
+
+    //    -----------------------------------------------------------------------------
+        var soil_temperature_1 = echarts.init(document.getElementById("soil_temperature_1"));
+        var soil_temperature_1tion = {
+            title : {
+                text: '一天气温'
+            },
+            tooltip : {
+                trigger: 'axis'
+            },
+            legend: {
+                data:['气温']
+            },
+            grid:{
+                x:40,
+                x2:40,
+                y2:24
+            },
+            calculable : true,
+            xAxis : [
+                {
+                    type : 'category',
+                    boundaryGap : false,
+                    data : dt
+                }
+            ],
+            yAxis : [
+                {
+                    type : 'value',
+                    axisLabel : {
+                        formatter: '{value} °C'
+                    }
+                }
+            ],
+            series : [
+                {
+                    name:'气温',
+                    type:'line',
+                    data:EData("soil_temperature_1"),
+                    markPoint : {
+                        data : [
+                            {type : 'max', name: '最大值'},
+                            {type : 'min', name: '最小值'}
+                        ]
+                    },
+                    markLine : {
+                        data : [
+                            {type : 'average', name: '平均值'}
+                        ]
+                    }
+                }
+            ]
+        };
+        soil_temperature_1.setOption(soil_temperature_1tion);
+        $(window).resize(soil_temperature_1.resize);
+
+        var soil_moisture_1 = echarts.init(document.getElementById("soil_moisture_1"));
+        var soil_moisture_1tion = {
+            title : {
+                text: '某地区蒸发量和降水量'
+            },
+            tooltip : {
+                trigger: 'axis'
+            },
+            legend: {
+                data:['降水量']
+            },
+            grid:{
+                x:30,
+                x2:40,
+                y2:24
+            },
+            calculable : true,
+            xAxis : [
+                {
+                    type : 'category',
+                    data : dt
+                }
+            ],
+            yAxis : [
+                {
+                    type : 'value'
+                }
+            ],
+            series : [
+                {
+                    name:'降水量',
+                    type:'bar',
+                    data:EData("soil_moisture_1"),
+                    markPoint : {
+                        data : [
+                            {name : '年最高', value : 182.2, xAxis: 7, yAxis: 183, symbolSize:18},
+                            {name : '年最低', value : 2.3, xAxis: 11, yAxis: 3}
+                        ]
+                    },
+                    markLine : {
+                        data : [
+                            {type : 'average', name : '平均值'}
+                        ]
+                    }
+                }
+            ]
+        };
+        soil_moisture_1.setOption(soil_moisture_1tion);
+
+        window.onresize = soil_moisture_1.resize;
+    //    -----------------------------------------------------------------------------------------------
+        var soil_temperature_2 = echarts.init(document.getElementById("soil_temperature_2"));
+        var soil_temperature_2tion = {
+            title : {
+                text: '一天气温'
+            },
+            tooltip : {
+                trigger: 'axis'
+            },
+            legend: {
+                data:['气温']
+            },
+            grid:{
+                x:40,
+                x2:40,
+                y2:24
+            },
+            calculable : true,
+            xAxis : [
+                {
+                    type : 'category',
+                    boundaryGap : false,
+                    data : dt
+                }
+            ],
+            yAxis : [
+                {
+                    type : 'value',
+                    axisLabel : {
+                        formatter: '{value} °C'
+                    }
+                }
+            ],
+            series : [
+                {
+                    name:'气温',
+                    type:'line',
+                    data:EData("soil_temperature_2"),
+                    markPoint : {
+                        data : [
+                            {type : 'max', name: '最大值'},
+                            {type : 'min', name: '最小值'}
+                        ]
+                    },
+                    markLine : {
+                        data : [
+                            {type : 'average', name: '平均值'}
+                        ]
+                    }
+                }
+            ]
+        };
+        soil_temperature_2.setOption(soil_temperature_2tion);
+        $(window).resize(soil_temperature_2.resize);
+
+        var soil_moisture_2 = echarts.init(document.getElementById("soil_moisture_2"));
+        var soil_moisture_2tion = {
+            title : {
+                text: '某地区蒸发量和降水量'
+            },
+            tooltip : {
+                trigger: 'axis'
+            },
+            legend: {
+                data:['降水量']
+            },
+            grid:{
+                x:30,
+                x2:40,
+                y2:24
+            },
+            calculable : true,
+            xAxis : [
+                {
+                    type : 'category',
+                    data : dt
+                }
+            ],
+            yAxis : [
+                {
+                    type : 'value'
+                }
+            ],
+            series : [
+                {
+                    name:'降水量',
+                    type:'bar',
+                    data:EData("soil_moisture_2"),
+                    markPoint : {
+                        data : [
+                            {name : '年最高', value : 182.2, xAxis: 7, yAxis: 183, symbolSize:18},
+                            {name : '年最低', value : 2.3, xAxis: 11, yAxis: 3}
+                        ]
+                    },
+                    markLine : {
+                        data : [
+                            {type : 'average', name : '平均值'}
+                        ]
+                    }
+                }
+            ]
+        };
+        soil_moisture_2.setOption(soil_moisture_2tion);
+
+        window.onresize = soil_moisture_2.resize;
+    //    ----------------------------------------------------------------------------------------
+        var soil_temperature_3 = echarts.init(document.getElementById("soil_temperature_3"));
+        var soil_temperature_3tion = {
+            title : {
+                text: '一天气温'
+            },
+            tooltip : {
+                trigger: 'axis'
+            },
+            legend: {
+                data:['气温']
+            },
+            grid:{
+                x:40,
+                x2:40,
+                y2:24
+            },
+            calculable : true,
+            xAxis : [
+                {
+                    type : 'category',
+                    boundaryGap : false,
+                    data : dt
+                }
+            ],
+            yAxis : [
+                {
+                    type : 'value',
+                    axisLabel : {
+                        formatter: '{value} °C'
+                    }
+                }
+            ],
+            series : [
+                {
+                    name:'气温',
+                    type:'line',
+                    data:EData("soil_temperature_3"),
+                    markPoint : {
+                        data : [
+                            {type : 'max', name: '最大值'},
+                            {type : 'min', name: '最小值'}
+                        ]
+                    },
+                    markLine : {
+                        data : [
+                            {type : 'average', name: '平均值'}
+                        ]
+                    }
+                }
+            ]
+        };
+        soil_temperature_3.setOption(soil_temperature_3tion);
+        $(window).resize(soil_temperature_3.resize);
+
+        var soil_moisture_3 = echarts.init(document.getElementById("soil_moisture_3"));
+        var soil_moisture_3tion = {
+            title : {
+                text: '某地区蒸发量和降水量'
+            },
+            tooltip : {
+                trigger: 'axis'
+            },
+            legend: {
+                data:['降水量']
+            },
+            grid:{
+                x:30,
+                x2:40,
+                y2:24
+            },
+            calculable : true,
+            xAxis : [
+                {
+                    type : 'category',
+                    data : dt
+                }
+            ],
+            yAxis : [
+                {
+                    type : 'value'
+                }
+            ],
+            series : [
+                {
+                    name:'降水量',
+                    type:'bar',
+                    data:EData("soil_moisture_3"),
+                    markPoint : {
+                        data : [
+                            {name : '年最高', value : 182.2, xAxis: 7, yAxis: 183, symbolSize:18},
+                            {name : '年最低', value : 2.3, xAxis: 11, yAxis: 3}
+                        ]
+                    },
+                    markLine : {
+                        data : [
+                            {type : 'average', name : '平均值'}
+                        ]
+                    }
+                }
+            ]
+        };
+        soil_moisture_3.setOption(soil_moisture_3tion);
+
+        window.onresize = soil_moisture_3.resize;
+
+        //    ----------------------------------------------------------------------------------------
+        var wind_speed = echarts.init(document.getElementById("wind_speed"));
+        var wind_speedtion = {
+            title : {
+                text: '一天气温'
+            },
+            tooltip : {
+                trigger: 'axis'
+            },
+            legend: {
+                data:['气温']
+            },
+            grid:{
+                x:40,
+                x2:40,
+                y2:24
+            },
+            calculable : true,
+            xAxis : [
+                {
+                    type : 'category',
+                    boundaryGap : false,
+                    data : dt
+                }
+            ],
+            yAxis : [
+                {
+                    type : 'value',
+                    axisLabel : {
+                        formatter: '{value} °C'
+                    }
+                }
+            ],
+            series : [
+                {
+                    name:'气温',
+                    type:'line',
+                    data:EData("wind_speed"),
+                    markPoint : {
+                        data : [
+                            {type : 'max', name: '最大值'},
+                            {type : 'min', name: '最小值'}
+                        ]
+                    },
+                    markLine : {
+                        data : [
+                            {type : 'average', name: '平均值'}
+                        ]
+                    }
+                }
+            ]
+        };
+        wind_speed.setOption(wind_speedtion);
+        $(window).resize(wind_speed.resize);
+
+        var conductance = echarts.init(document.getElementById("conductance"));
+        var conductancetion = {
+            title : {
+                text: '一天气温'
+            },
+            tooltip : {
+                trigger: 'axis'
+            },
+            legend: {
+                data:['气温']
+            },
+            grid:{
+                x:40,
+                x2:40,
+                y2:24
+            },
+            calculable : true,
+            xAxis : [
+                {
+                    type : 'category',
+                    boundaryGap : false,
+                    data : dt
+                }
+            ],
+            yAxis : [
+                {
+                    type : 'value',
+                    axisLabel : {
+                        formatter: '{value} °C'
+                    }
+                }
+            ],
+            series : [
+                {
+                    name:'气温',
+                    type:'line',
+                    data:EData("conductance"),
+                    markPoint : {
+                        data : [
+                            {type : 'max', name: '最大值'},
+                            {type : 'min', name: '最小值'}
+                        ]
+                    },
+                    markLine : {
+                        data : [
+                            {type : 'average', name: '平均值'}
+                        ]
+                    }
+                }
+            ]
+        };
+        conductance.setOption(conductancetion);
+
+        window.onresize = conductance.resize;
     });
-    // 使用刚指定的配置项和数据显示图表。
-    rainfall.setOption(option);
-
-    <!--温度-->
-    // 基于准备好的dom，初始化echarts实例
-    var temperature = echarts.init(document.getElementById('temperature'));
-    option = {
-        tooltip: {
-            trigger: 'axis',
-            formatter: function (params, ticket, callback) {
-                var htmlStr = '';
-                for(var i=0;i<params.length;i++){
-                    var param = params[i];
-                    var xName = param.name;//x轴的名称
-                    var seriesName = param.seriesName;//图例名称
-                    var value = param.value;//y轴值
-                    var color = param.color;//图例颜色
-
-                    if(i===0){
-                        htmlStr += xName + '日' + '<br/>';//x轴的名称
-                    }
-                    htmlStr +='<div>';
-                    //为了保证和原来的效果一样，这里自己实现了一个点的效果
-                    htmlStr += '<span style="margin-right:5px;display:inline-block;width:10px;height:10px;border-radius:5px;background-color:'+color+';"></span>' + '投诉 ' + value;
-                    htmlStr += '</div>';
-                }
-                return htmlStr;
-            }
-        },
-        legend: {
-            bottom:'left',
-            data:['近12个月投诉量']
-        },
-        grid: {
-            left: '3%',
-            right: '4%',
-            bottom: '9%',
-            containLabel: true
-        },
-        xAxis: {
-            type: 'category',
-            //boundaryGap: false,
-            axisTick:{ //y轴刻度线
-
-                show:false
-
-            },
-            data: ['2018-10','2018-11','2018-12','2019-01','2019-02','2019-03','2019-04','2019-05','2019-06','2019-07','2019-08','2019-09']
-
-        },
-        yAxis: {
-            type: 'value',
-            "axisLine":{       //y轴
-                "show":false
-
-            },
-            "axisTick":{       //y轴刻度线
-                "show":false
-            },
-            splitLine: {
-
-                show: true,
-
-                lineStyle:{
-
-                    type:'dashed'
-
-                }
-
-            }
-        },
-        series: [
-            {
-                name:'近12个月投诉量',
-                type:'line',
-                stack: '总量',
-                data:[5, 3, 4, 7, 8, 4, 10, 12, 15, 13, 16, 19],
-                symbol: 'circle',     //设定为实心点
-                symbolSize: 7,   //设定实心点的大小
-                itemStyle : {
-                    normal : {
-                        color:'blue'
-                    },
-                },
-            }
-        ]
-    };
-
-
-    // 使用刚指定的配置项和数据显示图表。
-    temperature.setOption(option);
-
-    <!--温度-->
-    // 基于准备好的dom，初始化echarts实例
-    var humidity = echarts.init(document.getElementById('humidity'));
-    option = {
-        title: {
-            text: '堆叠区域图'
-        },
-        tooltip : {
-            trigger: 'axis',
-            axisPointer: {
-                type: 'cross',
-                label: {
-                    backgroundColor: '#6a7985'
-                }
-            }
-        },
-        legend: {
-            data:['邮件营销','联盟广告','视频广告','直接访问','搜索引擎']
-        },
-        toolbox: {
-            feature: {
-                saveAsImage: {}
-            }
-        },
-        grid: {
-            left: '3%',
-            right: '4%',
-            bottom: '3%',
-            containLabel: true
-        },
-        xAxis : [
-            {
-                type : 'category',
-                boundaryGap : false,
-                data : ['周一','周二','周三','周四','周五','周六','周日']
-            }
-        ],
-        yAxis : [
-            {
-                type : 'value'
-            }
-        ],
-        series : [
-            {
-                name:'邮件营销',
-                type:'line',
-                stack: '总量',
-                areaStyle: {},
-                data:[120, 132, 101, 134, 90, 230, 210]
-            },
-            {
-                name:'联盟广告',
-                type:'line',
-                stack: '总量',
-                areaStyle: {},
-                data:[220, 182, 191, 234, 290, 330, 310]
-            },
-            {
-                name:'视频广告',
-                type:'line',
-                stack: '总量',
-                areaStyle: {},
-                data:[150, 232, 201, 154, 190, 330, 410]
-            },
-            {
-                name:'直接访问',
-                type:'line',
-                stack: '总量',
-                areaStyle: {normal: {}},
-                data:[320, 332, 301, 334, 390, 330, 320]
-            },
-            {
-                name:'搜索引擎',
-                type:'line',
-                stack: '总量',
-                label: {
-                    normal: {
-                        show: true,
-                        position: 'top'
-                    }
-                },
-                areaStyle: {normal: {}},
-                data:[820, 932, 901, 934, 1290, 1330, 1320]
-            }
-        ]
-    };
-
-    // 使用刚指定的配置项和数据显示图表。
-    humidity.setOption(option);
-
 </script>
+</body>
 </html>

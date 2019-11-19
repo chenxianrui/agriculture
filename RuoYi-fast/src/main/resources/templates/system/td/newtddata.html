@@ -7,14 +7,15 @@
     <meta charset="utf-8">
 </head>
 <link rel="stylesheet" th:href="@{/css/adminlte.min.css}">
+<link rel="stylesheet" th:href="@{/alibabaphoto/font_qq3lybkne0q/iconfont.css}">
 <body>
 <div class="row">
     <div class="col-12 col-sm-6 col-md-3">
         <div class="info-box">
-            <span class="info-box-icon bg-info elevation-1"><i class="fa fa-gear"></i></span>
+            <span class="info-box-icon bg-info elevation-1"><i class="iconfont icon-fengsu"></i></span>
             <div class="info-box-content">
-                <span class="info-box-text">CPU Traffic</span>
-                <span class="info-box-number">
+                <span class="info-box-text">风速</span>
+                <span class="info-box-number" id="fengsu">
                   10
                   <small>%</small>
                 </span>
@@ -23,10 +24,10 @@
     </div>
     <div class="col-12 col-sm-6 col-md-3">
         <div class="info-box mb-3">
-            <span class="info-box-icon bg-danger elevation-1"><i class="fa fa-google-plus"></i></span>
+            <span class="info-box-icon elevation-1" style="background-color: #0e9aef"><i class="iconfont icon-huabanfuben"></i></span>
             <div class="info-box-content">
-                <span class="info-box-text">Likes</span>
-                <span class="info-box-number">41,410</span>
+                <span class="info-box-text">降水量</span>
+                <span class="info-box-number" id="jiangshuiliang">41,410</span>
             </div>
         </div>
     </div>
@@ -35,21 +36,21 @@
 
     <div class="col-12 col-sm-6 col-md-3">
         <div class="info-box mb-3">
-            <span class="info-box-icon bg-success elevation-1"><i class="fa fa-shopping-cart"></i></span>
+            <span class="info-box-icon elevation-1" style="background-color: #ff6600"><i class="iconfont icon-wendu"></i></span>
 
             <div class="info-box-content">
-                <span class="info-box-text">Sales</span>
-                <span class="info-box-number">760</span>
+                <span class="info-box-text">温度</span>
+                <span class="info-box-number" id="wendu">760</span>
             </div>
         </div>
     </div>
     <div class="col-12 col-sm-6 col-md-3">
         <div class="info-box mb-3">
-            <span class="info-box-icon bg-warning elevation-1"><i class="fa fa-users"></i></span>
+            <span class="info-box-icon elevation-1" style="background-color: #545096"><i class="iconfont icon-IOTtubiao_huabanfuben"></i></span>
 
             <div class="info-box-content">
-                <span class="info-box-text">New Members</span>
-                <span class="info-box-number">2,000</span>
+                <span class="info-box-text">湿度</span>
+                <span class="info-box-number" id="shidu">2,000</span>
             </div>
         </div>
     </div>
@@ -57,10 +58,10 @@
 <div class="row">
     <div class="col-12 col-sm-6 col-md-3">
         <div class="info-box">
-            <span class="info-box-icon bg-info elevation-1"><i class="fa fa-gear"></i></span>
+            <span class="info-box-icon elevation-1" style="background-color: #d0ce00"><i class="iconfont icon-guangzhao"></i></span>
             <div class="info-box-content">
-                <span class="info-box-text">CPU Traffic</span>
-                <span class="info-box-number">
+                <span class="info-box-text">光照</span>
+                <span class="info-box-number" id="guangzhao">
                   10
                   <small>%</small>
                 </span>
@@ -69,10 +70,10 @@
     </div>
     <div class="col-12 col-sm-6 col-md-3">
         <div class="info-box mb-3">
-            <span class="info-box-icon bg-danger elevation-1"><i class="fa fa-google-plus"></i></span>
+            <span class="info-box-icon elevation-1" style="background-color: #FFFF00"><i class="iconfont icon-yangguang"></i></span>
             <div class="info-box-content">
-                <span class="info-box-text">Likes</span>
-                <span class="info-box-number">41,410</span>
+                <span class="info-box-text">光合作用</span>
+                <span class="info-box-number" id="guanghezuoyong">41,410</span>
             </div>
         </div>
     </div>
@@ -81,21 +82,20 @@
 
     <div class="col-12 col-sm-6 col-md-3">
         <div class="info-box mb-3">
-            <span class="info-box-icon bg-success elevation-1"><i class="fa fa-shopping-cart"></i></span>
-
+            <span class="info-box-icon elevation-1" style="background-color: #d43f3a"><i class="iconfont icon-turangwendu1"></i></span>
             <div class="info-box-content">
-                <span class="info-box-text">Sales</span>
-                <span class="info-box-number">760</span>
+                <span class="info-box-text">土壤温度01</span>
+                <span class="info-box-number" id="tuwen01">41,410</span>
             </div>
         </div>
     </div>
     <div class="col-12 col-sm-6 col-md-3">
         <div class="info-box mb-3">
-            <span class="info-box-icon bg-warning elevation-1"><i class="fa fa-users"></i></span>
+            <span class="info-box-icon elevation-1" style="background-color: #4E5465"><i class="iconfont icon-turangshidu1"></i></span>
 
             <div class="info-box-content">
-                <span class="info-box-text">New Members</span>
-                <span class="info-box-number">2,000</span>
+                <span class="info-box-text">土壤湿度01</span>
+                <span class="info-box-number" id="tushi01">760</span>
             </div>
         </div>
     </div>
@@ -103,10 +103,10 @@
 <div class="row">
     <div class="col-12 col-sm-6 col-md-3">
         <div class="info-box">
-            <span class="info-box-icon bg-info elevation-1"><i class="fa fa-gear"></i></span>
+            <span class="info-box-icon elevation-1" style="background-color: #ed9c28"><i class="iconfont icon-PH"></i></span>
             <div class="info-box-content">
-                <span class="info-box-text">CPU Traffic</span>
-                <span class="info-box-number">
+                <span class="info-box-text">ph值</span>
+                <span class="info-box-number" id="phnum">
                   10
                   <small>%</small>
                 </span>
@@ -115,10 +115,11 @@
     </div>
     <div class="col-12 col-sm-6 col-md-3">
         <div class="info-box mb-3">
-            <span class="info-box-icon bg-danger elevation-1"><i class="fa fa-google-plus"></i></span>
+            <span class="info-box-icon elevation-1" style="background-color: #33cabb"><i class="iconfont icon-fengxiang"></i></span>
+
             <div class="info-box-content">
-                <span class="info-box-text">Likes</span>
-                <span class="info-box-number">41,410</span>
+                <span class="info-box-text">风向</span>
+                <span class="info-box-number" id="fengxiang">760</span>
             </div>
         </div>
     </div>
@@ -127,44 +128,45 @@
 
     <div class="col-12 col-sm-6 col-md-3">
         <div class="info-box mb-3">
-            <span class="info-box-icon bg-success elevation-1"><i class="fa fa-shopping-cart"></i></span>
+            <span class="info-box-icon elevation-1" style="background-color: #d43f3a"><i class="iconfont icon-turangwendu2"></i></span>
 
             <div class="info-box-content">
-                <span class="info-box-text">Sales</span>
-                <span class="info-box-number">760</span>
+                <span class="info-box-text">土壤温度02</span>
+                <span class="info-box-number" id="tuwen02">2,000</span>
             </div>
         </div>
     </div>
     <div class="col-12 col-sm-6 col-md-3">
-        <div class="info-box mb-3">
-            <span class="info-box-icon bg-warning elevation-1"><i class="fa fa-users"></i></span>
-
+        <div class="info-box">
+            <span class="info-box-icon elevation-1" style="background-color: #4f5962"><i class="iconfont icon-turangshidu"></i></span>
             <div class="info-box-content">
-                <span class="info-box-text">New Members</span>
-                <span class="info-box-number">2,000</span>
+                <span class="info-box-text">土壤湿度02</span>
+                <span class="info-box-number" id="tushi02">
+                  10
+                  <small>%</small>
+                </span>
             </div>
         </div>
     </div>
 </div>
 <div class="row">
     <div class="col-12 col-sm-6 col-md-3">
-        <div class="info-box">
-            <span class="info-box-icon bg-info elevation-1"><i class="fa fa-gear"></i></span>
+        <div class="info-box mb-3">
+            <span class="info-box-icon elevation-1" style="background-color: #ed9c28"><i class="iconfont icon-eryanghuatan"></i></span>
+
             <div class="info-box-content">
-                <span class="info-box-text">CPU Traffic</span>
-                <span class="info-box-number">
-                  10
-                  <small>%</small>
-                </span>
+                <span class="info-box-text">二氧化碳</span>
+                <span class="info-box-number" id="co2">2,000</span>
             </div>
         </div>
     </div>
     <div class="col-12 col-sm-6 col-md-3">
         <div class="info-box mb-3">
-            <span class="info-box-icon bg-danger elevation-1"><i class="fa fa-google-plus"></i></span>
+            <span class="info-box-icon bg-warning elevation-1"><i class="icon-turangdiandaoshuai"></i></span>
+
             <div class="info-box-content">
-                <span class="info-box-text">Likes</span>
-                <span class="info-box-number">41,410</span>
+                <span class="info-box-text">电导</span>
+                <span class="info-box-number" id="diandao">2,000</span>
             </div>
         </div>
     </div>
@@ -173,27 +175,77 @@
 
     <div class="col-12 col-sm-6 col-md-3">
         <div class="info-box mb-3">
-            <span class="info-box-icon bg-success elevation-1"><i class="fa fa-shopping-cart"></i></span>
-
+            <span class="info-box-icon elevation-1" style="background-color: #d43f3a"><i class="iconfont icon-turangshidu"></i></span>
             <div class="info-box-content">
-                <span class="info-box-text">Sales</span>
-                <span class="info-box-number">760</span>
+                <span class="info-box-text">土壤温度03</span>
+                <span class="info-box-number" id="tuwen03">41,410</span>
             </div>
         </div>
     </div>
     <div class="col-12 col-sm-6 col-md-3">
         <div class="info-box mb-3">
-            <span class="info-box-icon bg-warning elevation-1"><i class="fa fa-users"></i></span>
+            <span class="info-box-icon elevation-1" style="background-color: #4f5962"><i class="iconfont icon-turangwendu"></i></span>
 
             <div class="info-box-content">
-                <span class="info-box-text">New Members</span>
-                <span class="info-box-number">2,000</span>
+                <span class="info-box-text">土壤湿度03</span>
+                <span class="info-box-number" id="tushi03">760</span>
             </div>
         </div>
     </div>
 </div>
 </body>
-<!--<th:block th:include="include :: footer" />-->
-<!--<th:block th:include="include :: echarts-js" />-->
-<!--<script th:src="@{/layui/layui.js}"></script>-->
+<th:block th:include="include :: footer" />
+<th:block th:include="include :: layout-latest-js" />
+<th:block th:include="include :: ztree-js" />
+<script>
+    $(function () {
+        var wind_speed = document.getElementById("fengsu");
+        var rainfall = document.getElementById("jiangshuiliang");
+        var temperature = document.getElementById("wendu");
+        var humidity = document.getElementById("shidu");
+        var illumination = document.getElementById("guangzhao");
+        var Photosynthesis = document.getElementById("guanghezuoyong");
+        var soil_temperature_1 = document.getElementById("tuwen01");
+        var soil_moisture_1 = document.getElementById("tushi01");
+        var ph = document.getElementById("phnum");
+        var wind_direction = document.getElementById("fengxiang");
+        var soil_temperature_2 = document.getElementById("tuwen02");
+        var soil_moisture_2 = document.getElementById("tushi02");
+        var co2 = document.getElementById("co2");
+        var conductance = document.getElementById("diandao");
+        var soil_temperature_3 = document.getElementById("tuwen03");
+        var soil_moisture_3 = document.getElementById("tushi03");
+
+        $.ajax({
+            type:"POST",
+            url:"/system/td/betternew",
+            data:{},
+            datatype: "json",
+            async:false,
+            success:function (data) {
+                window.alert("成功"+data);
+                data = JSON.parse(data);
+                wind_speed.innerText = data.data[0][1];
+                // rainfall.innerText = data.rainfall;
+                // temperature.innerText = data.temperature;
+                // humidity.innerText = data.humidity;
+                // illumination.innerText = data.illumination;
+                // Photosynthesis.innerText = data.Photosynthesis;
+                // soil_temperature_1.innerText = data.soil_temperature_1;
+                // soil_moisture_1.innerText = data.soil_moisture_1;
+                // ph.innerText = data.ph;
+                // wind_direction.innerText = data.wind_direction;
+                // soil_temperature_2.innerText = data.soil_temperature_2;
+                // soil_moisture_2.innerText = data.soil_moisture_2;
+                // co2.innerText = data.co2;
+                // conductance.innerText = data.conductance;
+                // soil_temperature_3.innerText = data.soil_temperature_3;
+                // soil_moisture_3.innerText = data.soil_moisture_3;
+            },
+            error:function (data) {
+                alert("出错");
+            }
+        })
+    })
+</script>
 </html>

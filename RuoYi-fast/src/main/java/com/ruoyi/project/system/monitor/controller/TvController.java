@@ -34,7 +34,6 @@ public class TvController {
     @PostMapping("/test")
     @ResponseBody
     public String getData(String id){
-        System.out.println(id);
         List<Monitor> monitors = new ArrayList();
         monitors.add(monitor01);
         monitors.add(monitor02);

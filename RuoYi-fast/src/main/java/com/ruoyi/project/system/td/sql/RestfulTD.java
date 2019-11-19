@@ -23,7 +23,7 @@ public class RestfulTD {
             .retryOnConnectionFailure(true)
             .connectTimeout(30, TimeUnit.SECONDS).build();
 
-    public static String getTdData(String host,String port,String user,String password,String sql) throws IOException {
+    public String getTdData(String host,String port,String user,String password,String sql) throws IOException {
 
         //构建RequestBody
         RequestBody requestBody = RequestBody.create(MediaType.parse("text/plain;charset=utf-8"),sql);
@@ -46,11 +46,12 @@ public class RestfulTD {
         return response.body().string();
     }
 
-    public static void main(String[] args) throws IOException {
-        GetTime getTime = new GetTime();
-        String tdtime = getTime.getDt();
-        System.out.println(getTdData("49.235.215.208","6020","root","taosdata","select * from iot.t_iot_sun5015  where ts >= \"2019-11-18 10:00:03\""));
-        System.out.println(getTdData("49.235.215.208","6020","root","taosdata","select * from iot.t_iot_weather_station  where ts >= '"+tdtime + "'"));
-    }
+//    public static void main(String[] args) throws IOException {
+//        GetTime getTime = new GetTime();
+//        String tdtime = getTime.getDt();
+//        RestfulTD restfulTD = new RestfulTD();
+//        System.out.println(restfulTD.getTdData("49.235.215.208","6020","root","taosdata","select * from iot.t_iot_sun5015  where ts >= \"2019-11-18 20:17:03\""));
+////        System.out.println(getTdData("49.235.215.208","6020","root","taosdata","select * from iot.t_iot_weather_station  where ts >= '"+tdtime + "'"));
+//    }
 
 }
