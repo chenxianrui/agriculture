@@ -26,6 +26,10 @@ public class TvController {
         return prefix + "/winmonitor/demo/cn/iframe";
     }
 
+    @GetMapping("/fouriframe")
+    public String fouriFrame(){
+        return prefix + "/sample";
+    }
 
     @Autowired
     Monitor01 monitor01;
