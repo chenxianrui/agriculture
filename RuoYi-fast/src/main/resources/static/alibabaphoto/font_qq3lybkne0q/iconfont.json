@@ -1,0 +1,121 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1541993",
+      "name": "土壤温度",
+      "font_class": "turangwendu",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "2309560",
+      "name": "温度",
+      "font_class": "wendu",
+      "unicode": "e632",
+      "unicode_decimal": 58930
+    },
+    {
+      "icon_id": "3988143",
+      "name": "光照",
+      "font_class": "guangzhao",
+      "unicode": "e62f",
+      "unicode_decimal": 58927
+    },
+    {
+      "icon_id": "6677858",
+      "name": "风向",
+      "font_class": "fengxiang",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "6677860",
+      "name": "风速",
+      "font_class": "fengsu",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "6677875",
+      "name": "土壤湿度",
+      "font_class": "turangshidu",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "6677880",
+      "name": "土壤温度",
+      "font_class": "turangwendu1",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "7335415",
+      "name": "二氧化碳",
+      "font_class": "eryanghuatan",
+      "unicode": "eb15",
+      "unicode_decimal": 60181
+    },
+    {
+      "icon_id": "7335483",
+      "name": "土壤湿度",
+      "font_class": "turangshidu1",
+      "unicode": "eb24",
+      "unicode_decimal": 60196
+    },
+    {
+      "icon_id": "7335487",
+      "name": "土壤温度",
+      "font_class": "turangwendu2",
+      "unicode": "eb23",
+      "unicode_decimal": 60195
+    },
+    {
+      "icon_id": "7335517",
+      "name": "土壤电导率",
+      "font_class": "turangdiandaoshuai",
+      "unicode": "eb2c",
+      "unicode_decimal": 60204
+    },
+    {
+      "icon_id": "7335588",
+      "name": "空气湿度",
+      "font_class": "kongqishidu",
+      "unicode": "eb3a",
+      "unicode_decimal": 60218
+    },
+    {
+      "icon_id": "7658863",
+      "name": "PH",
+      "font_class": "PH",
+      "unicode": "e65c",
+      "unicode_decimal": 58972
+    },
+    {
+      "icon_id": "8540073",
+      "name": "阳光",
+      "font_class": "yangguang",
+      "unicode": "e7b5",
+      "unicode_decimal": 59317
+    },
+    {
+      "icon_id": "8872002",
+      "name": "降水量",
+      "font_class": "huabanfuben",
+      "unicode": "e633",
+      "unicode_decimal": 58931
+    },
+    {
+      "icon_id": "9572483",
+      "name": "湿度",
+      "font_class": "IOTtubiao_huabanfuben",
+      "unicode": "e61a",
+      "unicode_decimal": 58906
+    }
+  ]
+}
