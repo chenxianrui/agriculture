@@ -24,6 +24,10 @@
 		float: left;
 	}
 
+	.weather{
+		margin-top: 15px;
+	}
+
 	.l_t_line {
 		width: 5px;
 		height: 24px;
@@ -106,23 +110,15 @@
 <div class="modal-box">
 
 	<!--左上边框-->
-
 	<div class="t_line_box">
-
 		<i class="t_l_line"></i>
-
 		<i class="l_t_line"></i>
-
 	</div>
 
 	<!--右上边框-->
-
 	<div class="t_line_box">
-
 		<i class="t_r_line"></i>
-
 		<i class="r_t_line"></i>
-
 	</div>
 	<!--<div>-->
 		<div class="time">
@@ -135,6 +131,8 @@
 	<!--</div>-->
 
 </div>
+	<iframe id="myframe" width="100%" height="75%" src="http://49.235.215.208:3000/d/JkufbSpWk/yang-guang-she-bei-5015?orgId=1&from=now-7d&to=now&kiosk"></iframe>
+	<iframe width="1200px" height="600px" th:src="@{/system/monitor/fouriframe}"></iframe>
 </body>
 <script>
     var newDate = '';
@@ -162,5 +160,6 @@
         document.getElementById("nowTime").innerHTML = newDate+"　"+week;
         setTimeout(getLangDate,1000);
     }
+
 </script>
 </html>

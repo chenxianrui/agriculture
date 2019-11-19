@@ -1,0 +1,16 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "8493577",
+      "name": "自动",
+      "font_class": "zidong",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    }
+  ]
+}

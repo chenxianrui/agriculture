@@ -1,0 +1,65 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1347",
+      "name": "左上",
+      "font_class": "zuoshang",
+      "unicode": "f01a2",
+      "unicode_decimal": 983458
+    },
+    {
+      "icon_id": "1349",
+      "name": "右上",
+      "font_class": "youshang",
+      "unicode": "f01a4",
+      "unicode_decimal": 983460
+    },
+    {
+      "icon_id": "1350",
+      "name": "左下",
+      "font_class": "zuoxia",
+      "unicode": "f01a5",
+      "unicode_decimal": 983461
+    },
+    {
+      "icon_id": "1352",
+      "name": "右下",
+      "font_class": "youxia",
+      "unicode": "f01a7",
+      "unicode_decimal": 983463
+    },
+    {
+      "icon_id": "3966861",
+      "name": "右",
+      "font_class": "you",
+      "unicode": "e69c",
+      "unicode_decimal": 59036
+    },
+    {
+      "icon_id": "4584188",
+      "name": "上",
+      "font_class": "shang",
+      "unicode": "e7ab",
+      "unicode_decimal": 59307
+    },
+    {
+      "icon_id": "5175908",
+      "name": "下 拉 (1)",
+      "font_class": "xiala",
+      "unicode": "e694",
+      "unicode_decimal": 59028
+    },
+    {
+      "icon_id": "6995737",
+      "name": "左",
+      "font_class": "zuo",
+      "unicode": "e85a",
+      "unicode_decimal": 59482
+    }
+  ]
+}
