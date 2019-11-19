@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <th:block th:include="include :: header('echarts')" />
+    <th:block th:include="include :: layout-latest-css" />
+    <th:block th:include="include :: ztree-css" />
+</head>
+<body>
+<div class="ibox-content" style="float: left">
+    <!-- 为 ECharts 准备一个具备大小（宽高）的 DOM -->
+    <div id="main" style="width: 300px;height:165px;"></div>
+</div>
+<div class="ibox-content" style="float: left">
+    <!-- 为 ECharts 准备一个具备大小（宽高）的 DOM -->
+    <div id="rainfall" style="width: 300px;height:165px;"></div>
+</div>
+<div class="ibox-content" style="float: left">
+     <!--为 ECharts 准备一个具备大小（宽高）的 DOM-->
+    <div id="temperature" style="width: 300px;height:165px;"></div>
+</div>
+<div class="ibox-content" style="float: left">
+    <!-- 为 ECharts 准备一个具备大小（宽高）的 DOM -->
+    <div id="humidity" style="width: 300px;height:165px;"></div>
+</div>
+</body>
+<script th:src="@{/js/echarts.min.js}"></script>
+<script>
+    //
+    <!--风向-->
+    // 基于准备好的dom，初始化echarts实例
+    var myChart = echarts.init(document.getElementById('main'));
+    option = {
+        title: {
+            text: '风向'
+        },
+        tooltip: {},
+        // legend: {
+        //     data: ['预算分配（Allocated Budget）', '实际开销（Actual Spending）']
+        // },
+        radar: {
+            // shape: 'circle',
+            name: {
+                textStyle: {
+                    color: '#fff',
+                    backgroundColor: '#999',
+                    borderRadius: 3,
+                    padding: [3, 5]
+                }
+            },
+            indicator: [
+                { name: '销售（sales）', max: 6500},
+                { name: '管理（Administration）', max: 16000},
+                { name: '信息技术（Information Techology）', max: 30000},
+                { name: '客服（Customer Support）', max: 38000},
+                { name: '研发（Development）', max: 52000},
+                { name: '市场（Marketing）', max: 25000}
+            ]
+        },
+        series: [{
+            name: '预算 vs 开销（Budget vs spending）',
+            type: 'radar',
+            // areaStyle: {normal: {}},
+            data : [
+                {
+                    value : [4300, 10000, 28000, 35000, 50000, 19000],
+                    name : '预算分配（Allocated Budget）'
+                },
+                {
+                    value : [5000, 14000, 28000, 31000, 42000, 21000],
+                    name : '实际开销（Actual Spending）'
+                }
+            ]
+        }]
+    };
+    // 使用刚指定的配置项和数据显示图表。
+    myChart.setOption(option);
+
+    <!--降雨-->
+    // 基于准备好的dom，初始化echarts实例
+    var rainfall = echarts.init(document.getElementById('rainfall'));
+    var dataAxis = ['点', '击', '柱', '子', '或', '者', '两', '指', '在', '触', '屏', '上', '滑', '动', '能', '够', '自', '动', '缩', '放'];
+    var data = [220, 182, 191, 234, 290, 330, 310, 123, 442, 321, 90, 149, 210, 122, 133, 334, 198, 123, 125, 220];
+    var yMax = 500;
+    var dataShadow = [];
+
+    for (var i = 0; i < data.length; i++) {
+        dataShadow.push(yMax);
+    }
+
+    option = {
+        title: {
+            text: '特性示例：渐变色 阴影 点击缩放',
+            subtext: 'Feature Sample: Gradient Color, Shadow, Click Zoom'
+        },
+        xAxis: {
+            data: dataAxis,
+            axisLabel: {
+                inside: true,
+                textStyle: {
+                    color: '#fff'
+                }
+            },
+            axisTick: {
+                show: false
+            },
+            axisLine: {
+                show: false
+            },
+            z: 10
+        },
+        yAxis: {
+            axisLine: {
+                show: false
+            },
+            axisTick: {
+                show: false
+            },
+            axisLabel: {
+                textStyle: {
+                    color: '#999'
+                }
+            }
+        },
+        dataZoom: [
+            {
+                type: 'inside'
+            }
+        ],
+        series: [
+            { // For shadow
+                type: 'bar',
+                itemStyle: {
+                    normal: {color: 'rgba(0,0,0,0.05)'}
+                },
+                barGap:'-100%',
+                barCategoryGap:'40%',
+                data: dataShadow,
+                animation: false
+            },
+            {
+                type: 'bar',
+                itemStyle: {
+                    normal: {
+                        color: new echarts.graphic.LinearGradient(
+                            0, 0, 0, 1,
+                            [
+                                {offset: 0, color: '#83bff6'},
+                                {offset: 0.5, color: '#188df0'},
+                                {offset: 1, color: '#188df0'}
+                            ]
+                        )
+                    },
+                    emphasis: {
+                        color: new echarts.graphic.LinearGradient(
+                            0, 0, 0, 1,
+                            [
+                                {offset: 0, color: '#2378f7'},
+                                {offset: 0.7, color: '#2378f7'},
+                                {offset: 1, color: '#83bff6'}
+                            ]
+                        )
+                    }
+                },
+                data: data
+            }
+        ]
+    };
+
+    // Enable data zoom when user click bar.
+    var zoomSize = 6;
+    myChart.on('click', function (params) {
+        console.log(dataAxis[Math.max(params.dataIndex - zoomSize / 2, 0)]);
+        myChart.dispatchAction({
+            type: 'dataZoom',
+            startValue: dataAxis[Math.max(params.dataIndex - zoomSize / 2, 0)],
+            endValue: dataAxis[Math.min(params.dataIndex + zoomSize / 2, data.length - 1)]
+        });
+    });
+    // 使用刚指定的配置项和数据显示图表。
+    rainfall.setOption(option);
+
+    <!--温度-->
+    // 基于准备好的dom，初始化echarts实例
+    var temperature = echarts.init(document.getElementById('temperature'));
+    option = {
+        tooltip: {
+            trigger: 'axis',
+            formatter: function (params, ticket, callback) {
+                var htmlStr = '';
+                for(var i=0;i<params.length;i++){
+                    var param = params[i];
+                    var xName = param.name;//x轴的名称
+                    var seriesName = param.seriesName;//图例名称
+                    var value = param.value;//y轴值
+                    var color = param.color;//图例颜色
+
+                    if(i===0){
+                        htmlStr += xName + '日' + '<br/>';//x轴的名称
+                    }
+                    htmlStr +='<div>';
+                    //为了保证和原来的效果一样，这里自己实现了一个点的效果
+                    htmlStr += '<span style="margin-right:5px;display:inline-block;width:10px;height:10px;border-radius:5px;background-color:'+color+';"></span>' + '投诉 ' + value;
+                    htmlStr += '</div>';
+                }
+                return htmlStr;
+            }
+        },
+        legend: {
+            bottom:'left',
+            data:['近12个月投诉量']
+        },
+        grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '9%',
+            containLabel: true
+        },
+        xAxis: {
+            type: 'category',
+            //boundaryGap: false,
+            axisTick:{ //y轴刻度线
+
+                show:false
+
+            },
+            data: ['2018-10','2018-11','2018-12','2019-01','2019-02','2019-03','2019-04','2019-05','2019-06','2019-07','2019-08','2019-09']
+
+        },
+        yAxis: {
+            type: 'value',
+            "axisLine":{       //y轴
+                "show":false
+
+            },
+            "axisTick":{       //y轴刻度线
+                "show":false
+            },
+            splitLine: {
+
+                show: true,
+
+                lineStyle:{
+
+                    type:'dashed'
+
+                }
+
+            }
+        },
+        series: [
+            {
+                name:'近12个月投诉量',
+                type:'line',
+                stack: '总量',
+                data:[5, 3, 4, 7, 8, 4, 10, 12, 15, 13, 16, 19],
+                symbol: 'circle',     //设定为实心点
+                symbolSize: 7,   //设定实心点的大小
+                itemStyle : {
+                    normal : {
+                        color:'blue'
+                    },
+                },
+            }
+        ]
+    };
+
+
+    // 使用刚指定的配置项和数据显示图表。
+    temperature.setOption(option);
+
+    <!--温度-->
+    // 基于准备好的dom，初始化echarts实例
+    var humidity = echarts.init(document.getElementById('humidity'));
+    option = {
+        title: {
+            text: '堆叠区域图'
+        },
+        tooltip : {
+            trigger: 'axis',
+            axisPointer: {
+                type: 'cross',
+                label: {
+                    backgroundColor: '#6a7985'
+                }
+            }
+        },
+        legend: {
+            data:['邮件营销','联盟广告','视频广告','直接访问','搜索引擎']
+        },
+        toolbox: {
+            feature: {
+                saveAsImage: {}
+            }
+        },
+        grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
+        },
+        xAxis : [
+            {
+                type : 'category',
+                boundaryGap : false,
+                data : ['周一','周二','周三','周四','周五','周六','周日']
+            }
+        ],
+        yAxis : [
+            {
+                type : 'value'
+            }
+        ],
+        series : [
+            {
+                name:'邮件营销',
+                type:'line',
+                stack: '总量',
+                areaStyle: {},
+                data:[120, 132, 101, 134, 90, 230, 210]
+            },
+            {
+                name:'联盟广告',
+                type:'line',
+                stack: '总量',
+                areaStyle: {},
+                data:[220, 182, 191, 234, 290, 330, 310]
+            },
+            {
+                name:'视频广告',
+                type:'line',
+                stack: '总量',
+                areaStyle: {},
+                data:[150, 232, 201, 154, 190, 330, 410]
+            },
+            {
+                name:'直接访问',
+                type:'line',
+                stack: '总量',
+                areaStyle: {normal: {}},
+                data:[320, 332, 301, 334, 390, 330, 320]
+            },
+            {
+                name:'搜索引擎',
+                type:'line',
+                stack: '总量',
+                label: {
+                    normal: {
+                        show: true,
+                        position: 'top'
+                    }
+                },
+                areaStyle: {normal: {}},
+                data:[820, 932, 901, 934, 1290, 1330, 1320]
+            }
+        ]
+    };
+
+    // 使用刚指定的配置项和数据显示图表。
+    humidity.setOption(option);
+
+</script>
+</html>
