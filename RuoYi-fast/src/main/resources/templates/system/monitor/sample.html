@@ -22,14 +22,14 @@
 <table class="wrap" width="1200" border="0" cellpadding="0" cellspacing="0" summary="Split Image">
 <tr>
  <td ><a href="#1x1"><img th:src="@{/img/2_swap_part1x1.jpg}" width="425" height="275" alt="Part 1x1" border="0"  /></a></td>
- <td><a href="#1x2"><img th:src="@{/img/2_swap_part1x2.jpg}" width="425" height="275" alt="Part 1x2" border="0"  /></a></td>
- <td><a href="#1x3"><img th:src="@{/img/2_swap_part1x3.jpg}" width="426" height="275" alt="Part 1x3" border="0"  /></a></td>
+ <td><a href="#1x2"><img th:src="@{/img/2_swap_part1x2.jpg}" id="button-open-1" width="425" height="275" alt="Part 1x2" border="0"  /></a></td>
+ <td><a href="#1x3"><img th:src="@{/img/2_swap_part1x3.jpg}" id="button-open-2" width="426" height="275" alt="Part 1x3" border="0"  /></a></td>
 </tr>
 <tr>
- <td><a href="#2x1"><img th:src="@{/img/2_swap_part2x1.jpg}" width="425" height="276" alt="Part 2x1" border="0"  /></a></td>
+ <td><a href="#2x1"><img th:src="@{/img/2_swap_part2x1.jpg}" id="button-open-3" width="425" height="276" alt="Part 2x1" border="0"  /></a></td>
  <td><a href="#2x2"><img th:src="@{/img/2_swap_part2x2.jpg}" width="425" height="276" alt="Part 2x2" border="0"  /></a></td>
  <!--<td><a href="#1x2"><iframe style="width: 425px; height: 275px;" th:src="@{/system/monitor/controllerIframe}"></iframe></a></td>-->
- <td><a href="#2x3"><img th:src="@{/img/2_swap_part2x3.jpg}" width="426" height="276" alt="Part 2x3" border="0"  /></a></td>
+ <td><a href="#2x3"><img th:src="@{/img/2_swap_part2x3.jpg}" id="button-open-4" width="426" height="276" alt="Part 2x3" border="0"  /></a></td>
 </tr>
 </table>
 
@@ -37,4 +37,41 @@
 <th:block th:include="include :: footer" />
 <th:block th:include="include :: layout-latest-js" />
 <th:block th:include="include :: ztree-js" />
+<script type="text/javascript">
+
+   var prefix = "/system/monitor";
+
+    $("#button-open-1").click(function(){
+        layer.open({
+            type: 2,
+            title: "球机",
+            content: prefix + "/ballMonitor",
+            area: ["800px", "550px"]
+        });
+    });
+   $("#button-open-2").click(function(){
+       layer.open({
+           type: 2,
+           title: "枪机",
+           content: prefix + "/gunMonitor01",
+           area: ["800px", "550px"]
+       });
+   });
+   $("#button-open-3").click(function(){
+       layer.open({
+           type: 2,
+           title: "枪机",
+           content: prefix + "/gunMonitor02",
+           area: ["800px", "550px"]
+       });
+   });
+   $("#button-open-4").click(function(){
+       layer.open({
+           type: 2,
+           title: "枪机",
+           content: prefix + "/gunMonitor03",
+           area: ["800px", "550px"]
+       });
+   });
+</script>
 </html>

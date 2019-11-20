@@ -9,7 +9,7 @@
         <div class="col-sm-6">
             <div class="ibox float-e-margins">
                 <div class="ibox-title">
-                    <h5>气温</h5>
+                    <h5>温度</h5>
                 </div>
                 <div class="ibox-content">
                     <div class="echarts" id="echarts-line-chart"></div>
@@ -19,7 +19,7 @@
         <div class="col-sm-6">
             <div class="ibox float-e-margins">
                 <div class="ibox-title">
-                    <h5>降水量</h5>
+                    <h5>雨量</h5>
                 </div>
                 <div class="ibox-content">
 
@@ -42,7 +42,7 @@
         <div class="col-sm-6">
             <div class="ibox float-e-margins">
                 <div class="ibox-title">
-                    <h5>光照</h5>
+                    <h5>照度</h5>
                 </div>
                 <div class="ibox-content">
 
@@ -55,7 +55,7 @@
         <div class="col-sm-6">
             <div class="ibox float-e-margins">
                 <div class="ibox-title">
-                    <h5>光合作用</h5>
+                    <h5>光合</h5>
                 </div>
                 <div class="ibox-content">
                     <div class="echarts" id="Photosynthesis"></div>
@@ -78,7 +78,7 @@
         <div class="col-sm-6">
             <div class="ibox float-e-margins">
                 <div class="ibox-title">
-                    <h5>二氧化碳含量</h5>
+                    <h5>CO2</h5>
                 </div>
                 <div class="ibox-content">
                     <div class="echarts" id="co2"></div>
@@ -88,7 +88,7 @@
         <div class="col-sm-6">
             <div class="ibox float-e-margins">
                 <div class="ibox-title">
-                    <h5>ph值</h5>
+                    <h5>PH</h5>
                 </div>
                 <div class="ibox-content">
 
@@ -101,7 +101,7 @@
         <div class="col-sm-6">
             <div class="ibox float-e-margins">
                 <div class="ibox-title">
-                    <h5>土壤温度01</h5>
+                    <h5>土温1</h5>
                 </div>
                 <div class="ibox-content">
                     <div class="echarts" id="soil_temperature_1"></div>
@@ -111,7 +111,7 @@
         <div class="col-sm-6">
             <div class="ibox float-e-margins">
                 <div class="ibox-title">
-                    <h5>土壤湿度01</h5>
+                    <h5>土湿1</h5>
                 </div>
                 <div class="ibox-content">
 
@@ -124,7 +124,7 @@
         <div class="col-sm-6">
             <div class="ibox float-e-margins">
                 <div class="ibox-title">
-                    <h5>土壤温度02</h5>
+                    <h5>土温2</h5>
                 </div>
                 <div class="ibox-content">
                     <div class="echarts" id="soil_temperature_2"></div>
@@ -134,7 +134,7 @@
         <div class="col-sm-6">
             <div class="ibox float-e-margins">
                 <div class="ibox-title">
-                    <h5>土壤湿度02</h5>
+                    <h5>土湿2</h5>
                 </div>
                 <div class="ibox-content">
 
@@ -147,7 +147,7 @@
         <div class="col-sm-6">
             <div class="ibox float-e-margins">
                 <div class="ibox-title">
-                    <h5>土壤温度03</h5>
+                    <h5>土温3</h5>
                 </div>
                 <div class="ibox-content">
                     <div class="echarts" id="soil_temperature_3"></div>
@@ -157,7 +157,7 @@
         <div class="col-sm-6">
             <div class="ibox float-e-margins">
                 <div class="ibox-title">
-                    <h5>土壤湿度03</h5>
+                    <h5>土湿3</h5>
                 </div>
                 <div class="ibox-content">
 
@@ -180,7 +180,7 @@
         <div class="col-sm-6">
             <div class="ibox float-e-margins">
                 <div class="ibox-title">
-                    <h5>光导</h5>
+                    <h5>电导</h5>
                 </div>
                 <div class="ibox-content">
 
@@ -195,7 +195,7 @@
 <script type="text/javascript">
     $(function () {
 
-        var dt = getEdata("fengsu");
+        var dt = getEdata("temperature");
 
         function getEdata(str) {
             var dttime = [];
@@ -236,20 +236,38 @@
                     alert("error");
                 }
             });
-            window.alert(eData);
             return eData;
         }
 
         var lineChart = echarts.init(document.getElementById("echarts-line-chart"));
         var lineoption = {
             title : {
-                text: '一天气温'
+                text: '最近一天温度',
+                trigger: 'axis',
+                formatter: function (params, ticket, callback) {
+                    var htmlStr = '';
+                    for(var i=0;i<params.length;i++){
+                        var param = params[i];
+                        var xName = param.name;//x轴的名称
+                        var seriesName = param.seriesName;//图例名称
+                        var value = param.value;//y轴值
+                        var color = param.color;//图例颜色
+                        if(i===0){
+                            htmlStr += xName + '日' + '<br/>';//x轴的名称
+                        }
+                        htmlStr +='<div>';
+                        //为了保证和原来的效果一样，这里自己实现了一个点的效果
+                        htmlStr += '<span style="margin-right:5px;display:inline-block;width:10px;height:10px;border-radius:5px;background-color:'+color+';"></span>' + '投诉 ' + value;
+                        htmlStr += '</div>';
+                    }
+                    return htmlStr;
+                }
             },
             tooltip : {
                 trigger: 'axis'
             },
             legend: {
-                data:['气温']
+                data:['温度']
             },
             grid:{
                 x:40,
@@ -274,19 +292,20 @@
             ],
             series : [
                 {
-                    name:'气温',
+                    name:'温度',
                     type:'line',
                     data: EData("temperature"),
-                    markPoint : {
-                        data : [
-                            {type : 'max', name: '最大值'},
-                            {type : 'min', name: '最小值'}
-                        ]
-                    },
-                    markLine : {
-                        data : [
-                            {type : 'average', name: '平均值'}
-                        ]
+                    // markLine : {
+                    //     data : [
+                    //         {type : 'average', name: '平均值'}
+                    //     ]
+                    // }
+                    symbol: 'circle',     //设定为实心点
+                    symbolSize: 1,   //设定实心点的大小
+                    itemStyle : {
+                        normal : {
+                            color:'#ff6600'
+                        }
                     }
                 }
             ]
@@ -297,13 +316,13 @@
         var barChart = echarts.init(document.getElementById("echarts-bar-chart"));
         var baroption = {
             title : {
-                text: '某地区蒸发量和降水量'
+                text: '最近一天雨量'
             },
             tooltip : {
                 trigger: 'axis'
             },
             legend: {
-                data:['降水量']
+                data:['雨量']
             },
             grid:{
                 x:30,
@@ -319,25 +338,19 @@
             ],
             yAxis : [
                 {
-                    type : 'value'
+                    type : 'value',
+                    axisLabel : {
+                        formatter: '{value}'
+                    }
                 }
             ],
             series : [
                 {
-                    name:'降水量',
+                    name:'雨量',
                     type:'bar',
                     data:EData("rainfall"),
-                    markPoint : {
-                        data : [
-                            {name : '年最高', value : 182.2, xAxis: 7, yAxis: 183, symbolSize:18},
-                            {name : '年最低', value : 2.3, xAxis: 11, yAxis: 3}
-                        ]
-                    },
-                    markLine : {
-                        data : [
-                            {type : 'average', name : '平均值'}
-                        ]
-                    }
+                    symbol: 'circle',     //设定为实心点
+                    symbolSize: 1   //设定实心点的大小
                 }
             ]
         };
@@ -348,13 +361,13 @@
         var humidity = echarts.init(document.getElementById("humidity"));
         var humiditytion = {
             title : {
-                text: '某地区蒸发量和降水量'
+                text: '最近一天湿度'
             },
             tooltip : {
                 trigger: 'axis'
             },
             legend: {
-                data:['降水量']
+                data:['湿度']
             },
             grid:{
                 x:30,
@@ -370,24 +383,23 @@
             ],
             yAxis : [
                 {
-                    type : 'value'
+                    type : 'value',
+                    axisLabel : {
+                        formatter: '{value}'
+                    }
                 }
             ],
             series : [
                 {
-                    name:'降水量',
+                    name:'湿度',
                     type:'bar',
                     data: EData("humidity"),
-                    markPoint : {
-                        data : [
-                            {name : '年最高', value : 182.2, xAxis: 7, yAxis: 183, symbolSize:18},
-                            {name : '年最低', value : 2.3, xAxis: 11, yAxis: 3}
-                        ]
-                    },
-                    markLine : {
-                        data : [
-                            {type : 'average', name : '平均值'}
-                        ]
+                    symbol: 'circle',     //设定为实心点
+                    symbolSize: 1,   //设定实心点的大小
+                    itemStyle : {
+                        normal : {
+                            color:'#545096'
+                        }
                     }
                 }
             ]
@@ -398,13 +410,13 @@
         var illumination = echarts.init(document.getElementById("illumination"));
         var illuminationtion = {
             title : {
-                text: '某地区蒸发量和降水量'
+                text: '最近一天照度'
             },
             tooltip : {
                 trigger: 'axis'
             },
             legend: {
-                data:['降水量']
+                data:['照度']
             },
             grid:{
                 x:30,
@@ -420,24 +432,23 @@
             ],
             yAxis : [
                 {
-                    type : 'value'
+                    type : 'value',
+                    axisLabel : {
+                        formatter: '{value} lx'
+                    }
                 }
             ],
             series : [
                 {
-                    name:'降水量',
+                    name:'照度',
                     type:'bar',
                     data:EData("illumination"),
-                    markPoint : {
-                        data : [
-                            {name : '年最高', value : 182.2, xAxis: 7, yAxis: 183, symbolSize:18},
-                            {name : '年最低', value : 2.3, xAxis: 11, yAxis: 3}
-                        ]
-                    },
-                    markLine : {
-                        data : [
-                            {type : 'average', name : '平均值'}
-                        ]
+                    symbol: 'circle',     //设定为实心点
+                    symbolSize: 1,   //设定实心点的大小
+                    itemStyle : {
+                        normal : {
+                            color:'#d0ce00'
+                        }
                     }
                 }
             ]
@@ -449,13 +460,13 @@
         var Photosynthesis = echarts.init(document.getElementById("Photosynthesis"));
         var Photosynthesistion = {
             title : {
-                text: '一天气温'
+                text: '最近一天光合'
             },
             tooltip : {
                 trigger: 'axis'
             },
             legend: {
-                data:['气温']
+                data:['光合']
             },
             grid:{
                 x:40,
@@ -474,25 +485,21 @@
                 {
                     type : 'value',
                     axisLabel : {
-                        formatter: '{value} °C'
+                        formatter: '{value} umol'
                     }
                 }
             ],
             series : [
                 {
-                    name:'气温',
+                    name:'光合',
                     type:'line',
                     data:EData("Photosynthesis"),
-                    markPoint : {
-                        data : [
-                            {type : 'max', name: '最大值'},
-                            {type : 'min', name: '最小值'}
-                        ]
-                    },
-                    markLine : {
-                        data : [
-                            {type : 'average', name: '平均值'}
-                        ]
+                    symbol: 'circle',     //设定为实心点
+                    symbolSize: 1,   //设定实心点的大小
+                    itemStyle : {
+                        normal : {
+                            color:'#d0ce00'
+                        }
                     }
                 }
             ]
@@ -501,16 +508,16 @@
 
         window.onresize = Photosynthesis.resize;
 
-        var co2 = echarts.init(document.getElementById("co2"));
-        var co2tion = {
+        var wind_direction = echarts.init(document.getElementById("wind_direction"));
+        var wind_directiontion = {
             title : {
-                text: '一天气温'
+                text: '最近一天风向'
             },
             tooltip : {
                 trigger: 'axis'
             },
             legend: {
-                data:['气温']
+                data:['风向']
             },
             grid:{
                 x:40,
@@ -529,25 +536,73 @@
                 {
                     type : 'value',
                     axisLabel : {
-                        formatter: '{value} °C'
+                        formatter: '{value} °'
                     }
                 }
             ],
             series : [
                 {
-                    name:'气温',
+                    name:'风向',
+                    type:'line',
+                    data:EData("wind_direction"),
+                    symbol: 'circle',     //设定为实心点
+                    symbolSize: 1,   //设定实心点的大小
+                    itemStyle : {
+                        normal : {
+                            color:'#33cabb'
+                        }
+                    }
+                }
+            ]
+        };
+        wind_direction.setOption(wind_directiontion);
+
+        window.onresize = wind_direction.resize;
+
+
+        var co2 = echarts.init(document.getElementById("co2"));
+        var co2tion = {
+            title : {
+                text: '最近一天CO2含量'
+            },
+            tooltip : {
+                trigger: 'axis'
+            },
+            legend: {
+                data:['CO2']
+            },
+            grid:{
+                x:40,
+                x2:40,
+                y2:24
+            },
+            calculable : true,
+            xAxis : [
+                {
+                    type : 'category',
+                    boundaryGap : false,
+                    data : dt
+                }
+            ],
+            yAxis : [
+                {
+                    type : 'value',
+                    axisLabel : {
+                        formatter: '{value} %'
+                    }
+                }
+            ],
+            series : [
+                {
+                    name:'CO2',
                     type:'line',
                     data:EData("co2"),
-                    markPoint : {
-                        data : [
-                            {type : 'max', name: '最大值'},
-                            {type : 'min', name: '最小值'}
-                        ]
-                    },
-                    markLine : {
-                        data : [
-                            {type : 'average', name: '平均值'}
-                        ]
+                    symbol: 'circle',     //设定为实心点
+                    symbolSize: 1,   //设定实心点的大小
+                    itemStyle : {
+                        normal : {
+                            color:'#ed9c28'
+                        }
                     }
                 }
             ]
@@ -561,13 +616,13 @@
         var ph = echarts.init(document.getElementById("ph"));
         var phtion = {
             title : {
-                text: '一天气温'
+                text: '最近一天PH值'
             },
             tooltip : {
                 trigger: 'axis'
             },
             legend: {
-                data:['气温']
+                data:['PH']
             },
             grid:{
                 x:40,
@@ -586,25 +641,21 @@
                 {
                     type : 'value',
                     axisLabel : {
-                        formatter: '{value} °C'
+                        formatter: '{value} '
                     }
                 }
             ],
             series : [
                 {
-                    name:'气温',
+                    name:'PH',
                     type:'line',
                     data:EData("ph"),
-                    markPoint : {
-                        data : [
-                            {type : 'max', name: '最大值'},
-                            {type : 'min', name: '最小值'}
-                        ]
-                    },
-                    markLine : {
-                        data : [
-                            {type : 'average', name: '平均值'}
-                        ]
+                    symbol: 'circle',     //设定为实心点
+                    symbolSize: 1,   //设定实心点的大小
+                    itemStyle : {
+                        normal : {
+                            color:'#ed9c28'
+                        }
                     }
                 }
             ]
@@ -618,13 +669,13 @@
         var soil_temperature_1 = echarts.init(document.getElementById("soil_temperature_1"));
         var soil_temperature_1tion = {
             title : {
-                text: '一天气温'
+                text: '最近一天土温1'
             },
             tooltip : {
                 trigger: 'axis'
             },
             legend: {
-                data:['气温']
+                data:['土温1']
             },
             grid:{
                 x:40,
@@ -649,19 +700,15 @@
             ],
             series : [
                 {
-                    name:'气温',
+                    name:'土温1',
                     type:'line',
                     data:EData("soil_temperature_1"),
-                    markPoint : {
-                        data : [
-                            {type : 'max', name: '最大值'},
-                            {type : 'min', name: '最小值'}
-                        ]
-                    },
-                    markLine : {
-                        data : [
-                            {type : 'average', name: '平均值'}
-                        ]
+                    symbol: 'circle',     //设定为实心点
+                    symbolSize: 1,   //设定实心点的大小
+                    itemStyle : {
+                        normal : {
+                            color:'#d43f3a'
+                        }
                     }
                 }
             ]
@@ -672,13 +719,13 @@
         var soil_moisture_1 = echarts.init(document.getElementById("soil_moisture_1"));
         var soil_moisture_1tion = {
             title : {
-                text: '某地区蒸发量和降水量'
+                text: '最近一天土湿1'
             },
             tooltip : {
                 trigger: 'axis'
             },
             legend: {
-                data:['降水量']
+                data:['土湿1']
             },
             grid:{
                 x:30,
@@ -694,24 +741,23 @@
             ],
             yAxis : [
                 {
-                    type : 'value'
+                    type : 'value',
+                    axisLabel : {
+                        formatter: '{value} %'
+                    }
                 }
             ],
             series : [
                 {
-                    name:'降水量',
+                    name:'土湿1',
                     type:'bar',
                     data:EData("soil_moisture_1"),
-                    markPoint : {
-                        data : [
-                            {name : '年最高', value : 182.2, xAxis: 7, yAxis: 183, symbolSize:18},
-                            {name : '年最低', value : 2.3, xAxis: 11, yAxis: 3}
-                        ]
-                    },
-                    markLine : {
-                        data : [
-                            {type : 'average', name : '平均值'}
-                        ]
+                    symbol: 'circle',     //设定为实心点
+                    symbolSize: 1,   //设定实心点的大小
+                    itemStyle : {
+                        normal : {
+                            color:'#4E5465'
+                        }
                     }
                 }
             ]
@@ -723,13 +769,13 @@
         var soil_temperature_2 = echarts.init(document.getElementById("soil_temperature_2"));
         var soil_temperature_2tion = {
             title : {
-                text: '一天气温'
+                text: '最近一天土温2'
             },
             tooltip : {
                 trigger: 'axis'
             },
             legend: {
-                data:['气温']
+                data:['土温2']
             },
             grid:{
                 x:40,
@@ -754,19 +800,15 @@
             ],
             series : [
                 {
-                    name:'气温',
+                    name:'土温2',
                     type:'line',
                     data:EData("soil_temperature_2"),
-                    markPoint : {
-                        data : [
-                            {type : 'max', name: '最大值'},
-                            {type : 'min', name: '最小值'}
-                        ]
-                    },
-                    markLine : {
-                        data : [
-                            {type : 'average', name: '平均值'}
-                        ]
+                    symbol: 'circle',     //设定为实心点
+                    symbolSize: 1,   //设定实心点的大小
+                    itemStyle : {
+                        normal : {
+                            color:'#d43f3a'
+                        }
                     }
                 }
             ]
@@ -777,13 +819,13 @@
         var soil_moisture_2 = echarts.init(document.getElementById("soil_moisture_2"));
         var soil_moisture_2tion = {
             title : {
-                text: '某地区蒸发量和降水量'
+                text: '最近一天土湿2'
             },
             tooltip : {
                 trigger: 'axis'
             },
             legend: {
-                data:['降水量']
+                data:['土湿2']
             },
             grid:{
                 x:30,
@@ -799,24 +841,23 @@
             ],
             yAxis : [
                 {
-                    type : 'value'
+                    type : 'value',
+                    axisLabel : {
+                        formatter: '{value} %'
+                    }
                 }
             ],
             series : [
                 {
-                    name:'降水量',
+                    name:'土湿2',
                     type:'bar',
                     data:EData("soil_moisture_2"),
-                    markPoint : {
-                        data : [
-                            {name : '年最高', value : 182.2, xAxis: 7, yAxis: 183, symbolSize:18},
-                            {name : '年最低', value : 2.3, xAxis: 11, yAxis: 3}
-                        ]
-                    },
-                    markLine : {
-                        data : [
-                            {type : 'average', name : '平均值'}
-                        ]
+                    symbol: 'circle',     //设定为实心点
+                    symbolSize: 1,   //设定实心点的大小
+                    itemStyle : {
+                        normal : {
+                            color:'#4f5962'
+                        }
                     }
                 }
             ]
@@ -828,13 +869,13 @@
         var soil_temperature_3 = echarts.init(document.getElementById("soil_temperature_3"));
         var soil_temperature_3tion = {
             title : {
-                text: '一天气温'
+                text: '最近一天土温3'
             },
             tooltip : {
                 trigger: 'axis'
             },
             legend: {
-                data:['气温']
+                data:['土温3']
             },
             grid:{
                 x:40,
@@ -859,19 +900,15 @@
             ],
             series : [
                 {
-                    name:'气温',
+                    name:'土温3',
                     type:'line',
                     data:EData("soil_temperature_3"),
-                    markPoint : {
-                        data : [
-                            {type : 'max', name: '最大值'},
-                            {type : 'min', name: '最小值'}
-                        ]
-                    },
-                    markLine : {
-                        data : [
-                            {type : 'average', name: '平均值'}
-                        ]
+                    symbol: 'circle',     //设定为实心点
+                    symbolSize: 1,   //设定实心点的大小
+                    itemStyle : {
+                        normal : {
+                            color:'#d43f3a'
+                        }
                     }
                 }
             ]
@@ -882,13 +919,13 @@
         var soil_moisture_3 = echarts.init(document.getElementById("soil_moisture_3"));
         var soil_moisture_3tion = {
             title : {
-                text: '某地区蒸发量和降水量'
+                text: '最近一天土湿3'
             },
             tooltip : {
                 trigger: 'axis'
             },
             legend: {
-                data:['降水量']
+                data:['土湿3']
             },
             grid:{
                 x:30,
@@ -904,24 +941,23 @@
             ],
             yAxis : [
                 {
-                    type : 'value'
+                    type : 'value',
+                    axisLabel : {
+                        formatter: '{value} %'
+                    }
                 }
             ],
             series : [
                 {
-                    name:'降水量',
+                    name:'土湿3',
                     type:'bar',
                     data:EData("soil_moisture_3"),
-                    markPoint : {
-                        data : [
-                            {name : '年最高', value : 182.2, xAxis: 7, yAxis: 183, symbolSize:18},
-                            {name : '年最低', value : 2.3, xAxis: 11, yAxis: 3}
-                        ]
-                    },
-                    markLine : {
-                        data : [
-                            {type : 'average', name : '平均值'}
-                        ]
+                    symbol: 'circle',     //设定为实心点
+                    symbolSize: 1,   //设定实心点的大小
+                    itemStyle : {
+                        normal : {
+                            color:'#4f5962'
+                        }
                     }
                 }
             ]
@@ -934,13 +970,13 @@
         var wind_speed = echarts.init(document.getElementById("wind_speed"));
         var wind_speedtion = {
             title : {
-                text: '一天气温'
+                text: '最近一天风速'
             },
             tooltip : {
                 trigger: 'axis'
             },
             legend: {
-                data:['气温']
+                data:['风速']
             },
             grid:{
                 x:40,
@@ -959,25 +995,21 @@
                 {
                     type : 'value',
                     axisLabel : {
-                        formatter: '{value} °C'
+                        formatter: '{value} m/s'
                     }
                 }
             ],
             series : [
                 {
-                    name:'气温',
+                    name:'风速',
                     type:'line',
                     data:EData("wind_speed"),
-                    markPoint : {
-                        data : [
-                            {type : 'max', name: '最大值'},
-                            {type : 'min', name: '最小值'}
-                        ]
-                    },
-                    markLine : {
-                        data : [
-                            {type : 'average', name: '平均值'}
-                        ]
+                    symbol: 'circle',     //设定为实心点
+                    symbolSize: 1,   //设定实心点的大小
+                    itemStyle : {
+                        normal : {
+                            color:'#17a2b8'
+                        }
                     }
                 }
             ]
@@ -988,13 +1020,13 @@
         var conductance = echarts.init(document.getElementById("conductance"));
         var conductancetion = {
             title : {
-                text: '一天气温'
+                text: '最近一天电导'
             },
             tooltip : {
                 trigger: 'axis'
             },
             legend: {
-                data:['气温']
+                data:['电导']
             },
             grid:{
                 x:40,
@@ -1013,25 +1045,21 @@
                 {
                     type : 'value',
                     axisLabel : {
-                        formatter: '{value} °C'
+                        formatter: '{value} S/m'
                     }
                 }
             ],
             series : [
                 {
-                    name:'气温',
+                    name:'电导',
                     type:'line',
                     data:EData("conductance"),
-                    markPoint : {
-                        data : [
-                            {type : 'max', name: '最大值'},
-                            {type : 'min', name: '最小值'}
-                        ]
-                    },
-                    markLine : {
-                        data : [
-                            {type : 'average', name: '平均值'}
-                        ]
+                    symbol: 'circle',     //设定为实心点
+                    symbolSize: 1,   //设定实心点的大小
+                    itemStyle : {
+                        normal : {
+                            color:'#ffc107'
+                        }
                     }
                 }
             ]

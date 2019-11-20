@@ -59,24 +59,24 @@
                 bZeroChannel: false      // zero channel
             };
 
-            // $.ajax({
-            //     type:"POST",
-            //     url:"/system/monitor/tv",
-            //     data: {"id":1},
-            //     datatype: "json",
-            //     async:false,
-            //     success:function (data) {
-            //         data = JSON.parse(data);
-            //         console.log("succ : " + data.ip + ":" + data.port);
-            //         oLiveView.szIP = data.ip;
-            //         oLiveView.szPort = data.port;
-            //         oLiveView.szUsername = data.username;
-            //         oLiveView.szPassword = data.password;
-            //     },
-            //     error:function (data) {
-            //         console.log("error : " + data);
-            //     }
-            // });
+            $.ajax({
+                type:"POST",
+                url:"/system/monitor/tv",
+                data: {"id":1},
+                datatype: "json",
+                async:false,
+                success:function (data) {
+                    data = JSON.parse(data);
+                    console.log("succ : " + data.ip + ":" + data.port);
+                    oLiveView.szIP = data.ip;
+                    oLiveView.szPort = data.port;
+                    oLiveView.szUsername = data.user;
+                    oLiveView.szPassword = data.password;
+                },
+                error:function (data) {
+                    console.log("error : " + data);
+                }
+            });
 
             var g_window = $("#tv1")
             $.each(g_window, function (i, oIframe) {
@@ -133,24 +133,24 @@
             bZeroChannel: false      // zero channel
         };
 
-        // $.ajax({
-        //     type:"POST",
-        //     url:"/system/monitor/tv",
-        //     data: {"id":2},
-        //     datatype: "json",
-        //     async:false,
-        //     success:function (data) {
-        //         data = JSON.parse(data);
-        //         console.log("succ : " + data.ip + ":" + data.port);
-        //         oLiveView.szIP = data.ip;
-        //         oLiveView.szPort = data.port;
-        //         oLiveView.szUsername = data.username;
-        //         oLiveView.szPassword = data.password;
-        //     },
-        //     error:function (data) {
-        //         console.log("error : " + data);
-        //     }
-        // });
+        $.ajax({
+            type:"POST",
+            url:"/system/monitor/tv",
+            data: {"id":2},
+            datatype: "json",
+            async:false,
+            success:function (data) {
+                data = JSON.parse(data);
+                console.log("succ : " + data.ip + ":" + data.port);
+                oLiveView.szIP = data.ip;
+                oLiveView.szPort = data.port;
+                oLiveView.szUsername = data.user;
+                oLiveView.szPassword = data.password;
+            },
+            error:function (data) {
+                console.log("error : " + data);
+            }
+        });
 
         var g_window = $("#tv2")
         $.each(g_window, function (i, oIframe) {
@@ -208,24 +208,24 @@
             bZeroChannel: false      // zero channel
         };
 
-        // $.ajax({
-        //     type:"POST",
-        //     url:"/system/monitor/tv",
-        //     data: {"id":3},
-        //     datatype: "json",
-        //     async:false,
-        //     success:function (data) {
-        //         data = JSON.parse(data);
-        //         console.log("succ : " + data.ip + ":" + data.port);
-        //         oLiveView.szIP = data.ip;
-        //         oLiveView.szPort = data.port;
-        //         oLiveView.szUsername = data.username;
-        //         oLiveView.szPassword = data.password;
-        //     },
-        //     error:function (data) {
-        //         console.log("error : " + data);
-        //     }
-        // });
+        $.ajax({
+            type:"POST",
+            url:"/system/monitor/tv",
+            data: {"id":3},
+            datatype: "json",
+            async:false,
+            success:function (data) {
+                data = JSON.parse(data);
+                console.log("succ : " + data.ip + ":" + data.port);
+                oLiveView.szIP = data.ip;
+                oLiveView.szPort = data.port;
+                oLiveView.szUsername = data.user;
+                oLiveView.szPassword = data.password;
+            },
+            error:function (data) {
+                console.log("error : " + data);
+            }
+        });
 
         var g_window = $("#tv3")
         $.each(g_window, function (i, oIframe) {
@@ -284,24 +284,24 @@
         };
 
 
-        // $.ajax({
-        //     type:"POST",
-        //     url:"/system/monitor/tv",
-        //     data: {"id":4},
-        //     datatype: "json",
-        //     async:false,
-        //     success:function (data) {
-        //         data = JSON.parse(data);
-        //         console.log("succ : " + data.ip + ":" + data.port);
-        //         oLiveView.szIP = data.ip;
-        //         oLiveView.szPort = data.port;
-        //         oLiveView.szUsername = data.username;
-        //         oLiveView.szPassword = data.password;
-        //     },
-        //     error:function (data) {
-        //         console.log("error : " + data);
-        //     }
-        // });
+        $.ajax({
+            type:"POST",
+            url:"/system/monitor/tv",
+            data: {"id":4},
+            datatype: "json",
+            async:false,
+            success:function (data) {
+                data = JSON.parse(data);
+                console.log("succ : " + data.ip + ":" + data.port);
+                oLiveView.szIP = data.ip;
+                oLiveView.szPort = data.port;
+                oLiveView.szUsername = data.user;
+                oLiveView.szPassword = data.password;
+            },
+            error:function (data) {
+                console.log("error : " + data);
+            }
+        });
 
 
         var g_window = $("#tv4")

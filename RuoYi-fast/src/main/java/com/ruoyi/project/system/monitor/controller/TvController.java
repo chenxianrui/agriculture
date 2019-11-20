@@ -16,6 +16,18 @@ public class TvController {
 
     private String prefix = "system/monitor";
 
+    @Autowired
+    Monitor01 monitor01;
+
+    @Autowired
+    Monitor02 monitor02;
+
+    @Autowired
+    Monitor03 monitor03;
+
+    @Autowired
+    Monitor04 monitor04;
+
     @GetMapping()
     public String fourTv(){
         return prefix + "/winmonitor/demo/cn/demo-iframe";
@@ -31,14 +43,25 @@ public class TvController {
         return prefix + "/sample";
     }
 
-    @Autowired
-    Monitor01 monitor01;
-    @Autowired
-    Monitor02 monitor02;
-    @Autowired
-    Monitor03 monitor03;
-    @Autowired
-    Monitor04 monitor04;
+    @GetMapping("/ballMonitor")
+    public String ballMonitor(){
+        return prefix + "/winmonitor/demo/cn/demo";
+    }
+
+    @GetMapping("/gunMonitor01")
+    public String gunMonitor01(){
+        return prefix + "/winmonitor/demo/cn/gun01";
+    }
+
+    @GetMapping("/gunMonitor02")
+    public String gunMonitor02(){
+        return prefix + "/winmonitor/demo/cn/gun02";
+    }
+
+    @GetMapping("/gunMonitor03")
+    public String gunMonitor03(){
+        return prefix + "/winmonitor/demo/cn/gun03";
+    }
 
     @PostMapping("/tv")
     @ResponseBody
