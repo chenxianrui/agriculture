@@ -208,7 +208,7 @@
                 success:function (data) {
                     data = JSON.parse(data);
                     for (var i=0; i < data.data.length; i++){
-                        dttime[i] = data.data[i][0];
+                        dttime[i] = data.data[i][0].slice(11, 16);
                     }
                 },
                 error:function (data) {
