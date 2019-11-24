@@ -131,6 +131,7 @@ public class WeatherController extends BaseController{
         String ymd = getTime.getDtN();
         String sql = "select ts, " + str + " from iot.t_iot_weather_station where ts >= '"+ ymd + "'";
         String data = restfulTD.getTdData("49.235.215.208","6020","root","taosdata",sql);
+
 //        System.out.println(data);
 //        String data = restfulTD.getTdData("49.235.215.208","6020","root","taosdata","select ts, temperature1 from iot.t_iot_sun5015  where ts >= \"2019-11-18 20:20:03\"");
 //        System.out.println(data);
