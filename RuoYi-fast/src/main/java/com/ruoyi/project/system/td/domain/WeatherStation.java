@@ -1,5 +1,9 @@
 package com.ruoyi.project.system.td.domain;
 
+import org.apache.poi.ss.formula.functions.T;
+
+import java.util.List;
+
 public class WeatherStation {
 
     private String ts;

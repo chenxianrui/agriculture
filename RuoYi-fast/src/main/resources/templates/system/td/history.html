@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <th:block th:include="include :: header('历史数据展示')" />
+    <th:block th:include="include :: layout-latest-css" />
+    <th:block th:include="include :: ztree-css" />
+</head>
+<body class="gray-bg">
+<div class="ui-layout-center">
+    <div class="container-div">
+        <div class="row">
+            <div class="col-sm-12 search-collapse">
+                <form id="user-form">
+                    <input type="hidden" id="deptId" name="deptId">
+                    <div class="select-list">
+                        <ul>
+                            <li class="select-time">
+                                <label>创建时间： </label>
+                                <input type="text" class="time-input" id="startTime" placeholder="开始时间" name="params[beginTime]"/>
+                                <span>-</span>
+                                <input type="text" class="time-input" id="endTime" placeholder="结束时间" name="params[endTime]"/>
+                            </li>
+                            <li>
+                                <a class="btn btn-primary btn-rounded btn-sm" onclick="$.table.search()"><i class="fa fa-search"></i>&nbsp;搜索</a>
+                                <a class="btn btn-warning btn-rounded btn-sm" onclick="$.form.reset()"><i class="fa fa-refresh"></i>&nbsp;重置</a>
+                            </li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+
+
+            <div class="col-sm-12 select-table table-striped">
+                <table id="bootstrap-table" data-mobile-responsive="true"></table>
+            </div>
+        </div>
+    </div>
+</div>
+<div th:include="include :: footer"></div>
+<script th:inline="javascript">
+    var prefix = "/system/td/historyData";
+    // var datas = [[${@dict.getType('sys_normal_disable')}]];
+
+    $(function() {
+        document.getElementById("startTime").value = getData();
+        document.getElementById("endTime").value = getData();
+        var panehHidden = false;
+        if ($(this).width() < 769) {
+            panehHidden = true;
+        }
+        $('body').layout({ initClosed: panehHidden, west__size: 185 });
+        query();
+    });
+
+    function query() {
+        var options = {
+            url: prefix + "/list",
+            showSearch: false,
+            showRefresh: false,
+            showToggle: false,
+            showColumns: false,
+            pageSize: 10,
+            modalName: "历史数据",
+            queryParams: queryParams,
+            columns: [{
+                field: 'ts',
+                title: '时间戳'
+            },
+                {
+                    field: 'id',
+                    title: 'id',
+                    sortable: true
+                },
+                {
+                    field: 'wind_speed',
+                    title: '风速'
+                },
+                {
+                    field: 'rainfall',
+                    title: '雨量'
+                },
+                {
+                    field: 'temperature',
+                    title: '温度'
+                },
+                {
+                    field: 'humidity',
+                    title: '湿度'
+                },
+                {
+                    field: 'illumination',
+                    title: '照度'
+                },
+                {
+                    field: 'photosynthesis',
+                    title: '光合'
+                },
+                {
+                    field: 'wind_direction',
+                    title: '风向'
+                },
+                {
+                    field: 'co2',
+                    title: 'CO2'
+                },
+                {
+                    field: 'ph',
+                    title: 'PH'
+                },
+                {
+                    field: 'soil_temperature_1',
+                    title: '土温1'
+                },
+                {
+                    field: 'soil_moisture_1',
+                    title: '土湿1'
+                },
+                {
+                    field: 'soil_temperature_2',
+                    title: '土温2'
+                },
+                {
+                    field: 'soil_moisture_2',
+                    title: '土湿2'
+                },
+                {
+                    field: 'soil_temperature_3',
+                    title: '土温3'
+                },
+                {
+                    field: 'soil_moisture_3',
+                    title: '土湿3'
+                },
+                {
+                    field: 'conductance',
+                    title: '电导'
+                }]
+        };
+        $.table.init(options);
+    }
+    function getData() {
+        var myDate = new Date();
+        var y = myDate.getFullYear();
+        var m = myDate.getMonth() + 1;
+        var d = myDate.getDate();
+        var ymd = y + "-" + m + "-" + d;
+        return ymd;
+    }
+    function queryParams(params) {
+        var search = $.table.queryParams(params);
+        search.beginTime = $("#startTime").val();
+        search.endTime = $("#endTime").val();
+        return search;
+    }
+</script>
+</body>
+<th:block th:include="include :: footer" />
+<th:block th:include="include :: echarts-js" />
+<th:block th:include="include :: layout-latest-js" />
+<th:block th:include="include :: ztree-js" />
+</html>

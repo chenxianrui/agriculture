@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh" xmlns:th="http://www.thymeleaf.org" xmlns:shiro="http://www.pollix.at/thymeleaf/shiro">
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
 <head>
     <th:block th:include="include :: header('百度ECharts')" />
 </head>
@@ -10,6 +10,7 @@
             <div class="ibox float-e-margins">
                 <div class="ibox-title">
                     <h5>温度</h5>
+                    <button style="margin-left: 400px"><a th:href="@{/system/td/historyData}">历史数据查询</a></button>
                 </div>
                 <div class="ibox-content">
                     <div class="echarts" id="echarts-line-chart"></div>
@@ -22,7 +23,6 @@
                     <h5>雨量</h5>
                 </div>
                 <div class="ibox-content">
-
                     <div class="echarts" id="echarts-bar-chart"></div>
                 </div>
             </div>

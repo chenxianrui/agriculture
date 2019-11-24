@@ -2,9 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="81a1bdb2-8311-4c4f-b3f4-d48e7a556715" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_7_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_1.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_5.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_1.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_ezmorph_ezmorph_1_0_3.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_json_lib_json_lib_jdk15_2_4.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/td/history.html" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_3.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_1.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_4.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/RuoYi-fast/pom.xml" afterPath="$PROJECT_DIR$/RuoYi-fast/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/td/controller/WeatherController.java" afterPath="$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/td/controller/WeatherController.java" />
+      <change beforePath="$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/td/domain/WeatherStation.java" afterPath="$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/td/domain/WeatherStation.java" />
+      <change beforePath="$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/td/sql/RestfulTD.java" afterPath="$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/td/sql/RestfulTD.java" />
+      <change beforePath="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/demo/table/button.html" afterPath="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/demo/table/button.html" />
       <change beforePath="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/index.html" afterPath="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/index.html" />
-      <change beforePath="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/login.html" afterPath="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/login.html" />
+      <change beforePath="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/equipment/equipment.html" afterPath="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/equipment/equipment.html" />
+      <change beforePath="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/td/echas.html" afterPath="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/td/echas.html" />
     </list>
     <ignored path="$PROJECT_DIR$/RuoYi-fast/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -53,37 +69,28 @@
     <favorites_list name="y_project-RuoYi-fast-master (2) - 副本" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.9">
+    <splitter split-orientation="horizontal" split-proportion="0.8475091">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-          <file leaf-file-name="demo.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/monitor/winmonitor/demo/cn/demo.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="14582">
-                  <caret line="634" column="45" lean-forward="false" selection-start-line="634" selection-start-column="45" selection-end-line="634" selection-end-column="45" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="WeatherController.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/td/controller/WeatherController.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="460">
-                  <caret line="30" column="32" lean-forward="false" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
+                <state relative-caret-position="41">
+                  <caret line="132" column="0" lean-forward="false" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
                   <folding>
-                    <element signature="e#502#503#0" expanded="true" />
-                    <element signature="e#542#543#0" expanded="true" />
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#4564#4565#0" expanded="true" />
+                    <element signature="e#4606#4607#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="demo-iframe.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/monitor/winmonitor/demo/cn/demo-iframe.html">
+          <file leaf-file-name="equipment.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/equipment/equipment.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="23">
-                  <caret line="216" column="37" lean-forward="false" selection-start-line="216" selection-start-column="37" selection-end-line="216" selection-end-column="37" />
+                <state relative-caret-position="299">
+                  <caret line="52" column="29" lean-forward="false" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="29" />
                   <folding />
                 </state>
               </provider>
@@ -92,129 +99,19 @@
           <file leaf-file-name="TvController.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/monitor/controller/TvController.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="920">
+                <state relative-caret-position="776">
                   <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#679#680#0" expanded="true" />
-                    <element signature="e#744#745#0" expanded="true" />
-                    <element signature="e#924#925#0" expanded="true" />
-                    <element signature="e#965#966#0" expanded="true" />
-                    <element signature="e#1031#1032#0" expanded="true" />
-                    <element signature="e#1089#1090#0" expanded="true" />
-                    <element signature="e#1157#1158#0" expanded="true" />
-                    <element signature="e#1216#1217#0" expanded="true" />
-                    <element signature="e#1284#1285#0" expanded="true" />
-                    <element signature="e#1343#1344#0" expanded="true" />
-                    <element signature="e#1411#1412#0" expanded="true" />
-                    <element signature="e#1470#1471#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/index.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="851">
-                  <caret line="160" column="35" lean-forward="true" selection-start-line="160" selection-start-column="35" selection-end-line="160" selection-end-column="35" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="login.html" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/login.html">
+          <file leaf-file-name="RestfulTD.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/td/sql/RestfulTD.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="317">
-                  <caret line="40" column="30" lean-forward="true" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
+                <state relative-caret-position="467">
+                  <caret line="47" column="5" lean-forward="true" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
                   <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="login.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/static/ruoyi/login.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-1592">
-                  <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="dialog.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/demo/modal/dialog.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="layer.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/demo/modal/layer.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="3105">
-                  <caret line="135" column="40" lean-forward="false" selection-start-line="135" selection-start-column="40" selection-end-line="135" selection-end-column="40" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="newtddata.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/td/newtddata.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1702">
-                  <caret line="74" column="99" lean-forward="false" selection-start-line="74" selection-start-column="99" selection-end-line="74" selection-end-column="99" />
-                  <folding>
-                    <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#span#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#span#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#span#0;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#span#1;n#div#0;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#span#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#span#1;n#div#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#span#1;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#span#0;n#div#0;n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#span#1;n#div#0;n#div#0;n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#span#0;n#div#0;n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#span#1;n#div#0;n#div#0;n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#span#1;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#span#1;n#div#0;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#span#0;n#div#0;n#div#3;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#3;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#span#1;n#div#0;n#div#0;n#div#3;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#span#0;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#span#1;n#div#0;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#span#1;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#span#1;n#div#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#span#0;n#div#0;n#div#3;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#3;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#span#1;n#div#0;n#div#0;n#div#3;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#span#0;n#div#0;n#div#4;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#4;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#span#1;n#div#0;n#div#0;n#div#4;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                  </folding>
                 </state>
               </provider>
             </entry>
@@ -223,75 +120,53 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-          <file leaf-file-name="echas.html" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/td/echas.html">
+          <file leaf-file-name="history.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/td/history.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="300">
-                  <caret line="210" column="66" lean-forward="false" selection-start-line="210" selection-start-column="66" selection-end-line="210" selection-end-column="66" />
+                <state relative-caret-position="208">
+                  <caret line="94" column="42" lean-forward="false" selection-start-line="94" selection-start-column="42" selection-end-line="94" selection-end-column="42" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="event.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/demo/table/event.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="92">
+                  <caret line="16" column="40" lean-forward="false" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="DictDataServiceImpl.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/dict/service/DictDataServiceImpl.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="95">
+                  <caret line="63" column="7" lean-forward="false" selection-start-line="63" selection-start-column="7" selection-end-line="63" selection-end-column="7" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="EquipmentController.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/equipment/controller/EquipmentController.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="184">
+                  <caret line="50" column="51" lean-forward="false" selection-start-line="50" selection-start-column="51" selection-end-line="50" selection-end-column="51" />
                   <folding>
-                    <marker date="1574248877098" expanded="true" signature="8403:8509" ph="..." />
+                    <element signature="imports" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="layer.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/demo/modal/layer.html">
+          <file leaf-file-name="search.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/demo/table/search.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="3841">
-                  <caret line="167" column="34" lean-forward="false" selection-start-line="167" selection-start-column="34" selection-end-line="167" selection-end-column="34" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="sample.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/monitor/sample.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="851">
-                  <caret line="37" column="53" lean-forward="false" selection-start-line="37" selection-start-column="53" selection-end-line="37" selection-end-column="53" />
-                  <folding>
-                    <marker date="1574237603052" expanded="false" signature="1308:1336" ph="..." />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="iframe.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/monitor/winmonitor/demo/cn/iframe.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="322">
-                  <caret line="14" column="1" lean-forward="false" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="gun01.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/monitor/winmonitor/demo/cn/gun01.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="322">
-                  <caret line="14" column="8" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="gun02.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/monitor/winmonitor/demo/cn/gun02.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="782">
-                  <caret line="34" column="24" lean-forward="false" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="gun03.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/monitor/winmonitor/demo/cn/gun03.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="782">
-                  <caret line="34" column="24" lean-forward="false" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
+                <state relative-caret-position="168">
+                  <caret line="154" column="32" lean-forward="false" selection-start-line="154" selection-start-column="32" selection-end-line="154" selection-end-column="32" />
                   <folding />
                 </state>
               </provider>
@@ -313,7 +188,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>云台控制</find>
       <find>500</find>
       <find>ptz</find>
       <find>parent-wnd</find>
@@ -343,6 +217,7 @@
       <find>button-open-1</find>
       <find>192.168.0.103</find>
       <find>ajax</find>
+      <find>endTime</find>
     </findStrings>
     <replaceStrings>
       <replace>2</replace>
@@ -352,6 +227,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -361,18 +241,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/RuoYi-fast/src/main/resources/application-druid.yml" />
-        <option value="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/monitorTV.html" />
-        <option value="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/monitor/demo.html" />
-        <option value="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/monitor/monitorTV.html" />
-        <option value="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/monitor/CN_WEB3.0控件开发包V1.1.0_Win32/demo/cn/demo.js" />
-        <option value="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/monitor/CN_WEB3.0控件开发包V1.1.0_Win32/demo/cn/demo.html" />
-        <option value="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/monitor/winmonitor/demo/cn/demo-seajs.html" />
         <option value="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/monitor/winmonitor/demo/demo.css" />
         <option value="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/monitor/winmonitor/demo/cn/demo.js" />
         <option value="$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/equipment/domain/RestfulTD.java" />
-        <option value="$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/td/domain/WeatherStation.java" />
-        <option value="$PROJECT_DIR$/RuoYi-fast/src/main/resources/static/css/demo.css" />
         <option value="$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/framework/config/IpConfig.java" />
         <option value="$PROJECT_DIR$/RuoYi-fast/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/monitor/ip/IpK.java" />
@@ -383,7 +254,6 @@
         <option value="$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/monitor/entity/allmoniitor.java" />
         <option value="$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/monitor/entity/AllMoniitor.java" />
         <option value="$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/monitor/entity/Monitor.java" />
-        <option value="$PROJECT_DIR$/RuoYi-fast/pom.xml" />
         <option value="$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/role/controller/RoleController.java" />
         <option value="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/monitor/winmonitor/demo/cn/demo-easy.html" />
         <option value="$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/monitor/entity/User.java" />
@@ -398,20 +268,30 @@
         <option value="$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/monitor/entity/Monitor04.java" />
         <option value="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/monitor/winmonitor/demo/cn/iframe.html" />
         <option value="$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/td/sql/GetTime.java" />
-        <option value="$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/td/sql/RestfulTD.java" />
         <option value="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/td/newtddata.html" />
         <option value="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/demo/modal/layer.html" />
         <option value="$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/monitor/controller/TvController.java" />
         <option value="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/monitor/winmonitor/demo/cn/demo-iframe.html" />
-        <option value="$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/td/controller/WeatherController.java" />
         <option value="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/monitor/winmonitor/demo/cn/demo.html" />
         <option value="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/monitor/winmonitor/demo/cn/gun03.html" />
         <option value="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/monitor/winmonitor/demo/cn/gun02.html" />
         <option value="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/monitor/winmonitor/demo/cn/gun01.html" />
         <option value="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/monitor/sample.html" />
-        <option value="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/td/echas.html" />
-        <option value="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/index.html" />
         <option value="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/login.html" />
+        <option value="$PROJECT_DIR$/RuoYi-fast/src/main/resources/static/css/animate.css" />
+        <option value="$PROJECT_DIR$/RuoYi-fast/src/main/resources/static/css/demo.css" />
+        <option value="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/index.html" />
+        <option value="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/demo/table/search.html" />
+        <option value="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/td/echas.html" />
+        <option value="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/equipment/equipment.html" />
+        <option value="$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/td/sql/RestfulTD.java" />
+        <option value="$PROJECT_DIR$/RuoYi-fast/pom.xml" />
+        <option value="$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/framework/config/PageHelperConfig.java" />
+        <option value="$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/td/domain/WeatherStation.java" />
+        <option value="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/demo/table/button.html" />
+        <option value="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/td/his.html" />
+        <option value="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/td/history.html" />
+        <option value="$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/td/controller/WeatherController.java" />
       </list>
     </option>
   </component>
@@ -448,6 +328,11 @@
           <item name="RuoYi" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
         </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="RuoYi" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
       </expand>
       <select />
     </treeState>
@@ -476,10 +361,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -622,6 +505,31 @@
               <item name="ruoyi" type="462c0819:PsiDirectoryNode" />
               <item name="project" type="462c0819:PsiDirectoryNode" />
               <item name="system" type="462c0819:PsiDirectoryNode" />
+              <item name="equipment" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
+              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
+              <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ruoyi" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="system" type="462c0819:PsiDirectoryNode" />
+              <item name="equipment" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
+              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
+              <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ruoyi" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="system" type="462c0819:PsiDirectoryNode" />
               <item name="monitor" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -636,19 +544,6 @@
               <item name="system" type="462c0819:PsiDirectoryNode" />
               <item name="monitor" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
-              <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ruoyi" type="462c0819:PsiDirectoryNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
-              <item name="monitor" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
@@ -791,67 +686,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
-              <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
-              <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="codebase" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
-              <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="layui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
-              <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="layui" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
-              <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="ruoyi" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
-              <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -873,28 +707,7 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="form" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
-              <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="modal" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
-              <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="monitor" type="462c0819:PsiDirectoryNode" />
+              <item name="table" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
@@ -905,53 +718,6 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="system" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
-              <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
-              <item name="equipment" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
-              <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
-              <item name="monitor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
-              <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
-              <item name="monitor" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
-              <item name="y_project-RuoYi-fast-master (2) - 副本" type="462c0819:PsiDirectoryNode" />
-              <item name="RuoYi-fast" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
-              <item name="monitor" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="cn" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="y_project-RuoYi-fast-master (2) - 副本" type="b2602c69:ProjectViewProjectNode" />
@@ -972,20 +738,21 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="tool" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../blog - 副本 - 副本 (2)" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../untitled1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelWidth1" value="75" />
@@ -994,25 +761,29 @@
     <property name="RequestMappingsPanelOrder2" value="2" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="SearchEverywhereHistoryKey" value="adminlte&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/resources/static/css/adminlte.min.css&#10;admin&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/resources/static/css/adminlte.min.css&#10;echarts&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/resources/templates/demo/report/echarts.html&#10;ibox-content&#9;null&#9;null&#10;Schedule&#9;PSI&#9;JAVA://com.ruoyi.project.monitor.job.util.ScheduleUtils&#10;add&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/resources/templates/system/role/add.html&#10;json&#9;PSI&#9;JAVA://com.fasterxml.jackson.core.io.JsonEOFException&#10;EquipmentCon&#9;PSI&#9;JAVA://com.ruoyi.project.system.equipment.controller.EquipmentController&#10;footer&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/resources/templates/demo/table/footer.html&#10;System/main&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/java/com/ruoyi/project/system/config/domain&#10;Shiro&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/java/com/ruoyi/framework/config/ShiroConfig.java&#10;user&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/resources/templates/system/user/user.html&#10;Screen&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/java/com/ruoyi/project/system/screen/controller/ScreenController.java&#10;equipmen&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/resources/templates/system/equipment/equipment.html&#10;User&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/java/com/ruoyi/project/system/user/service/UserServiceImpl.java&#10;Equipmen&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/resources/mybatis/system/EquipmentMapper.xml&#10;Equipment&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/resources/mybatis/system/EquipmentMapper.xml&#10;RoleMa&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/resources/mybatis/system/RoleMapper.xml&#10;Eq&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/java/com/ruoyi/project/system/equipment/service/EquipmentServiceImpl.java&#10;Equipm&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/java/com/ruoyi/project/system/equipment/controller/EquipmentController.java&#10;equipment&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/resources/templates/system/equipment/equipment.html&#10;Role&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/java/com/ruoyi/project/system/role/controller/RoleController.java&#10;EquipmentS&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/java/com/ruoyi/project/system/equipment/service/EquipmentServiceImpl.java&#10;EquipmenS&#9;PSI&#9;JAVA://com.ruoyi.project.system.equipment.service.IEquipmentService&#10;UserSer&#9;PSI&#9;JAVA://com.ruoyi.project.system.user.service.UserServiceImpl&#10;role&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/resources/templates/system/role/role.html&#10;RoleController&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/java/com/ruoyi/project/system/role/controller/RoleController.java&#10;EquipmentDep&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/java/com/ruoyi/project/system/equipment/mysqlDomain/EquipmentDept.java&#10;edit&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/resources/templates/system/user/edit.html&#10;E&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/java/com/ruoyi/project/system/equipment/service/EquipmentServiceImpl.java&#10;EquipmentD&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/java/com/ruoyi/project/system/equipment/mapper/EquipmentDeptMapper.java&#10;RoleDeptMapper&#9;PSI&#9;JAVA://com.ruoyi.project.system.role.mapper.RoleDeptMapper&#10;RoleDeptMa&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/resources/mybatis/system/RoleDeptMapper.xml&#10;Equ&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/java/com/ruoyi/project/system/equipment/controller/EquipmentController.java&#10;checkEmailUnique&#9;PSI&#9;JAVA://com.ruoyi.project.system.user.controller.UserController#checkEmailUnique&#10;layui-layer-btn&#9;null&#9;null&#10;bootstrap-&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/resources/static/ajax/libs/bootstrap-table/extensions/export/bootstrap-table-export.js&#10;bootstrap&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/resources/static/ajax/libs/bootstrap-table/bootstrap-table.min.js&#10;boo&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/resources/static/ajax/libs/bootstrap-table/extensions/columns/bootstrap-table-fixed-columns.js&#10;RoleCont&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/java/com/ruoyi/project/system/role/controller/RoleController.java&#10;submitHandler&#9;null&#9;null&#10;Equip&#9;PSI&#9;JAVA://com.ruoyi.project.system.equipment.service.IEquipmentService&#10;UserSe&#9;PSI&#9;JAVA://com.ruoyi.project.system.user.service.UserServiceImpl&#10;equip&#9;PSI&#9;JAVA://com.ruoyi.project.system.equipment.mapper.EquipmentDeptMapper&#10;UserM&#9;PSI&#9;JAVA://com.ruoyi.project.system.user.mapper.UserMapper&#10;UserCon&#9;PSI&#9;JAVA://com.ruoyi.project.system.user.controller.UserController&#10;bootstraptable&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/resources/static/ajax/libs/bootstrap-table&#10;include&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/resources/templates/include.html&#10;roleId&#9;null&#9;null&#10;uniqueId&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="Weather&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/java/com/ruoyi/project/system/td/domain/WeatherStation.java&#10;button&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/resources/templates/demo/table/button.html&#10;equipment&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/resources/templates/system/equipment/equipment.html&#10;EquipmentController&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/java/com/ruoyi/project/system/equipment/controller/EquipmentController.java&#10;user&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/resources/templates/system/user/user.html&#10;User&#9;PSI&#9;JAVA://com.ruoyi.project.system.user.controller.UserController&#10;adminlte&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/resources/static/css/adminlte.min.css&#10;admin&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/resources/static/css/adminlte.min.css&#10;echarts&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/resources/templates/demo/report/echarts.html&#10;ibox-content&#9;null&#9;null&#10;Schedule&#9;PSI&#9;JAVA://com.ruoyi.project.monitor.job.util.ScheduleUtils&#10;add&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/resources/templates/system/role/add.html&#10;json&#9;PSI&#9;JAVA://com.fasterxml.jackson.core.io.JsonEOFException&#10;EquipmentCon&#9;PSI&#9;JAVA://com.ruoyi.project.system.equipment.controller.EquipmentController&#10;footer&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/resources/templates/demo/table/footer.html&#10;System/main&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/java/com/ruoyi/project/system/config/domain&#10;Shiro&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/java/com/ruoyi/framework/config/ShiroConfig.java&#10;Screen&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/java/com/ruoyi/project/system/screen/controller/ScreenController.java&#10;equipmen&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/resources/templates/system/equipment/equipment.html&#10;Equipmen&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/resources/mybatis/system/EquipmentMapper.xml&#10;Equipment&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/resources/mybatis/system/EquipmentMapper.xml&#10;RoleMa&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/resources/mybatis/system/RoleMapper.xml&#10;Eq&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/java/com/ruoyi/project/system/equipment/service/EquipmentServiceImpl.java&#10;Equipm&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/java/com/ruoyi/project/system/equipment/controller/EquipmentController.java&#10;Role&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/java/com/ruoyi/project/system/role/controller/RoleController.java&#10;EquipmentS&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/java/com/ruoyi/project/system/equipment/service/EquipmentServiceImpl.java&#10;EquipmenS&#9;PSI&#9;JAVA://com.ruoyi.project.system.equipment.service.IEquipmentService&#10;UserSer&#9;PSI&#9;JAVA://com.ruoyi.project.system.user.service.UserServiceImpl&#10;role&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/resources/templates/system/role/role.html&#10;RoleController&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/java/com/ruoyi/project/system/role/controller/RoleController.java&#10;EquipmentDep&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/java/com/ruoyi/project/system/equipment/mysqlDomain/EquipmentDept.java&#10;edit&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/resources/templates/system/user/edit.html&#10;E&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/java/com/ruoyi/project/system/equipment/service/EquipmentServiceImpl.java&#10;EquipmentD&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/java/com/ruoyi/project/system/equipment/mapper/EquipmentDeptMapper.java&#10;RoleDeptMapper&#9;PSI&#9;JAVA://com.ruoyi.project.system.role.mapper.RoleDeptMapper&#10;RoleDeptMa&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/resources/mybatis/system/RoleDeptMapper.xml&#10;Equ&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/java/com/ruoyi/project/system/equipment/controller/EquipmentController.java&#10;checkEmailUnique&#9;PSI&#9;JAVA://com.ruoyi.project.system.user.controller.UserController#checkEmailUnique&#10;layui-layer-btn&#9;null&#9;null&#10;bootstrap-&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/resources/static/ajax/libs/bootstrap-table/extensions/export/bootstrap-table-export.js&#10;bootstrap&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/resources/static/ajax/libs/bootstrap-table/bootstrap-table.min.js&#10;boo&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/resources/static/ajax/libs/bootstrap-table/extensions/columns/bootstrap-table-fixed-columns.js&#10;RoleCont&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/java/com/ruoyi/project/system/role/controller/RoleController.java&#10;submitHandler&#9;null&#9;null&#10;Equip&#9;PSI&#9;JAVA://com.ruoyi.project.system.equipment.service.IEquipmentService&#10;UserSe&#9;PSI&#9;JAVA://com.ruoyi.project.system.user.service.UserServiceImpl&#10;equip&#9;PSI&#9;JAVA://com.ruoyi.project.system.equipment.mapper.EquipmentDeptMapper&#10;UserM&#9;PSI&#9;JAVA://com.ruoyi.project.system.user.mapper.UserMapper&#10;UserCon&#9;PSI&#9;JAVA://com.ruoyi.project.system.user.controller.UserController&#10;bootstraptable&#9;FILE&#9;file://C:/Users/lenovo/IdeaProjects/y_project-RuoYi-fast-master (2) - 副本/RuoYi-fast/src/main/resources/static/ajax/libs/bootstrap-table" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\lenovo\IdeaProjects\y_project-RuoYi-fast-master (2) - 副本\RuoYi-fast\src\main\resources\templates\system\monitor" />
-      <recent name="C:\Users\lenovo\IdeaProjects\y_project-RuoYi-fast-master (2) - 副本\RuoYi-fast\src\main\resources\templates\system" />
-      <recent name="C:\Users\lenovo\IdeaProjects\y_project-RuoYi-fast-master (2) - 副本\RuoYi-fast\src\main\resources\static\ruoyi" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.ruoyi.project.system.screen.controller" />
-      <recent name="com.ruoyi.project.system.screen.mapper" />
-      <recent name="com.ruoyi.framework.TDengine.Entity" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\lenovo\IdeaProjects\y_project-RuoYi-fast-master (2) - 副本\RuoYi-fast\src\main\resources\templates\system\monitor\winmonitor\demo\cn" />
       <recent name="C:\Users\lenovo\IdeaProjects\y_project-RuoYi-fast-master (2) - 副本\RuoYi-fast\src\main\resources\static\alibabaphoto" />
       <recent name="C:\Users\lenovo\IdeaProjects\y_project-RuoYi-fast-master (2) - 副本\RuoYi-fast\src\main\resources\static" />
       <recent name="C:\Users\lenovo\IdeaProjects\y_project-RuoYi-fast-master (2) - 副本\RuoYi-fast\src\main\java\com\ruoyi\project\system\monitor\entity" />
       <recent name="C:\Users\lenovo\IdeaProjects\y_project-RuoYi-fast-master (2) - 副本\RuoYi-fast\src\main\resources\static\js" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ruoyi.framework.config" />
+      <recent name="com.ruoyi.project.system.screen.controller" />
+      <recent name="com.ruoyi.project.system.screen.mapper" />
+      <recent name="com.ruoyi.framework.TDengine.Entity" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\lenovo\IdeaProjects\y_project-RuoYi-fast-master (2) - 副本\RuoYi-fast\src\main\resources\templates\system\monitor" />
+      <recent name="C:\Users\lenovo\IdeaProjects\y_project-RuoYi-fast-master (2) - 副本\RuoYi-fast\src\main\resources\templates\system" />
+      <recent name="C:\Users\lenovo\IdeaProjects\y_project-RuoYi-fast-master (2) - 副本\RuoYi-fast\src\main\resources\static\ruoyi" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1251,7 +1022,11 @@
       <workItem from="1574143312053" duration="252000" />
       <workItem from="1574143862173" duration="26024000" />
       <workItem from="1574206175616" duration="22673000" />
-      <workItem from="1574310042145" duration="604000" />
+      <workItem from="1574310042145" duration="3821000" />
+      <workItem from="1574379523324" duration="2625000" />
+      <workItem from="1574477620089" duration="25021000" />
+      <workItem from="1574554153680" duration="1946000" />
+      <workItem from="1574568043359" duration="19479000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1574129646002</created>
@@ -1292,7 +1067,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="585033000" />
+    <option name="totallyTimeSpent" value="637321000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1305,13 +1080,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="15" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32886267" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5284738" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1362661" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.73690206" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2918455" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1325,15 +1099,15 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3428246" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14806378" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16173121" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23015021" sideWeight="0.49429038" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5273605" sideWeight="0.49066213" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13090129" sideWeight="0.50933784" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3111588" sideWeight="0.50570965" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1350,8 +1124,8 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="15" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32886267" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2972665" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1362661" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30523917" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -1367,15 +1141,15 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3428246" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41116172" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22779043" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16173121" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3299356" sideWeight="0.49066213" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.49429038" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13090129" sideWeight="0.50933784" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3111588" sideWeight="0.50570965" order="7" side_tool="true" content_ui="tabs" />
@@ -1401,178 +1175,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/role/controller/RoleController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="86" column="17" lean-forward="true" selection-start-line="86" selection-start-column="17" selection-end-line="86" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/role/add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="130" column="24" lean-forward="true" selection-start-line="130" selection-start-column="24" selection-end-line="130" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/common/xss/XssFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/application-druid.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="18" column="19" lean-forward="true" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/monitor/winmonitor/demo/cn/demo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-322">
-          <caret line="350" column="87" lean-forward="false" selection-start-line="350" selection-start-column="87" selection-end-line="350" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/monitor/winmonitor/demo/cn/text.html" />
-    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/monitor/entity/AllMonitor.java" />
-    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/monitor/entity/UserTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/monitor/job/controller/JobController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-370">
-          <caret line="31" column="13" lean-forward="false" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/monitor/job/util/ScheduleUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="102" column="60" lean-forward="true" selection-start-line="102" selection-start-column="60" selection-end-line="102" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/equipment/equipment.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="58" column="63" lean-forward="false" selection-start-line="58" selection-start-column="63" selection-end-line="58" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/static/ruoyi/js/ry-ui.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-11337">
-          <caret line="845" column="14" lean-forward="true" selection-start-line="845" selection-start-column="14" selection-end-line="845" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/static/js/echarts.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/monitor/entity/Monitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="165" column="19" lean-forward="false" selection-start-line="165" selection-start-column="19" selection-end-line="165" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/monitor/entity/Monitor02.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="46" column="5" lean-forward="true" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/monitor/entity/Monitor03.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="47" column="5" lean-forward="false" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/monitor/entity/Monitor04.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="40" column="43" lean-forward="true" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/monitor/entity/Monitor01.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="34" column="13" lean-forward="true" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/static/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73048">
-          <caret line="3176" column="86" lean-forward="false" selection-start-line="3176" selection-start-column="74" selection-end-line="3176" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/demo/report/echarts.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="18" column="50" lean-forward="true" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/static/font_qq3lybkne0q/demo.css" />
-    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/equipment/add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2297">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="783" column="4" lean-forward="false" selection-start-line="783" selection-start-column="4" selection-end-line="783" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/static/alibabaphoto/font_qq3lybkne0q/demo.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/td/sql/RestfulTD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="966">
-          <caret line="50" column="42" lean-forward="false" selection-start-line="50" selection-start-column="42" selection-end-line="50" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/td/sql/GetTime.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
-          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1583,21 +1189,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/user/user.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="92" column="71" lean-forward="false" selection-start-line="92" selection-start-column="71" selection-end-line="92" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/monitor/winmonitor/demo/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/static/css/demo.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1609,7 +1201,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2806">
           <caret line="122" column="16" lean-forward="false" selection-start-line="122" selection-start-column="16" selection-end-line="122" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1617,16 +1208,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
           <caret line="10" column="288" lean-forward="false" selection-start-line="10" selection-start-column="281" selection-end-line="10" selection-end-column="288" />
-          <folding>
-            <element signature="e#56219#56422#2" expanded="true" />
-            <element signature="e#56646#56798#2" expanded="true" />
-            <element signature="e#57300#57449#2" expanded="true" />
-            <element signature="e#57750#57916#1" expanded="true" />
-            <element signature="e#67629#67872#2" expanded="true" />
-            <element signature="e#68724#68974#2" expanded="true" />
-            <element signature="e#94316#94509#2" expanded="true" />
-            <element signature="e#94555#94748#2" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1641,7 +1222,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1649,86 +1229,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1702">
           <caret line="74" column="99" lean-forward="false" selection-start-line="74" selection-start-column="99" selection-end-line="74" selection-end-column="99" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#div#0;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#div#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#div#0;n#div#0;n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#div#0;n#div#0;n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#div#0;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#3;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#3;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#div#0;n#div#0;n#div#3;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#div#0;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#div#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#3;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#3;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#div#0;n#div#0;n#div#3;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#4;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#4;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#div#0;n#div#0;n#div#4;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/monitor/controller/TvController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="920">
-          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#679#680#0" expanded="true" />
-            <element signature="e#744#745#0" expanded="true" />
-            <element signature="e#924#925#0" expanded="true" />
-            <element signature="e#965#966#0" expanded="true" />
-            <element signature="e#1031#1032#0" expanded="true" />
-            <element signature="e#1089#1090#0" expanded="true" />
-            <element signature="e#1157#1158#0" expanded="true" />
-            <element signature="e#1216#1217#0" expanded="true" />
-            <element signature="e#1284#1285#0" expanded="true" />
-            <element signature="e#1343#1344#0" expanded="true" />
-            <element signature="e#1411#1412#0" expanded="true" />
-            <element signature="e#1470#1471#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/td/controller/WeatherController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="30" column="32" lean-forward="false" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
-          <folding>
-            <element signature="e#502#503#0" expanded="true" />
-            <element signature="e#542#543#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1736,7 +1236,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="14582">
           <caret line="634" column="45" lean-forward="false" selection-start-line="634" selection-start-column="45" selection-end-line="634" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1744,15 +1243,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
           <caret line="14" column="1" lean-forward="false" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/demo/modal/layer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3105">
-          <caret line="135" column="40" lean-forward="false" selection-start-line="135" selection-start-column="40" selection-end-line="135" selection-end-column="40" />
-          <folding />
+        <state relative-caret-position="3841">
+          <caret line="167" column="34" lean-forward="false" selection-start-line="167" selection-start-column="34" selection-end-line="167" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -1760,7 +1257,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="782">
           <caret line="34" column="24" lean-forward="false" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1768,7 +1264,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="782">
           <caret line="34" column="24" lean-forward="false" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1776,7 +1271,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
           <caret line="14" column="8" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1784,53 +1278,368 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="851">
           <caret line="37" column="53" lean-forward="false" selection-start-line="37" selection-start-column="53" selection-end-line="37" selection-end-column="53" />
-          <folding>
-            <marker date="1574237603052" expanded="false" signature="1308:1336" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/td/echas.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="210" column="66" lean-forward="false" selection-start-line="210" selection-start-column="66" selection-end-line="210" selection-end-column="66" />
-          <folding>
-            <marker date="1574248877098" expanded="true" signature="8403:8509" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/monitor/winmonitor/demo/cn/demo-iframe.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
+        <state relative-caret-position="4968">
           <caret line="216" column="37" lean-forward="false" selection-start-line="216" selection-start-column="37" selection-end-line="216" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/static/ruoyi/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/static/css/animate.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="19" column="30" lean-forward="false" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/static/css/demo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="1" lean-forward="false" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RuoYi-fast/LICENSE">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/user/add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="52" lean-forward="false" selection-start-line="4" selection-start-column="52" selection-end-line="4" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/td/sql/GetTime.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/static/ruoyi/js/ry-ui.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1745">
+          <caret line="13" column="12" lean-forward="false" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/user/user.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3749">
+          <caret line="163" column="36" lean-forward="false" selection-start-line="163" selection-start-column="36" selection-end-line="163" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/user/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="51" column="17" lean-forward="false" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RuoYi-fast/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1127">
+          <caret line="49" column="34" lean-forward="false" selection-start-line="49" selection-start-column="34" selection-end-line="49" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/td/echas.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4738">
+          <caret line="206" column="16" lean-forward="false" selection-start-line="206" selection-start-column="16" selection-end-line="206" selection-end-column="28" />
+          <folding>
+            <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <marker date="1574484226658" expanded="true" signature="8465:8571" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/monitor/controller/TvController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="776">
+          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/framework/web/service/DictService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="35">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <element signature="e#681#682#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/demo/table/pageGo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="25" column="26" lean-forward="false" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/demo/table/other.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="65" column="41" lean-forward="true" selection-start-line="65" selection-start-column="41" selection-end-line="65" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/framework/web/page/TableDataInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="43" column="5" lean-forward="true" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/framework/web/controller/BaseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="49" column="36" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/framework/config/PageHelperConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="16" column="51" lean-forward="true" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="851">
-          <caret line="160" column="35" lean-forward="true" selection-start-line="160" selection-start-column="35" selection-end-line="160" selection-end-column="35" />
+        <state relative-caret-position="23">
+          <caret line="98" column="91" lean-forward="false" selection-start-line="98" selection-start-column="91" selection-end-line="98" selection-end-column="91" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/static/ruoyi/login.js">
+    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/dict/service/DictDataServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1592">
-          <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        <state relative-caret-position="95">
+          <caret line="63" column="7" lean-forward="false" selection-start-line="63" selection-start-column="7" selection-end-line="63" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/login.html">
+    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/equipment/controller/EquipmentController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="40" column="30" lean-forward="true" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
+        <state relative-caret-position="184">
+          <caret line="50" column="51" lean-forward="false" selection-start-line="50" selection-start-column="51" selection-end-line="50" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/demo/operate/table.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="56" column="16" lean-forward="false" selection-start-line="56" selection-start-column="16" selection-end-line="56" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/static/ajax/libs/bootstrap-select/bootstrap-select.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="820" column="6" lean-forward="false" selection-start-line="820" selection-start-column="6" selection-end-line="820" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="12219" column="4" lean-forward="false" selection-start-line="12219" selection-start-column="4" selection-end-line="12219" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/equipment/equipment.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="52" column="29" lean-forward="false" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/demo/table/button.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="35" column="12" lean-forward="false" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/demo/table/search.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="154" column="32" lean-forward="false" selection-start-line="154" selection-start-column="32" selection-end-line="154" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/demo/table/event.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="16" column="40" lean-forward="false" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/td/his.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="61">
+          <caret line="25" column="127" lean-forward="true" selection-start-line="25" selection-start-column="110" selection-end-line="25" selection-end-column="127" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/td/history.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="94" column="42" lean-forward="false" selection-start-line="94" selection-start-column="42" selection-end-line="94" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/td/domain/WeatherStation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="14" column="31" lean-forward="true" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/td/controller/WeatherController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="41">
+          <caret line="132" column="0" lean-forward="false" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4564#4565#0" expanded="true" />
+            <element signature="e#4606#4607#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/td/sql/RestfulTD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="47" column="5" lean-forward="true" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>RuoYi</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: ch.qos.logback:logback-classic:1.2.3</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
