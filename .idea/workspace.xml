@@ -2,25 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="81a1bdb2-8311-4c4f-b3f4-d48e7a556715" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_7_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_5.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_ezmorph_ezmorph_1_0_3.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_json_lib_json_lib_jdk15_2_4.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/td/history.html" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_3.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_4.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/RuoYi-fast/pom.xml" afterPath="$PROJECT_DIR$/RuoYi-fast/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/td/controller/WeatherController.java" afterPath="$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/td/controller/WeatherController.java" />
-      <change beforePath="$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/td/domain/WeatherStation.java" afterPath="$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/td/domain/WeatherStation.java" />
-      <change beforePath="$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/td/sql/RestfulTD.java" afterPath="$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/td/sql/RestfulTD.java" />
-      <change beforePath="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/demo/table/button.html" afterPath="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/demo/table/button.html" />
-      <change beforePath="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/index.html" afterPath="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/index.html" />
-      <change beforePath="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/equipment/equipment.html" afterPath="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/equipment/equipment.html" />
-      <change beforePath="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/td/echas.html" afterPath="$PROJECT_DIR$/RuoYi-fast/src/main/resources/templates/system/td/echas.html" />
     </list>
     <ignored path="$PROJECT_DIR$/RuoYi-fast/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -110,7 +92,7 @@
             <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/td/sql/RestfulTD.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="467">
-                  <caret line="47" column="5" lean-forward="true" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+                  <caret line="47" column="5" lean-forward="false" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
                   <folding />
                 </state>
               </provider>
@@ -231,6 +213,12 @@
       <map>
         <entry key="$PROJECT_DIR$" value="master" />
       </map>
+    </option>
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--follow-tags" />
+        <option name="title" value="Current Branch" />
+      </GitPushTagMode>
     </option>
   </component>
   <component name="GradleLocalSettings">
@@ -1026,7 +1014,7 @@
       <workItem from="1574379523324" duration="2625000" />
       <workItem from="1574477620089" duration="25021000" />
       <workItem from="1574554153680" duration="1946000" />
-      <workItem from="1574568043359" duration="19479000" />
+      <workItem from="1574568043359" duration="19628000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1574129646002</created>
@@ -1063,11 +1051,18 @@
       <option name="project" value="LOCAL" />
       <updated>1574246681654</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="init">
+      <created>1574588822809</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1574588822809</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="637321000" />
+    <option name="totallyTimeSpent" value="637470000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1100,10 +1095,10 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14806378" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.48291573" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16173121" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5273605" sideWeight="0.49066213" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25214592" sideWeight="0.49066213" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
@@ -1561,7 +1556,7 @@
     <entry file="file://$PROJECT_DIR$/RuoYi-fast/src/main/java/com/ruoyi/project/system/td/sql/RestfulTD.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="467">
-          <caret line="47" column="5" lean-forward="true" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+          <caret line="47" column="5" lean-forward="false" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
           <folding />
         </state>
       </provider>
