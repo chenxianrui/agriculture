@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <th:block th:include="include :: header('历史数据展示')" />
+    <link rel="stylesheet" th:href="@{/layui/css/layui.css}" media="all"/>
+    <th:block th:include="include :: bootstrap-select-css" />
+</head>
+<body>
+<div class="col-sm-12 search-collapse">
+    <form id="time-form">
+        <div class="select-list">
+            <ul>
+                <li class="select-time">
+                    <label>创建时间： </label>
+                    <input type="text" class="time-input" id="startTime" placeholder="开始时间" name="params[beginTime]"/>
+                    <span>-</span>
+                    <input type="text" class="time-input" id="endTime" placeholder="结束时间" name="params[endTime]"/>
+                </li>
+                <li>
+                    <a class="btn btn-primary btn-rounded btn-sm" onclick="fenye()"><i class="fa fa-search"></i>&nbsp;搜索</a>
+                    <a class="btn btn-warning btn-rounded btn-sm" onclick="$.form.reset('time-form')"><i class="fa fa-refresh"></i>&nbsp;重置</a>
+                </li>
+            </ul>
+        </div>
+    </form>
+</div>
+<table class="table table-striped">
+    <thead>
+    <th>时间戳</th>
+    <th>id</th>
+    <th>风速</th>
+    <th>雨量</th>
+    <th>温度</th>
+    <th>湿度</th>
+    <th>照度</th>
+    <th>光合</th>
+    <th>风向</th>
+    <th>CO2</th>
+    <th>PH</th>
+    <th>土温1</th>
+    <th>土湿1</th>
+    <th>土温2</th>
+    <th>土湿2</th>
+    <th>土温3</th>
+    <th>土湿3</th>
+    <th>电导</th>
+    </thead>
+    <tbody id="tbs">
+
+    </tbody>
+</table>
+
+<div id="demo8"></div>
+<script th:src="@{/js/jquery.min.js}"></script>
+<script th:src="@{/js/bootstrap.min.js}"></script>
+<script th:src="@{/ajax/libs/bootstrap-table/bootstrap-table.min.js}"></script>
+<script th:src="@{/layui/layui.js}"></script>
+<th:block th:include="include :: bootstrap-select-js" />
+<script th:src="@{/ajax/libs/bootstrap-table/locale/bootstrap-table-zh-CN.min.js}"></script>
+<script th:src="@{/ajax/libs/bootstrap-table/extensions/mobile/bootstrap-table-mobile.js}"></script>
+<script th:src="@{/ajax/libs/bootstrap-table/extensions/toolbar/bootstrap-table-toolbar.min.js}"></script>
+<script th:src="@{/ajax/libs/bootstrap-table/extensions/columns/bootstrap-table-fixed-columns.js}"></script>
+<script th:src="@{/ajax/libs/validate/jquery.validate.min.js}"></script>
+<script th:src="@{/ajax/libs/validate/messages_zh.min.js}"></script>
+<script th:src="@{/ajax/libs/validate/jquery.validate.extend.js}"></script>
+<script th:src="@{/ajax/libs/bootstrap-treetable/bootstrap-treetable.js}"></script>
+<script th:src="@{/ajax/libs/bootstrap-table/extensions/export/bootstrap-table-export.js}"></script>
+<script th:src="@{/ajax/libs/bootstrap-table/extensions/export/tableExport.js}"></script>
+<script th:src="@{/ajax/libs/blockUI/jquery.blockUI.js}"></script>
+<script th:src="@{/ajax/libs/iCheck/icheck.min.js}"></script>
+<script th:src="@{/ajax/libs/layer/layer.min.js}"></script>
+<script th:src="@{/ruoyi/js/common.js?v=4.0.0}"></script>
+<script th:src="@{/ruoyi/js/ry-ui.js?v=4.0.0}"></script>
+
+<script>
+    var prefix = "/system/td/historyData";
+    $(function(){
+        document.getElementById("startTime").value = getData();
+        document.getElementById("endTime").value = getData();
+        fenye();
+    });
+    function fenye(){
+        var startTime = document.getElementById("startTime").value;
+        var endTime = document.getElementById("endTime").value;
+        layui.use(['laypage', 'layer'], function(){
+            var laypage = layui.laypage
+                ,layer = layui.layer;
+            //自定义排版
+            $.ajax({
+                type:'post',
+                dataType:'json',
+                data:{'curr':1,'limit':10, 'star':startTime, 'end':endTime},
+                url: "/system/td/historyData/list",
+                async:false,
+                success:function(data){
+                    showData(data);
+                    laypage.render({
+                        elem: 'demo8'
+                        ,count: data.ct
+                        ,layout: ['limit', 'prev', 'page', 'next']
+                        ,jump:function(obj){
+                            var pageStart = document.getElementById("startTime").value;
+                            var pageEnd = document.getElementById("endTime").value;
+                            //分页切换的回掉
+                            $.ajax({
+                                type:'post',
+                                dataType:'json',
+                                data:{'curr':obj.curr,'limit':obj.limit, 'star':pageStart, 'end':pageEnd},
+                                url: prefix + "/list",
+                                success:function(data){
+                                    showData(data);
+                                }
+                            })
+                        }
+                    });
+                }
+            })
+        });
+    }
+    function showData(ds){
+        $("#tbs").empty();
+        var htmlStr="";
+        for(var i=0;i<ds.data.length;i++){
+            htmlStr+='<tr><td>';
+            htmlStr+=ds.data[i].ts;
+            htmlStr+='</td><td>';
+            htmlStr+=ds.data[i].id;
+            htmlStr+='</td><td>';
+            htmlStr+=ds.data[i].wind_speed;
+            htmlStr+='</td><td>';
+            htmlStr+=ds.data[i].rainfall;
+            htmlStr+='</td><td>';
+            htmlStr+=ds.data[i].temperature;
+            htmlStr+='</td><td>';
+            htmlStr+=ds.data[i].humidity;
+            htmlStr+='</td><td>';
+            htmlStr+=ds.data[i].illumination;
+            htmlStr+='</td><td>';
+            htmlStr+=ds.data[i].photosynthesis;
+            htmlStr+='</td><td>';
+            htmlStr+=ds.data[i].wind_direction;
+            htmlStr+='</td><td>';
+            htmlStr+=ds.data[i].co2;
+            htmlStr+='</td><td>';
+            htmlStr+=ds.data[i].ph;
+            htmlStr+='</td><td>';
+            htmlStr+=ds.data[i].soil_temperature_1;
+            htmlStr+='</td><td>';
+            htmlStr+=ds.data[i].soil_moisture_1;
+            htmlStr+='</td><td>';
+            htmlStr+=ds.data[i].soil_temperature_2;
+            htmlStr+='</td><td>';
+            htmlStr+=ds.data[i].soil_moisture_2;
+            htmlStr+='</td><td>';
+            htmlStr+=ds.data[i].soil_temperature_3;
+            htmlStr+='</td><td>';
+            htmlStr+=ds.data[i].soil_moisture_3;
+            htmlStr+='</td><td>';
+            htmlStr+=ds.data[i].conductance;
+            htmlStr+='</td></tr>';
+
+        }
+        $("#tbs").append(htmlStr);
+    }
+    function getData() {
+        var myDate = new Date();
+        var y = myDate.getFullYear();
+        var m = myDate.getMonth() + 1;
+        var d = myDate.getDate();
+        var ymd = y + "-" + m + "-" + d;
+        return ymd;
+    }
+</script>
+</body>
+</html>

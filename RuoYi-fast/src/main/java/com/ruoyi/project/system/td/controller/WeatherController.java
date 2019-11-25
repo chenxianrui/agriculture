@@ -23,9 +23,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
 @Controller
 @RequestMapping("/system/td")
@@ -43,20 +41,39 @@ public class WeatherController extends BaseController{
         return prefix + "/newtddata";
     }
 
+    @GetMapping("/historyData")
+    public String list() {
+        return prefix + "/historyData";
+    }
+
+    /**
+     * 历史数据
+     * @param curr
+     * @param limit
+     * @param star
+     * @param end
+     * @return
+     * @throws IOException
+     */
     @PostMapping("/historyData/list")
     @ResponseBody
-    public TableDataInfo select(HttpServletRequest request) throws IOException{
-//        WeatherStation weatherStation1 = new WeatherStation();
-        String beginTime = request.getParameter("params[beginTime]");
-        String endTime = request.getParameter("params[endTime]");
-        beginTime = beginTime + " 00:00:00";
-        endTime = endTime + " 00:00:00";
-        System.out.println(beginTime+endTime);
+    public Map<String, Object> select(int curr, int limit, String star, String end) throws IOException{
+        String pageCount;
+        star = star + " 00:00:00";
+        end = end + " 23:59:59";
         RestfulTD restfulTD = new RestfulTD();
-        String sql = "select * from iot.t_iot_weather_station where ts >= '"+ beginTime + "' and ts <= '" + endTime + "'";
+        curr = (curr - 1) * limit;
+        String sql = "select * from iot.t_iot_weather_station where ts >= '"+ star + "' and ts <= '" + end + "'" + " limit " + curr + ", " + limit;
+        String countSql = "select count(*) from iot.t_iot_weather_station where ts >= '"+ star + "' and ts <= '" + end + "'";
         String data = restfulTD.getTdData("49.235.215.208","6020","root","taosdata",sql);
-//        String data = restfulTD.getTdData("49.235.215.208","6020","root","taosdata","select * from iot.t_iot_weather_station  where ts >= \"2019-11-18 20:20:03\"");
-        System.out.println(data);
+        String count = restfulTD.getTdData("49.235.215.208","6020","root","taosdata",countSql);
+        JSONObject jsonCount = JSON.parseObject(count);
+        JSONArray countList = jsonCount.getJSONArray("data");
+        if (countList.size() == 0){
+            pageCount = "0";
+        }else {
+            pageCount = countList.get(0).toString().substring(1,3);
+        }
         JSONObject jsonObject = JSON.parseObject(data);
         JSONArray list = jsonObject.getJSONArray("data");
         List<WeatherStation> weatherStations = new ArrayList<>();
@@ -67,6 +84,7 @@ public class WeatherController extends BaseController{
                 WeatherStation weatherStation = new WeatherStation();
                 String[] st = splits[0].split("\"");
                 String[] st2 = splits[1].split("\"");
+                String[] split = splits[17].split("]");
                 weatherStation.setTs(st[1]);
                 weatherStation.setId(st2[1]);
                 weatherStation.setWind_speed(Float.parseFloat(splits[2]));
@@ -84,19 +102,15 @@ public class WeatherController extends BaseController{
                 weatherStation.setSoil_moisture_2(Float.parseFloat(splits[14]));
                 weatherStation.setSoil_temperature_3(Float.parseFloat(splits[15]));
                 weatherStation.setSoil_moisture_3(Float.parseFloat(splits[16]));
-                String[] split = splits[17].split("]");
                 weatherStation.setConductance(Float.parseFloat(split[0]));
                 weatherStations.add(i,weatherStation);
             }
         }
-        startPage();
         List<WeatherStation> historyList = weatherStations;
-        return getDataTable(historyList);
-    }
-
-    @GetMapping("/historyData")
-    public String list() {
-        return prefix + "/history";
+        Map<String, Object> map = new HashMap<String, Object>();
+        map.put("data", historyList);
+        map.put("ct", pageCount);
+        return map;
     }
 
     /**
@@ -113,7 +127,6 @@ public class WeatherController extends BaseController{
         String sql = "select * from iot.t_iot_weather_station  where ts >= '"+ymd + "'";
 //        String data = restfulTD.getTdData("49.235.215.208","6020","root","taosdata","select * from iot.t_iot_weather_station  where ts >= \"2019-11-18 20:20:03\"");
         String data = restfulTD.getTdData("49.235.215.208","6020","root","taosdata",sql);
-        System.out.println(data);
         return data;
     }
 
