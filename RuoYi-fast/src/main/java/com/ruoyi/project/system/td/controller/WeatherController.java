@@ -4,24 +4,13 @@ package com.ruoyi.project.system.td.controller;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
-import com.github.pagehelper.PageHelper;
-import com.github.pagehelper.PageInfo;
 import com.ruoyi.framework.web.controller.BaseController;
-import com.ruoyi.framework.web.page.TableDataInfo;
-import com.ruoyi.framework.web.domain.AjaxResult;
 import com.ruoyi.project.system.td.domain.WeatherStation;
 import com.ruoyi.project.system.td.sql.GetTime;
 import com.ruoyi.project.system.td.sql.RestfulTD;
-import org.apache.ibatis.annotations.Param;
-import org.apache.poi.ss.formula.functions.Mode;
-import org.apache.poi.ss.formula.functions.T;
-import org.apache.shiro.authz.annotation.RequiresPermissions;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
-import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 import java.util.*;
 
