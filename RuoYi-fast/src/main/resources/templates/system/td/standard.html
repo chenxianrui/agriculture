@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <th:block th:include="include :: header('播种标准')" />
+    <link rel="stylesheet" th:href="@{/layui/css/layui.css}" media="all"/>
+    <th:block th:include="include :: bootstrap-select-css" />
+</head>
+<style>
+    .stateCss{
+        width: 165px;
+        height: 100px;
+        /*border: 1px solid red;*/
+        float: left;
+        margin-left: 6px;
+    }
+    .dateCss{
+        width: 165px;
+        height: 20px;
+        text-align: center;
+    }
+    .colorCss{
+        width: 165px;
+        height: 80px;
+        border-radius: 15px;
+    }
+    .divBOX{
+        width: 1200px;
+        height: 100px;
+        /*border: 1px solid black;*/
+    }
+</style>
+<body>
+<div class="divBOX" id="BOXdiv">
+    <!--<div class="stateCss" style="margin-left: 0"></div>-->
+    <!--<div class="stateCss"></div>-->
+    <!--<div class="stateCss"></div>-->
+    <!--<div class="stateCss"></div>-->
+    <!--<div class="stateCss"></div>-->
+    <!--<div class="stateCss"></div>-->
+    <!--<div class="stateCss"></div>-->
+</div>
+</body>
+<th:block th:include="include :: footer" />
+<script>
+    $(function () {
+        standardColor();
+    });
+
+    function standardColor() {
+        $.ajax({
+            type:'post',
+            dataType:'json',
+            data:{},
+            url: "/system/standard/humidityColor",
+            async:false,
+            success:function (data) {
+                $("#BOXdiv").empty();
+                var htmlStr="";
+                for (var i=0; i<data.data.length; i++){
+                    if (data.data[i].state === -1){
+                        htmlStr+='<div class="stateCss">\n' +
+                            '        <div class="dateCss">'+ data.data[i].dtime + '</div>\n' +
+                            '        <div class="colorCss" style="background-color: \n' +
+                            '\n' +
+                            '#d43f3a"></div>\n' +
+                            '    </div>';
+                    }else if (data.data[i].state === 0){
+                        htmlStr+='<div class="stateCss">\n' +
+                            '        <div class="dateCss">' + data.data[i].dtime + '</div>\n' +
+                            '        <div class="colorCss" style="background-color: \n' +
+                            '#ed9c28"></div>\n' +
+                            '    </div>';
+                    }else if (data.data[i].state === 1){
+                        htmlStr+='<div class="stateCss">\n' +
+                            '        <div class="dateCss">'+ data.data[i].dtime + '</div>\n' +
+                            '        <div class="colorCss" style="background-color: \n' +
+                            '\n' +
+                            '#32CD32"></div>\n' +
+                            '    </div>';
+                    }else {
+                        // htmlStr+="未知";
+                        htmlStr+='<div class="stateCss">\n' +
+                            '        <div class="dateCss">'+ data.data[i].dtime + '</div>\n' +
+                            '        <div class="colorCss" style="background-color: black"></div>\n' +
+                            '    </div>';
+                    }
+                }
+                $("#BOXdiv").append(htmlStr);
+            },
+            error:function () {
+                alert("error");
+            }
+        })
+    }
+</script>
+</html>

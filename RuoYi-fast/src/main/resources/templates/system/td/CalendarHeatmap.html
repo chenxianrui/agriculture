@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <th:block th:include="include :: header('播种历史数据')" />
+    <th:block th:include="include :: bootstrap-select-css" />
+</head>
+<body>
+<div class="col-sm-12 search-collapse">
+    <form id="time-form">
+        <div class="select-list">
+            <ul>
+                <li class="select-time">
+                    <label>创建时间： </label>
+                    <input type="text" class="time-input" id="startTime" placeholder="开始时间" name="params[beginTime]"/>
+                    <span>-</span>
+                    <input type="text" class="time-input" id="endTime" placeholder="结束时间" name="params[endTime]"/>
+                </li>
+                <li>
+                    <a class="btn btn-primary btn-rounded btn-sm" onclick="btnoncl()"><i class="fa fa-search"></i>&nbsp;搜索</a>
+                    <a class="btn btn-warning btn-rounded btn-sm" onclick="$.form.reset('time-form')"><i class="fa fa-refresh"></i>&nbsp;重置</a>
+                </li>
+            </ul>
+        </div>
+    </form>
+</div>
+
+<div><button style="border: 0px solid #ffffff; background-color: #ffffff"></button></div>
+
+
+<div id="main" style="width:100%;height:400px;"></div>
+
+
+<script th:src="@{/js/plugins/echarts.min.js}"></script>
+<th:block th:include="include :: footer" />
+<th:block th:include="include :: bootstrap-select-js" />
+
+<script>
+    function btnoncl(){
+        var start = document.getElementById("startTime").value;
+        var end = document.getElementById("endTime").value;
+        var myChart = echarts.init(document.getElementById('main'));
+        var option = {
+            title: {
+                top: 30,
+                left: 'center',
+                text: '全年适宜播种情况'
+            },
+            tooltip : {
+                // formatter: function () {
+                //     return "";
+                // }
+            },
+            visualMap: {
+                show: true,
+                min: -1,
+                max: 1,
+                type: 'piecewise',
+                // precision:0,
+                orient: 'horizontal',
+                left: 'center',
+                // text:['不适宜', '适宜','极度适宜'],
+                // textGap:100,
+                // hoverLink:true,
+                // dimension:3,
+                // seriesIndex:3,
+                top: 65,
+                textStyle: {
+                    color: '#000'
+                },
+                inRange:{
+                    color:['green','#DAA520','red'],
+                    symbolSize: [30, 100]
+                },
+                splitNumber:3,
+                // categories:['极度适宜', '适宜', '不适宜']
+            },
+            calendar: {
+                top: 120,
+                left: 30,
+                right: 30,
+                cellSize: ['auto', 13],
+                range: '2019',
+                itemStyle: {
+                    normal: {borderWidth: 0.5}
+                },
+                yearLabel: {show: false}
+            },
+            series: {
+                type: 'heatmap',
+                coordinateSystem: 'calendar',
+                data: search(start, end)
+            }
+        };
+        myChart.setOption(option);
+    }
+    function calendarHeatmap() {
+        var calenData = [];
+        var startTime = document.getElementById("startTime").value;
+        var endTime = document.getElementById("endTime").value;
+        // var startTime = '2019-12-01';
+        // var endTime = '2019-12-05';
+        $.ajax({
+            type:"POST",
+            url:"/system/standard/historyData",
+            data: {'star':startTime, 'end':endTime},
+            datatype: "json",
+            async:false,
+            success:function (data) {
+                for (var i=0; i<data.length; i++){
+                    calenData.push([
+                        echarts.format.formatTime('yyyy-MM-dd',  data[i].dtime),
+                        data[i].state
+                    ])
+                }
+            },
+            error:function (data) {
+                alert("error");
+            }
+        });
+        return calenData;
+    }
+</script>
+<script type="text/javascript">
+    $(function () {
+        var myChart = echarts.init(document.getElementById('main'));
+        var option = {
+            title: {
+                top: 30,
+                left: 'center',
+                text: '全年适宜播种情况'
+            },
+            tooltip : {},
+            visualMap: {
+                min: -1,
+                max: 1,
+                type: 'piecewise',
+                orient: 'horizontal',
+                left: 'center',
+                // text:['不适宜', '适宜','极度适宜'],
+                // textGap:100,
+                // dimension:3,
+                // seriesIndex:3,
+                // showLabel: true,
+                top: 65,
+                textStyle: {
+                    color: '#000'
+                },
+                inRange:{
+                    color:['green','#DAA520','red']
+                    // symbolSize: [30, 100]
+                },
+                splitNumber:3,
+                categories:['极度适宜', '适宜', '不适宜']
+            },
+            calendar: {
+                top: 120,
+                left: 30,
+                right: 30,
+                cellSize: ['auto', 13],
+                range: '2019',
+                itemStyle: {
+                    normal: {borderWidth: 0.5}
+                },
+                yearLabel: {show: false}
+            },
+            series: {
+                type: 'heatmap',
+                coordinateSystem: 'calendar',
+                data: calendarHeatmap()
+            }
+        };
+        myChart.setOption(option);
+    })
+</script>
+<script>
+    function search(start, end) {
+        var calenData = [];
+        // var startTime = document.getElementById("startTime").value;
+        // var endTime = document.getElementById("endTime").value;
+        var startTime = '2019-12-03';
+        var endTime = '2019-12-07';
+        $.ajax({
+            type:"POST",
+            url:"/system/standard/historyData",
+            data: {'star':start, 'end':end},
+            datatype: "json",
+            async:false,
+            success:function (data) {
+                for (var i=0; i<data.length; i++){
+                    calenData.push([
+                        echarts.format.formatTime('yyyy-MM-dd',  data[i].dtime),
+                        data[i].state
+                    ])
+                }
+            },
+            error:function (data) {
+                alert("error");
+            }
+        });
+        return calenData;
+    }
+</script>
+</body>
+</html>

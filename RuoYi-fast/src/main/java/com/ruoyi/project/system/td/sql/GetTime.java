@@ -1,7 +1,10 @@
 package com.ruoyi.project.system.td.sql;
 
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
+import java.util.List;
 
 public class GetTime {
 
@@ -34,6 +37,43 @@ public class GetTime {
         SimpleDateFormat sf=new SimpleDateFormat(predate + " HH:" + minstr + ":ss");
         String strchangetime = sf.format(System.currentTimeMillis());
         return strchangetime;
+    }
+
+    /**
+     * 过去n天
+     * @return
+     */
+    public String getSixDay(int time){
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+        Calendar c = Calendar.getInstance();
+
+        //过去六天
+        c.setTime(new Date());
+        c.add(Calendar.DATE, - time);
+        Date d = c.getTime();
+        String day = format.format(d);
+        day = day + " 00:00:00";
+        return day;
+    }
+
+    public List getNDay(int time){
+        List list = new ArrayList();
+        for (int i=1; i<time+1; i++){
+            SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+            Calendar c = Calendar.getInstance();
+
+            //过去六天
+            c.setTime(new Date());
+            c.add(Calendar.DATE, - i);
+            Date d = c.getTime();
+            String day = format.format(d);
+            String dayNight = format.format(d);
+            day = day + " 07:00:00";
+            dayNight = dayNight + " 19:00:00";
+            list.add(day);
+            list.add(dayNight);
+        }
+        return list;
     }
 
 }

@@ -14,6 +14,9 @@ import org.springframework.web.bind.annotation.*;
 import java.io.IOException;
 import java.util.*;
 
+/**
+ * 气象数据
+ */
 @Controller
 @RequestMapping("/system/td")
 public class WeatherController extends BaseController{
@@ -63,39 +66,7 @@ public class WeatherController extends BaseController{
         }else {
             pageCount = countList.get(0).toString().substring(1,3);
         }
-        JSONObject jsonObject = JSON.parseObject(data);
-        JSONArray list = jsonObject.getJSONArray("data");
-        List<WeatherStation> weatherStations = new ArrayList<>();
-        for (int i=0; i<list.size(); i++){
-            String str = list.get(i).toString();
-            String[] splits = str.split(",");
-            if (splits != null && splits.length != 0){
-                WeatherStation weatherStation = new WeatherStation();
-                String[] st = splits[0].split("\"");
-                String[] st2 = splits[1].split("\"");
-                String[] split = splits[17].split("]");
-                weatherStation.setTs(st[1]);
-                weatherStation.setId(st2[1]);
-                weatherStation.setWind_speed(Float.parseFloat(splits[2]));
-                weatherStation.setRainfall(Float.parseFloat(splits[3]));
-                weatherStation.setTemperature(Float.parseFloat(splits[4]));
-                weatherStation.setHumidity(Float.parseFloat(splits[5]));
-                weatherStation.setIllumination(Float.parseFloat(splits[6]));
-                weatherStation.setPhotosynthesis(Float.parseFloat(splits[7]));
-                weatherStation.setWind_direction(Float.parseFloat(splits[8]));
-                weatherStation.setCo2(Float.parseFloat(splits[9]));
-                weatherStation.setPh(Float.parseFloat(splits[10]));
-                weatherStation.setSoil_temperature_1(Float.parseFloat(splits[11]));
-                weatherStation.setSoil_moisture_1(Float.parseFloat(splits[12]));
-                weatherStation.setSoil_temperature_2(Float.parseFloat(splits[13]));
-                weatherStation.setSoil_moisture_2(Float.parseFloat(splits[14]));
-                weatherStation.setSoil_temperature_3(Float.parseFloat(splits[15]));
-                weatherStation.setSoil_moisture_3(Float.parseFloat(splits[16]));
-                weatherStation.setConductance(Float.parseFloat(split[0]));
-                weatherStations.add(i,weatherStation);
-            }
-        }
-        List<WeatherStation> historyList = weatherStations;
+        List<WeatherStation> historyList = restfulTD.weatherStations(data);
         Map<String, Object> map = new HashMap<String, Object>();
         map.put("data", historyList);
         map.put("ct", pageCount);
