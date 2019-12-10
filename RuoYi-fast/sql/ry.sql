@@ -11,7 +11,7 @@
  Target Server Version : 50727
  File Encoding         : 65001
 
- Date: 10/10/2019 18:16:15
+ Date: 10/12/2019 13:25:07
 */
 
 SET NAMES utf8mb4;
@@ -221,7 +221,7 @@ CREATE TABLE `qrtz_scheduler_state`  (
 -- ----------------------------
 -- Records of qrtz_scheduler_state
 -- ----------------------------
-INSERT INTO `qrtz_scheduler_state` VALUES ('RuoyiScheduler', 'LAPTOP-BSONSKNC1570667004406', 1570669968098, 15000);
+INSERT INTO `qrtz_scheduler_state` VALUES ('RuoyiScheduler', 'LAPTOP-BSONSKNC1575941220744', 1575951642977, 15000);
 
 -- ----------------------------
 -- Table structure for qrtz_simple_triggers
@@ -290,9 +290,9 @@ CREATE TABLE `qrtz_triggers`  (
 -- ----------------------------
 -- Records of qrtz_triggers
 -- ----------------------------
-INSERT INTO `qrtz_triggers` VALUES ('RuoyiScheduler', 'TASK_CLASS_NAME1', 'DEFAULT', 'TASK_CLASS_NAME1', 'DEFAULT', NULL, 1570667010000, -1, 5, 'PAUSED', 'CRON', 1570667005000, 0, NULL, 2, '');
-INSERT INTO `qrtz_triggers` VALUES ('RuoyiScheduler', 'TASK_CLASS_NAME2', 'DEFAULT', 'TASK_CLASS_NAME2', 'DEFAULT', NULL, 1570667010000, -1, 5, 'PAUSED', 'CRON', 1570667005000, 0, NULL, 2, '');
-INSERT INTO `qrtz_triggers` VALUES ('RuoyiScheduler', 'TASK_CLASS_NAME3', 'DEFAULT', 'TASK_CLASS_NAME3', 'DEFAULT', NULL, 1570667020000, -1, 5, 'PAUSED', 'CRON', 1570667005000, 0, NULL, 2, '');
+INSERT INTO `qrtz_triggers` VALUES ('RuoyiScheduler', 'TASK_CLASS_NAME1', 'DEFAULT', 'TASK_CLASS_NAME1', 'DEFAULT', NULL, 1575941230000, -1, 5, 'PAUSED', 'CRON', 1575941221000, 0, NULL, 2, '');
+INSERT INTO `qrtz_triggers` VALUES ('RuoyiScheduler', 'TASK_CLASS_NAME2', 'DEFAULT', 'TASK_CLASS_NAME2', 'DEFAULT', NULL, 1575941235000, -1, 5, 'PAUSED', 'CRON', 1575941222000, 0, NULL, 2, '');
+INSERT INTO `qrtz_triggers` VALUES ('RuoyiScheduler', 'TASK_CLASS_NAME3', 'DEFAULT', 'TASK_CLASS_NAME3', 'DEFAULT', NULL, 1575941240000, -1, 5, 'PAUSED', 'CRON', 1575941222000, 0, NULL, 2, '');
 
 -- ----------------------------
 -- Table structure for sys_config
@@ -461,12 +461,15 @@ CREATE TABLE `sys_equipment`  (
 -- ----------------------------
 -- Records of sys_equipment
 -- ----------------------------
-INSERT INTO `sys_equipment` VALUES ('40378510054', '公主岭设备', '2019-10-07 15:32:03', '无', '34', '34', '49.235.215.208', '5015', '2019-10-07 15:31:41');
 INSERT INTO `sys_equipment` VALUES ('40326904964', '长岭设备', '2019-10-07 15:31:13', '无', '33', '33', '49.235.215.208', '5016', '2019-10-07 15:31:33');
-INSERT INTO `sys_equipment` VALUES ('2', '长岭03设备', '2019-10-08 07:39:20', '2463019831@qq.com', '66', '66', '49.235.215.208', '5019', '2019-10-08 07:39:20');
-INSERT INTO `sys_equipment` VALUES ('55', '长岭10设备', '2019-10-08 12:59:10', '2463019831@qq.com', '66', '66', '49.235.215.208', '5017', '2019-10-08 12:59:10');
-INSERT INTO `sys_equipment` VALUES ('1', '长岭03设备', '2019-10-08 13:00:47', '2463019831@qq.com', '66', '66', '49.235.215.208', '5017', '2019-10-08 13:00:47');
-INSERT INTO `sys_equipment` VALUES ('9', '长岭05设备', '2019-10-08 20:35:46', '2463019831@qq.com', '66', '66', '49.235.215.208', '5017', '2019-10-08 20:35:46');
+INSERT INTO `sys_equipment` VALUES ('2', '长岭03设备', '2019-10-08 07:39:20', '2463019831@qq.com', '113', '24.6', '49.235.215.208', '5019', '2019-10-08 07:39:20');
+INSERT INTO `sys_equipment` VALUES ('55', '长岭10设备', '2019-10-08 12:59:10', '2463019831@qq.com', '115.6', '33.5', '49.235.215.208', '5017', '2019-10-08 12:59:10');
+INSERT INTO `sys_equipment` VALUES ('1', '长岭03设备', '2019-10-08 13:00:47', '2463019831@qq.com', '117', '35', '49.235.215.208', '5017', '2019-10-08 13:00:47');
+INSERT INTO `sys_equipment` VALUES ('9', '长岭05设备', '2019-10-08 20:35:46', '2463019831@qq.com', '119', '44', '49.235.215.208', '5017', '2019-10-08 20:35:46');
+INSERT INTO `sys_equipment` VALUES ('75', '长岭010设备', '2019-10-11 18:42:27', '2463019831@qq.com', '120', '33', '49.235.215.208', '5020', '2019-10-11 18:42:27');
+INSERT INTO `sys_equipment` VALUES ('76', '长岭11设备', '2019-10-11 18:42:27', '2463019831@qq.com', '66', '66', '49.235.215.208', '5020', '2019-10-11 18:42:27');
+INSERT INTO `sys_equipment` VALUES ('76', '长岭11设备', '2019-10-11 18:42:27', '2463019831@qq.com', '66', '66', '49.235.215.208', '5020', '2019-10-11 18:42:27');
+INSERT INTO `sys_equipment` VALUES ('40326904963', '长岭003设备', '2019-10-11 20:01:08', '2463019831@qq.com', '66', '66', '49.235.215.208', '5021', '2019-10-11 20:01:08');
 
 -- ----------------------------
 -- Table structure for sys_equipment_dept
@@ -482,7 +485,6 @@ CREATE TABLE `sys_equipment_dept`  (
 -- Records of sys_equipment_dept
 -- ----------------------------
 INSERT INTO `sys_equipment_dept` VALUES (100, '40326904964');
-INSERT INTO `sys_equipment_dept` VALUES (100, '40378510054');
 INSERT INTO `sys_equipment_dept` VALUES (103, '55');
 INSERT INTO `sys_equipment_dept` VALUES (105, '56');
 INSERT INTO `sys_equipment_dept` VALUES (105, '57');
@@ -490,6 +492,8 @@ INSERT INTO `sys_equipment_dept` VALUES (105, '9');
 INSERT INTO `sys_equipment_dept` VALUES (105, '99');
 INSERT INTO `sys_equipment_dept` VALUES (107, '1');
 INSERT INTO `sys_equipment_dept` VALUES (108, '66');
+INSERT INTO `sys_equipment_dept` VALUES (108, '75');
+INSERT INTO `sys_equipment_dept` VALUES (109, '40326904963');
 
 -- ----------------------------
 -- Table structure for sys_job
@@ -550,7 +554,7 @@ CREATE TABLE `sys_logininfor`  (
   `msg` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT '' COMMENT '提示消息',
   `login_time` datetime(0) NULL DEFAULT NULL COMMENT '访问时间',
   PRIMARY KEY (`info_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 316 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci COMMENT = '系统访问记录' ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 431 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci COMMENT = '系统访问记录' ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of sys_logininfor
@@ -771,6 +775,121 @@ INSERT INTO `sys_logininfor` VALUES (312, 'admin', '127.0.0.1', '内网IP', 'Chr
 INSERT INTO `sys_logininfor` VALUES (313, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', '0', '登录成功', '2019-10-09 14:47:06');
 INSERT INTO `sys_logininfor` VALUES (314, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', '0', '登录成功', '2019-10-09 19:09:05');
 INSERT INTO `sys_logininfor` VALUES (315, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', '0', '登录成功', '2019-10-10 07:35:15');
+INSERT INTO `sys_logininfor` VALUES (316, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', '0', '登录成功', '2019-10-10 19:39:57');
+INSERT INTO `sys_logininfor` VALUES (317, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', '0', '登录成功', '2019-10-10 20:20:35');
+INSERT INTO `sys_logininfor` VALUES (318, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', '0', '登录成功', '2019-10-11 12:48:13');
+INSERT INTO `sys_logininfor` VALUES (319, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', '0', '登录成功', '2019-10-11 18:13:53');
+INSERT INTO `sys_logininfor` VALUES (320, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', '0', '登录成功', '2019-10-11 19:59:04');
+INSERT INTO `sys_logininfor` VALUES (321, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', '0', '登录成功', '2019-10-11 20:53:03');
+INSERT INTO `sys_logininfor` VALUES (322, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', '0', '登录成功', '2019-10-12 15:39:21');
+INSERT INTO `sys_logininfor` VALUES (323, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', '1', '验证码错误', '2019-10-12 18:45:20');
+INSERT INTO `sys_logininfor` VALUES (324, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', '0', '登录成功', '2019-10-12 18:45:23');
+INSERT INTO `sys_logininfor` VALUES (325, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', '0', '登录成功', '2019-10-13 14:06:00');
+INSERT INTO `sys_logininfor` VALUES (326, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', '0', '登录成功', '2019-10-13 16:11:36');
+INSERT INTO `sys_logininfor` VALUES (327, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', '0', '登录成功', '2019-10-14 08:50:35');
+INSERT INTO `sys_logininfor` VALUES (328, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', '0', '登录成功', '2019-10-17 07:56:18');
+INSERT INTO `sys_logininfor` VALUES (329, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', '0', '登录成功', '2019-10-17 08:29:25');
+INSERT INTO `sys_logininfor` VALUES (330, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', '0', '登录成功', '2019-11-15 09:32:24');
+INSERT INTO `sys_logininfor` VALUES (331, 'admin', '127.0.0.1', '内网IP', 'Internet Explorer 11', 'Windows 10', '0', '登录成功', '2019-11-16 11:48:21');
+INSERT INTO `sys_logininfor` VALUES (332, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', '0', '登录成功', '2019-11-16 12:53:17');
+INSERT INTO `sys_logininfor` VALUES (333, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', '0', '登录成功', '2019-11-16 13:22:36');
+INSERT INTO `sys_logininfor` VALUES (334, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', '0', '登录成功', '2019-11-16 15:23:26');
+INSERT INTO `sys_logininfor` VALUES (335, 'admin', '127.0.0.1', '内网IP', 'Internet Explorer 11', 'Windows 10', '0', '登录成功', '2019-11-16 16:15:37');
+INSERT INTO `sys_logininfor` VALUES (336, 'admin', '127.0.0.1', '内网IP', 'Internet Explorer 11', 'Windows 10', '0', '登录成功', '2019-11-17 17:57:38');
+INSERT INTO `sys_logininfor` VALUES (337, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', '1', '验证码错误', '2019-11-17 18:01:27');
+INSERT INTO `sys_logininfor` VALUES (338, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', '0', '登录成功', '2019-11-17 18:01:29');
+INSERT INTO `sys_logininfor` VALUES (339, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', '0', '登录成功', '2019-11-17 18:34:43');
+INSERT INTO `sys_logininfor` VALUES (340, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', '0', '登录成功', '2019-11-17 19:41:55');
+INSERT INTO `sys_logininfor` VALUES (341, 'admin', '127.0.0.1', '内网IP', 'Internet Explorer 11', 'Windows 10', '0', '登录成功', '2019-11-17 20:15:59');
+INSERT INTO `sys_logininfor` VALUES (342, 'admin', '127.0.0.1', '内网IP', 'Internet Explorer 11', 'Windows 10', '0', '登录成功', '2019-11-17 20:48:40');
+INSERT INTO `sys_logininfor` VALUES (343, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', '0', '登录成功', '2019-11-17 20:51:35');
+INSERT INTO `sys_logininfor` VALUES (344, 'admin', '127.0.0.1', '内网IP', 'Microsoft Edge', 'Windows 10', '0', '登录成功', '2019-11-17 20:55:29');
+INSERT INTO `sys_logininfor` VALUES (345, 'admin', '127.0.0.1', '内网IP', 'Internet Explorer 11', 'Windows 10', '0', '登录成功', '2019-11-18 07:57:23');
+INSERT INTO `sys_logininfor` VALUES (346, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', '0', '登录成功', '2019-11-18 08:35:48');
+INSERT INTO `sys_logininfor` VALUES (347, 'admin', '127.0.0.1', '内网IP', 'Internet Explorer 11', 'Windows 10', '0', '登录成功', '2019-11-18 09:03:09');
+INSERT INTO `sys_logininfor` VALUES (348, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', '0', '登录成功', '2019-11-18 10:42:05');
+INSERT INTO `sys_logininfor` VALUES (349, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', '0', '登录成功', '2019-11-18 11:20:07');
+INSERT INTO `sys_logininfor` VALUES (350, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', '0', '登录成功', '2019-11-18 11:33:58');
+INSERT INTO `sys_logininfor` VALUES (351, 'admin', '127.0.0.1', '内网IP', 'Internet Explorer 11', 'Windows 10', '1', '验证码错误', '2019-11-18 12:43:41');
+INSERT INTO `sys_logininfor` VALUES (352, 'admin', '127.0.0.1', '内网IP', 'Internet Explorer 11', 'Windows 10', '0', '登录成功', '2019-11-18 12:43:43');
+INSERT INTO `sys_logininfor` VALUES (353, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', '0', '登录成功', '2019-11-18 15:10:53');
+INSERT INTO `sys_logininfor` VALUES (354, 'admin', '127.0.0.1', '内网IP', 'Internet Explorer 11', 'Windows 10', '0', '登录成功', '2019-11-18 16:18:09');
+INSERT INTO `sys_logininfor` VALUES (355, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', '0', '登录成功', '2019-11-18 18:10:27');
+INSERT INTO `sys_logininfor` VALUES (356, 'admin', '127.0.0.1', '内网IP', 'Internet Explorer 11', 'Windows 10', '0', '登录成功', '2019-11-18 20:22:49');
+INSERT INTO `sys_logininfor` VALUES (357, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', '1', '验证码错误', '2019-11-19 08:51:53');
+INSERT INTO `sys_logininfor` VALUES (358, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', '0', '登录成功', '2019-11-19 09:01:59');
+INSERT INTO `sys_logininfor` VALUES (359, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', '0', '登录成功', '2019-11-19 09:44:35');
+INSERT INTO `sys_logininfor` VALUES (360, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', '0', '登录成功', '2019-11-19 14:23:07');
+INSERT INTO `sys_logininfor` VALUES (361, 'admin', '127.0.0.1', '内网IP', 'Internet Explorer 11', 'Windows 10', '0', '登录成功', '2019-11-19 15:04:06');
+INSERT INTO `sys_logininfor` VALUES (362, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', '0', '登录成功', '2019-11-19 20:12:43');
+INSERT INTO `sys_logininfor` VALUES (363, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', '0', '登录成功', '2019-11-19 20:39:19');
+INSERT INTO `sys_logininfor` VALUES (364, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', '0', '登录成功', '2019-11-20 07:41:51');
+INSERT INTO `sys_logininfor` VALUES (365, 'admin', '127.0.0.1', '内网IP', 'Firefox', 'Windows 10', '0', '登录成功', '2019-11-20 09:30:18');
+INSERT INTO `sys_logininfor` VALUES (366, 'admin', '127.0.0.1', '内网IP', 'Firefox', 'Windows 10', '0', '登录成功', '2019-11-20 09:34:36');
+INSERT INTO `sys_logininfor` VALUES (367, 'admin', '127.0.0.1', '内网IP', 'Firefox', 'Windows 10', '1', '验证码错误', '2019-11-20 13:06:56');
+INSERT INTO `sys_logininfor` VALUES (368, 'admin', '127.0.0.1', '内网IP', 'Firefox', 'Windows 10', '0', '登录成功', '2019-11-20 13:07:00');
+INSERT INTO `sys_logininfor` VALUES (369, 'admin', '127.0.0.1', '内网IP', 'Firefox', 'Windows 10', '0', '登录成功', '2019-11-20 13:53:14');
+INSERT INTO `sys_logininfor` VALUES (370, 'admin', '127.0.0.1', '内网IP', 'Firefox', 'Windows 10', '1', '验证码错误', '2019-11-20 19:19:01');
+INSERT INTO `sys_logininfor` VALUES (371, 'admin', '127.0.0.1', '内网IP', 'Firefox', 'Windows 10', '1', '验证码错误', '2019-11-20 19:19:06');
+INSERT INTO `sys_logininfor` VALUES (372, 'admin', '127.0.0.1', '内网IP', 'Firefox', 'Windows 10', '1', '验证码错误', '2019-11-20 19:19:08');
+INSERT INTO `sys_logininfor` VALUES (373, 'admin', '127.0.0.1', '内网IP', 'Firefox', 'Windows 10', '0', '登录成功', '2019-11-20 19:19:13');
+INSERT INTO `sys_logininfor` VALUES (374, 'admin', '127.0.0.1', '内网IP', 'Firefox', 'Windows 10', '0', '登录成功', '2019-11-21 12:22:42');
+INSERT INTO `sys_logininfor` VALUES (375, 'admin', '127.0.0.1', '内网IP', 'Firefox', 'Windows 10', '1', '验证码错误', '2019-11-21 12:27:44');
+INSERT INTO `sys_logininfor` VALUES (376, 'admin', '127.0.0.1', '内网IP', 'Firefox', 'Windows 10', '0', '登录成功', '2019-11-21 12:27:46');
+INSERT INTO `sys_logininfor` VALUES (377, 'admin', '127.0.0.1', '内网IP', 'Firefox', 'Windows 10', '0', '登录成功', '2019-11-21 12:31:43');
+INSERT INTO `sys_logininfor` VALUES (378, 'admin', '127.0.0.1', '内网IP', 'Firefox 7', 'Windows 10', '0', '登录成功', '2019-11-23 10:56:21');
+INSERT INTO `sys_logininfor` VALUES (379, 'admin', '127.0.0.1', '内网IP', 'Firefox 7', 'Windows 10', '0', '登录成功', '2019-11-23 13:16:25');
+INSERT INTO `sys_logininfor` VALUES (380, 'admin', '127.0.0.1', '内网IP', 'Firefox 7', 'Windows 10', '0', '登录成功', '2019-11-23 16:09:33');
+INSERT INTO `sys_logininfor` VALUES (381, 'admin', '127.0.0.1', '内网IP', 'Firefox 7', 'Windows 10', '0', '登录成功', '2019-11-23 19:23:36');
+INSERT INTO `sys_logininfor` VALUES (382, 'admin', '127.0.0.1', '内网IP', 'Firefox 7', 'Windows 10', '0', '登录成功', '2019-11-24 08:12:10');
+INSERT INTO `sys_logininfor` VALUES (383, 'admin', '127.0.0.1', '内网IP', 'Firefox 7', 'Windows 10', '1', '验证码错误', '2019-11-24 12:20:24');
+INSERT INTO `sys_logininfor` VALUES (384, 'admin', '127.0.0.1', '内网IP', 'Firefox 7', 'Windows 10', '0', '登录成功', '2019-11-24 12:20:26');
+INSERT INTO `sys_logininfor` VALUES (385, 'admin', '127.0.0.1', '内网IP', 'Firefox 7', 'Windows 10', '0', '登录成功', '2019-11-24 13:06:06');
+INSERT INTO `sys_logininfor` VALUES (386, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', '0', '登录成功', '2019-11-24 17:30:17');
+INSERT INTO `sys_logininfor` VALUES (387, 'admin', '127.0.0.1', '内网IP', 'Firefox 7', 'Windows 10', '0', '登录成功', '2019-11-24 18:19:25');
+INSERT INTO `sys_logininfor` VALUES (388, 'admin', '127.0.0.1', '内网IP', 'Firefox 7', 'Windows 10', '0', '登录成功', '2019-11-24 19:29:01');
+INSERT INTO `sys_logininfor` VALUES (389, 'admin', '127.0.0.1', '内网IP', 'Firefox 7', 'Windows 10', '0', '登录成功', '2019-11-24 20:17:23');
+INSERT INTO `sys_logininfor` VALUES (390, 'admin', '127.0.0.1', '内网IP', 'Firefox 7', 'Windows 10', '0', '登录成功', '2019-11-25 08:26:59');
+INSERT INTO `sys_logininfor` VALUES (391, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', '1', '验证码错误', '2019-11-25 12:22:30');
+INSERT INTO `sys_logininfor` VALUES (392, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', '0', '登录成功', '2019-11-25 12:22:34');
+INSERT INTO `sys_logininfor` VALUES (393, 'admin', '127.0.0.1', '内网IP', 'Firefox 7', 'Windows 10', '0', '登录成功', '2019-11-25 15:32:31');
+INSERT INTO `sys_logininfor` VALUES (394, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', '0', '登录成功', '2019-11-25 15:39:06');
+INSERT INTO `sys_logininfor` VALUES (395, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', '0', '登录成功', '2019-11-25 19:51:59');
+INSERT INTO `sys_logininfor` VALUES (396, 'admin', '127.0.0.1', '内网IP', 'Firefox 7', 'Windows 10', '1', '验证码错误', '2019-11-25 20:31:46');
+INSERT INTO `sys_logininfor` VALUES (397, 'admin', '127.0.0.1', '内网IP', 'Firefox 7', 'Windows 10', '0', '登录成功', '2019-11-25 20:31:48');
+INSERT INTO `sys_logininfor` VALUES (398, 'admin', '127.0.0.1', '内网IP', 'Firefox 7', 'Windows 10', '0', '登录成功', '2019-11-26 15:58:39');
+INSERT INTO `sys_logininfor` VALUES (399, 'admin', '127.0.0.1', '内网IP', 'Firefox 7', 'Windows 10', '0', '登录成功', '2019-11-27 09:58:59');
+INSERT INTO `sys_logininfor` VALUES (400, 'admin', '127.0.0.1', '内网IP', 'Firefox 7', 'Windows 10', '0', '登录成功', '2019-11-27 12:19:40');
+INSERT INTO `sys_logininfor` VALUES (401, 'admin', '127.0.0.1', '内网IP', 'Firefox 7', 'Windows 10', '0', '登录成功', '2019-11-28 20:34:58');
+INSERT INTO `sys_logininfor` VALUES (402, 'admin', '127.0.0.1', '内网IP', 'Firefox 7', 'Windows 10', '0', '登录成功', '2019-11-29 09:08:59');
+INSERT INTO `sys_logininfor` VALUES (403, 'admin', '127.0.0.1', '内网IP', 'Firefox 7', 'Windows 10', '0', '登录成功', '2019-12-02 15:11:37');
+INSERT INTO `sys_logininfor` VALUES (404, 'admin', '127.0.0.1', '内网IP', 'Firefox 7', 'Windows 10', '0', '登录成功', '2019-12-02 18:53:39');
+INSERT INTO `sys_logininfor` VALUES (405, 'admin', '127.0.0.1', '内网IP', 'Firefox 7', 'Windows 10', '0', '登录成功', '2019-12-02 19:10:17');
+INSERT INTO `sys_logininfor` VALUES (406, 'admin', '127.0.0.1', '内网IP', 'Firefox 7', 'Windows 10', '0', '登录成功', '2019-12-03 08:00:55');
+INSERT INTO `sys_logininfor` VALUES (407, 'admin', '127.0.0.1', '内网IP', 'Firefox 7', 'Windows 10', '0', '登录成功', '2019-12-03 09:09:08');
+INSERT INTO `sys_logininfor` VALUES (408, 'admin', '127.0.0.1', '内网IP', 'Firefox 7', 'Windows 10', '0', '登录成功', '2019-12-03 10:01:16');
+INSERT INTO `sys_logininfor` VALUES (409, 'admin', '127.0.0.1', '内网IP', 'Firefox 7', 'Windows 10', '0', '登录成功', '2019-12-03 11:33:54');
+INSERT INTO `sys_logininfor` VALUES (410, 'admin', '127.0.0.1', '内网IP', 'Firefox 7', 'Windows 10', '0', '登录成功', '2019-12-03 18:03:14');
+INSERT INTO `sys_logininfor` VALUES (411, 'admin', '127.0.0.1', '内网IP', 'Firefox 7', 'Windows 10', '0', '登录成功', '2019-12-03 19:52:19');
+INSERT INTO `sys_logininfor` VALUES (412, 'admin', '127.0.0.1', '内网IP', 'Firefox 7', 'Windows 10', '0', '登录成功', '2019-12-04 12:58:37');
+INSERT INTO `sys_logininfor` VALUES (413, 'admin', '127.0.0.1', '内网IP', 'Firefox 7', 'Windows 10', '1', '验证码错误', '2019-12-04 13:48:16');
+INSERT INTO `sys_logininfor` VALUES (414, 'admin', '127.0.0.1', '内网IP', 'Firefox 7', 'Windows 10', '0', '登录成功', '2019-12-04 13:48:19');
+INSERT INTO `sys_logininfor` VALUES (415, 'admin', '127.0.0.1', '内网IP', 'Firefox 7', 'Windows 10', '0', '登录成功', '2019-12-04 14:49:43');
+INSERT INTO `sys_logininfor` VALUES (416, 'admin', '127.0.0.1', '内网IP', 'Firefox 7', 'Windows 10', '0', '登录成功', '2019-12-04 17:27:02');
+INSERT INTO `sys_logininfor` VALUES (417, 'admin', '127.0.0.1', '内网IP', 'Firefox 7', 'Windows 10', '0', '登录成功', '2019-12-05 10:30:30');
+INSERT INTO `sys_logininfor` VALUES (418, 'admin', '127.0.0.1', '内网IP', 'Firefox 7', 'Windows 10', '0', '登录成功', '2019-12-05 12:18:41');
+INSERT INTO `sys_logininfor` VALUES (419, 'admin', '127.0.0.1', '内网IP', 'Firefox 7', 'Windows 10', '0', '登录成功', '2019-12-05 15:52:45');
+INSERT INTO `sys_logininfor` VALUES (420, 'admin', '127.0.0.1', '内网IP', 'Firefox 7', 'Windows 10', '0', '登录成功', '2019-12-05 16:15:37');
+INSERT INTO `sys_logininfor` VALUES (421, 'admin', '127.0.0.1', '内网IP', 'Firefox 7', 'Windows 10', '0', '登录成功', '2019-12-05 16:32:48');
+INSERT INTO `sys_logininfor` VALUES (422, 'admin', '127.0.0.1', '内网IP', 'Firefox 7', 'Windows 10', '0', '登录成功', '2019-12-05 19:05:06');
+INSERT INTO `sys_logininfor` VALUES (423, '陈显锐', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', '1', '用户不存在/密码错误', '2019-12-08 17:07:34');
+INSERT INTO `sys_logininfor` VALUES (424, '陈显锐', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', '1', '用户不存在/密码错误', '2019-12-08 17:07:38');
+INSERT INTO `sys_logininfor` VALUES (425, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', '1', '验证码错误', '2019-12-08 17:07:55');
+INSERT INTO `sys_logininfor` VALUES (426, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', '0', '登录成功', '2019-12-08 17:08:01');
+INSERT INTO `sys_logininfor` VALUES (427, 'admin', '127.0.0.1', '内网IP', 'Firefox 7', 'Windows 10', '0', '登录成功', '2019-12-08 17:21:11');
+INSERT INTO `sys_logininfor` VALUES (428, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', '0', '登录成功', '2019-12-08 20:32:59');
+INSERT INTO `sys_logininfor` VALUES (429, 'admin', '127.0.0.1', '内网IP', 'Firefox 7', 'Windows 10', '0', '登录成功', '2019-12-10 09:27:43');
+INSERT INTO `sys_logininfor` VALUES (430, 'admin', '127.0.0.1', '内网IP', 'Firefox 7', 'Windows 10', '0', '登录成功', '2019-12-10 11:28:47');
 
 -- ----------------------------
 -- Table structure for sys_menu
@@ -801,6 +920,8 @@ CREATE TABLE `sys_menu`  (
 INSERT INTO `sys_menu` VALUES (1, '系统管理', 0, 1, '#', '', 'M', '0', '', 'fa fa-gear', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '系统管理目录');
 INSERT INTO `sys_menu` VALUES (2, '系统监控', 0, 2, '#', '', 'M', '0', '', 'fa fa-video-camera', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '系统监控目录');
 INSERT INTO `sys_menu` VALUES (3, '系统工具', 0, 3, '#', '', 'M', '0', '', 'fa fa-bars', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '系统工具目录');
+INSERT INTO `sys_menu` VALUES (4, '监控画面', 0, 4, '/system/monitor', '', 'C', '0', 'system:monitor:TV', '#', 'admin', '2019-11-16 12:24:04', 'ry', '2019-11-16 12:24:10', '监控画面');
+INSERT INTO `sys_menu` VALUES (5, '最新数据展示', 0, 5, '/system/td', '', 'C', '0', 'system:td:list', '#', 'admin', '2019-11-16 12:24:04', 'ry', '2019-11-16 12:24:10', '最新数据展示');
 INSERT INTO `sys_menu` VALUES (100, '用户管理', 0, 1, '/system/user', '', 'C', '0', 'system:user:view', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '用户管理菜单');
 INSERT INTO `sys_menu` VALUES (101, '角色管理', 1, 2, '/system/role', '', 'C', '0', 'system:role:view', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '角色管理菜单');
 INSERT INTO `sys_menu` VALUES (102, '菜单管理', 1, 3, '/system/menu', '', 'C', '0', 'system:menu:view', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '菜单管理菜单');
@@ -818,6 +939,7 @@ INSERT INTO `sys_menu` VALUES (113, '表单构建', 3, 1, '/tool/build', '', 'C'
 INSERT INTO `sys_menu` VALUES (114, '代码生成', 3, 2, '/tool/gen', '', 'C', '0', 'tool:gen:view', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '代码生成菜单');
 INSERT INTO `sys_menu` VALUES (115, '系统接口', 3, 3, '/tool/swagger', '', 'C', '0', 'tool:swagger:view', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '系统接口菜单');
 INSERT INTO `sys_menu` VALUES (116, '设备管理', 0, 10, '/system/equipment', '', 'C', '0', 'system:equipment:view', '#', 'admin', '2019-09-25 05:54:57', 'ry', '2019-09-25 05:55:03', '设备管理菜单');
+INSERT INTO `sys_menu` VALUES (117, '投屏', 0, 5, '/system/screen', '', 'C', '0', NULL, '#', 'admin', '2019-10-12 15:42:10', 'ry', '2019-10-12 15:42:18', '');
 INSERT INTO `sys_menu` VALUES (500, '操作日志', 108, 1, '/monitor/operlog', '', 'C', '0', 'monitor:operlog:view', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '操作日志菜单');
 INSERT INTO `sys_menu` VALUES (501, '登录日志', 108, 2, '/monitor/logininfor', '', 'C', '0', 'monitor:logininfor:view', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '登录日志菜单');
 INSERT INTO `sys_menu` VALUES (1000, '用户查询', 100, 1, '#', '', 'F', '0', 'system:user:list', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '');
@@ -930,7 +1052,7 @@ CREATE TABLE `sys_oper_log`  (
   `error_msg` varchar(2000) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT '' COMMENT '错误消息',
   `oper_time` datetime(0) NULL DEFAULT NULL COMMENT '操作时间',
   PRIMARY KEY (`oper_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 128 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci COMMENT = '操作日志记录' ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 132 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci COMMENT = '操作日志记录' ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of sys_oper_log
@@ -963,6 +1085,10 @@ INSERT INTO `sys_oper_log` VALUES (124, '用户管理', 6, 'com.ruoyi.project.sy
 INSERT INTO `sys_oper_log` VALUES (125, '用户管理', 6, 'com.ruoyi.project.system.user.controller.UserController.importData()', 1, 'admin', '中国', '/system/user/importData', '127.0.0.1', '内网IP', '{\"updateSupport\":[\"false\"]}', 1, '', '2019-10-10 08:15:57');
 INSERT INTO `sys_oper_log` VALUES (126, '设备管理', 6, 'com.ruoyi.project.system.equipment.controller.EquipmentController.importData()', 1, 'admin', '中国', '/system/equipment/importData', '127.0.0.1', '内网IP', '{\"updateSupport\":[\"false\"]}', 0, NULL, '2019-10-10 08:24:10');
 INSERT INTO `sys_oper_log` VALUES (127, '设备管理', 6, 'com.ruoyi.project.system.equipment.controller.EquipmentController.importData()', 1, 'admin', '中国', '/system/equipment/importData', '127.0.0.1', '内网IP', '{\"updateSupport\":[\"false\"]}', 0, NULL, '2019-10-10 08:53:26');
+INSERT INTO `sys_oper_log` VALUES (128, '设备管理', 1, 'com.ruoyi.project.system.equipment.controller.EquipmentController.addSave()', 1, 'admin', '中国', '/system/equipment/add', '127.0.0.1', '内网IP', '{\"deptId\":[\"108\"],\"equipmentId\":[\"75\"],\"deptName\":[\"松原市\"],\"equipmentName\":[\"长岭010设备\"],\"sensorType\":[\"2463019831@qq.com\"],\"longitude\":[\"66\"],\"latitude\":[\"66\"],\"equipmentIpAddress\":[\"49.235.215.208\"],\"port\":[\"5020\"],\"remark\":[\"\"],\"status\":[\"1\"],\"roleIds\":[\"\"],\"postIds\":[\"\"]}', 0, NULL, '2019-10-11 18:42:28');
+INSERT INTO `sys_oper_log` VALUES (129, '设备管理', 1, 'com.ruoyi.project.system.equipment.controller.EquipmentController.addSave()', 1, 'admin', '中国', '/system/equipment/add', '127.0.0.1', '内网IP', '{\"deptId\":[\"109\"],\"equipmentId\":[\"40326904963\"],\"deptName\":[\"四平市\"],\"equipmentName\":[\"长岭003设备\"],\"sensorType\":[\"2463019831@qq.com\"],\"longitude\":[\"66\"],\"latitude\":[\"66\"],\"equipmentIpAddress\":[\"49.235.215.208\"],\"port\":[\"5021\"],\"remark\":[\"\"],\"status\":[\"1\"],\"roleIds\":[\"\"],\"postIds\":[\"\"]}', 0, NULL, '2019-10-11 20:01:08');
+INSERT INTO `sys_oper_log` VALUES (130, '个人信息', 2, 'com.ruoyi.project.system.user.controller.ProfileController.updateAvatar()', 1, 'admin', '中国', '/system/user/profile/updateAvatar', '127.0.0.1', '内网IP', '{}', 0, NULL, '2019-11-21 12:25:40');
+INSERT INTO `sys_oper_log` VALUES (131, '个人信息', 2, 'com.ruoyi.project.system.user.controller.ProfileController.update()', 1, 'admin', '中国', '/system/user/profile/update', '127.0.0.1', '内网IP', '{\"id\":[\"\"],\"userName\":[\"test\"],\"phonenumber\":[\"15888888888\"],\"email\":[\"ry@163.com\"],\"sex\":[\"1\"]}', 0, NULL, '2019-11-21 12:25:42');
 
 -- ----------------------------
 -- Table structure for sys_post
@@ -1154,6 +1280,34 @@ INSERT INTO `sys_role_menu` VALUES (2, 1059);
 INSERT INTO `sys_role_menu` VALUES (2, 1060);
 
 -- ----------------------------
+-- Table structure for sys_sow
+-- ----------------------------
+DROP TABLE IF EXISTS `sys_sow`;
+CREATE TABLE `sys_sow`  (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `dtime` date NULL DEFAULT NULL COMMENT '时间',
+  `state` int(10) NOT NULL DEFAULT 0 COMMENT '状态',
+  `average_temperature` float(100, 0) NULL DEFAULT NULL COMMENT '平均温度',
+  `average_humidity` float(100, 0) NULL DEFAULT NULL COMMENT '平均湿度',
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 97 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of sys_sow
+-- ----------------------------
+INSERT INTO `sys_sow` VALUES (1, '2019-12-03', 0, 0, 0);
+INSERT INTO `sys_sow` VALUES (2, '2019-12-01', 1, 1, 1);
+INSERT INTO `sys_sow` VALUES (4, '2019-12-07', 0, 1, 1);
+INSERT INTO `sys_sow` VALUES (5, '2019-12-11', 0, 1, 1);
+INSERT INTO `sys_sow` VALUES (10, '2019-12-04', 1, 0, 0);
+INSERT INTO `sys_sow` VALUES (91, '2019-12-05', -1, 0, 0);
+INSERT INTO `sys_sow` VALUES (92, '2018-01-08', 0, 0, 0);
+INSERT INTO `sys_sow` VALUES (93, '2019-12-06', 1, 0, 0);
+INSERT INTO `sys_sow` VALUES (94, '2019-12-08', -1, 0, 0);
+INSERT INTO `sys_sow` VALUES (95, '2019-12-09', 0, 0, 0);
+INSERT INTO `sys_sow` VALUES (96, '2019-12-10', -1, 0, 1);
+
+-- ----------------------------
 -- Table structure for sys_user
 -- ----------------------------
 DROP TABLE IF EXISTS `sys_user`;
@@ -1184,7 +1338,7 @@ CREATE TABLE `sys_user`  (
 -- ----------------------------
 -- Records of sys_user
 -- ----------------------------
-INSERT INTO `sys_user` VALUES (1, 100, 'admin', '若依', '00', 'ry@163.com', '15888888888', '1', '', '29c67a30398638269fe600f73a054934', '111111', '0', '0', '127.0.0.1', '2019-10-10 07:35:16', 'admin', '2018-03-16 11:33:00', 'ry', '2019-10-10 07:35:15', '管理员');
+INSERT INTO `sys_user` VALUES (1, 100, 'admin', 'test', '00', 'ry@163.com', '15888888888', '1', '/profile/avatar/2019/11/21/26242fe9e74f134e9ed4ea58a3e766cf.png', '29c67a30398638269fe600f73a054934', '111111', '0', '0', '127.0.0.1', '2019-12-10 11:28:47', 'admin', '2018-03-16 11:33:00', 'ry', '2019-12-10 11:28:46', '管理员');
 INSERT INTO `sys_user` VALUES (2, 110, 'ry', '若依', '00', 'ry@qq.com', '15666666666', '1', '', '8e6d98b90472783cc73c17047ddccf36', '222222', '0', '0', '127.0.0.1', '2019-09-27 09:14:46', 'admin', '2018-03-16 11:33:00', 'ry', '2019-09-27 09:14:46', '测试员');
 INSERT INTO `sys_user` VALUES (100, 103, '123123', '陈显锐', '00', '2463019832@qq.com', '13807572222', '0', '', '804a2b6eb72943f1c3a7387a2adf1ef2', 'eed996', '0', '2', '127.0.0.1', '2019-08-08 17:47:01', 'admin', '2019-08-08 16:01:43', 'admin', '2019-08-09 13:41:49', '');
 INSERT INTO `sys_user` VALUES (102, 105, '12312321312312', 'chenx', '00', '323232323232@qq.com', '13807572343', '0', '', '82ce420c47be6e59b29c35ec96fa37fc', '2443e5', '0', '0', '', NULL, 'admin', '2019-09-29 19:16:04', 'admin', '2019-10-05 13:28:43', '');
@@ -1211,19 +1365,59 @@ CREATE TABLE `sys_user_online`  (
 -- ----------------------------
 -- Records of sys_user_online
 -- ----------------------------
-INSERT INTO `sys_user_online` VALUES ('1cd82327-2f12-41ec-8909-ecc8ba6c78d8', 'admin', '中国', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', 'on_line', '2019-10-10 07:35:09', '2019-10-10 08:58:07', 1800000);
+INSERT INTO `sys_user_online` VALUES ('02ff5eea-3fb9-440b-9da5-02a853d63404', 'admin', '中国', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', 'on_line', '2019-11-19 08:45:49', '2019-11-19 09:39:15', 1800000);
+INSERT INTO `sys_user_online` VALUES ('03a13413-4550-4d6d-9b98-a247f05210f3', 'admin', '中国', '127.0.0.1', '内网IP', 'Firefox 7', 'Windows 10', 'on_line', '2019-12-02 18:42:28', '2019-12-02 18:54:49', 1800000);
+INSERT INTO `sys_user_online` VALUES ('0469ea67-5752-4fb8-96f3-c2bb10ce7264', 'admin', '中国', '127.0.0.1', '内网IP', 'Internet Explorer 11', 'Windows 10', 'on_line', '2019-11-19 15:03:57', '2019-11-19 15:30:52', 1800000);
+INSERT INTO `sys_user_online` VALUES ('0cf06acf-de2d-4ee3-b64c-886d9d4c0734', 'admin', '中国', '127.0.0.1', '内网IP', 'Firefox 7', 'Windows 10', 'on_line', '2019-11-23 10:56:11', '2019-11-23 13:06:38', 1800000);
+INSERT INTO `sys_user_online` VALUES ('0d7184f0-e098-4003-b523-e687fe11af99', 'admin', '中国', '127.0.0.1', '内网IP', 'Firefox 7', 'Windows 10', 'on_line', '2019-11-23 19:23:30', '2019-11-23 20:06:17', 1800000);
+INSERT INTO `sys_user_online` VALUES ('1b98e666-51f8-4bbb-880b-b0bdd103f591', 'admin', '中国', '127.0.0.1', '内网IP', 'Firefox 7', 'Windows 10', 'on_line', '2019-11-24 08:11:45', '2019-11-24 08:41:11', 1800000);
+INSERT INTO `sys_user_online` VALUES ('1f0d1ca1-0846-4917-9f26-cb9eb25675c8', 'admin', '中国', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', 'on_line', '2019-10-14 08:50:27', '2019-10-14 09:27:13', 1800000);
+INSERT INTO `sys_user_online` VALUES ('219e04ba-4250-466f-be28-1cf45a7ed153', 'admin', '中国', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', 'on_line', '2019-12-05 10:29:26', '2019-12-05 10:29:30', 1800000);
+INSERT INTO `sys_user_online` VALUES ('21a54c82-cdff-4ff6-a40f-b5bfadae30a0', 'admin', '中国', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', 'on_line', '2019-11-15 09:32:14', '2019-11-15 09:37:59', 1800000);
 INSERT INTO `sys_user_online` VALUES ('280cc8fd-e93d-48f5-ae48-fcc31fb67002', 'admin', '中国', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', 'on_line', '2019-10-05 18:26:13', '2019-10-05 19:11:14', 1800000);
+INSERT INTO `sys_user_online` VALUES ('2a458e5d-7c97-483e-a113-50bdbe2672a2', 'admin', '中国', '127.0.0.1', '内网IP', 'Firefox 7', 'Windows 10', 'on_line', '2019-11-29 09:08:45', '2019-11-29 09:11:06', 1800000);
+INSERT INTO `sys_user_online` VALUES ('34bd83fc-a509-466c-b513-1c5bb5f6a52f', 'admin', '中国', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', 'on_line', '2019-11-24 17:29:46', '2019-11-24 17:30:20', 1800000);
+INSERT INTO `sys_user_online` VALUES ('35a464df-ade2-412e-a318-69c6aa1c59ec', 'admin', '中国', '127.0.0.1', '内网IP', 'Firefox 7', 'Windows 10', 'on_line', '2019-11-28 20:34:25', '2019-11-28 20:36:06', 1800000);
+INSERT INTO `sys_user_online` VALUES ('3cfc8eb3-52c3-4499-b4f2-898993d6467c', 'admin', '中国', '127.0.0.1', '内网IP', 'Internet Explorer 11', 'Windows 10', 'on_line', '2019-11-17 20:48:36', '2019-11-17 21:15:10', 1800000);
+INSERT INTO `sys_user_online` VALUES ('3d14681d-4a31-42a5-adf4-0d77d20a5926', 'admin', '中国', '127.0.0.1', '内网IP', 'Firefox 7', 'Windows 10', 'on_line', '2019-12-10 11:28:31', '2019-12-10 12:19:35', 1800000);
+INSERT INTO `sys_user_online` VALUES ('402e3964-f50c-4af8-b7d1-032bbfaad5bb', 'admin', '中国', '127.0.0.1', '内网IP', 'Firefox 7', 'Windows 10', 'on_line', '2019-12-03 19:52:11', '2019-12-03 21:19:20', 1800000);
+INSERT INTO `sys_user_online` VALUES ('50a4eb8f-be85-48e4-9f5d-bc34333c768c', 'admin', '中国', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', 'on_line', '2019-11-16 12:53:03', '2019-11-16 13:22:00', 1800000);
+INSERT INTO `sys_user_online` VALUES ('5fd1b8ab-4579-4c0b-a139-f31eb55e675d', 'admin', '中国', '127.0.0.1', '内网IP', 'Firefox 7', 'Windows 10', 'on_line', '2019-11-27 09:58:48', '2019-11-27 10:07:29', 1800000);
 INSERT INTO `sys_user_online` VALUES ('62d255b0-8b7e-4531-b9fe-3252aa762026', 'admin', '中国', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', 'on_line', '2019-09-27 16:05:37', '2019-09-27 16:27:55', 1800000);
+INSERT INTO `sys_user_online` VALUES ('6c4d2469-ff99-4c02-b6c6-87977480ba7d', 'admin', '中国', '127.0.0.1', '内网IP', 'Firefox 7', 'Windows 10', 'on_line', '2019-11-24 13:06:01', '2019-11-24 17:38:20', 1800000);
 INSERT INTO `sys_user_online` VALUES ('6e3b2500-7454-4b13-9e67-8b0c3650af7d', 'admin', '中国', '127.0.0.1', '内网IP', 'Microsoft Edge', 'Windows 10', 'on_line', '2019-09-29 17:15:18', '2019-09-29 18:35:29', 1800000);
+INSERT INTO `sys_user_online` VALUES ('755c921a-3422-448d-b203-6ac1e4688cc3', 'admin', '中国', '127.0.0.1', '内网IP', 'Firefox', 'Windows 10', 'on_line', '2019-11-21 12:22:30', '2019-11-21 12:31:44', 1800000);
+INSERT INTO `sys_user_online` VALUES ('7bd5e01f-3625-466e-9a38-e13069e2adcc', 'admin', '中国', '127.0.0.1', '内网IP', 'Firefox', 'Windows 10', 'on_line', '2019-11-20 09:29:49', '2019-11-20 09:31:03', 1800000);
+INSERT INTO `sys_user_online` VALUES ('7c5b2b7f-3e52-4400-b7ae-3834ade7d495', 'admin', '中国', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', 'on_line', '2019-12-05 12:18:56', '2019-12-05 15:27:08', 1800000);
+INSERT INTO `sys_user_online` VALUES ('83a239a6-c5e5-4e7d-9206-32fe5dc26561', 'admin', '中国', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', 'on_line', '2019-12-04 12:56:22', '2019-12-04 12:57:58', 1800000);
+INSERT INTO `sys_user_online` VALUES ('873d3b3c-718b-432d-b7c5-cb86fe0c83cf', 'admin', '中国', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', 'on_line', '2019-11-25 19:51:48', '2019-11-25 20:24:25', 1800000);
 INSERT INTO `sys_user_online` VALUES ('88ee690d-54e0-46b2-96a8-c7aadb34f1fc', 'admin', '中国', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', 'on_line', '2019-09-25 13:50:14', '2019-09-25 16:29:30', 1800000);
 INSERT INTO `sys_user_online` VALUES ('8ab9923d-f31f-4db3-93c4-98b9508dd917', 'admin', '中国', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', 'on_line', '2019-10-06 15:14:08', '2019-10-06 16:47:06', 1800000);
+INSERT INTO `sys_user_online` VALUES ('8fa8f750-1f11-4396-a766-ff9b94714d69', 'admin', '中国', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', 'on_line', '2019-11-16 15:23:10', '2019-11-16 16:16:16', 1800000);
+INSERT INTO `sys_user_online` VALUES ('9000f7af-4192-4355-8c15-b18ae8c65aed', 'admin', '中国', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', 'on_line', '2019-11-19 20:39:11', '2019-11-19 21:21:55', 1800000);
+INSERT INTO `sys_user_online` VALUES ('918e62f5-6e64-4863-aa2d-2b1a9f233cb5', 'admin', '中国', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', 'on_line', '2019-11-20 07:41:39', '2019-11-20 09:17:08', 1800000);
 INSERT INTO `sys_user_online` VALUES ('91b0f43c-bfcf-41d5-af30-05501706f2a8', 'admin', '中国', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', 'on_line', '2019-10-08 19:34:30', '2019-10-08 20:53:30', 1800000);
 INSERT INTO `sys_user_online` VALUES ('92769a22-12a7-4d95-992f-b4ede667d531', 'admin', '中国', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', 'on_line', '2019-09-30 15:10:31', '2019-09-30 15:47:32', 1800000);
+INSERT INTO `sys_user_online` VALUES ('94e4f696-601c-4a64-9b1e-36f0888148f8', 'admin', '中国', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', 'on_line', '2019-12-05 15:27:35', '2019-12-05 15:49:55', 1800000);
+INSERT INTO `sys_user_online` VALUES ('99d53afd-d5b8-4cb3-9dc4-c2fc30529a03', 'admin', '中国', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', 'on_line', '2019-11-25 12:22:10', '2019-11-25 12:22:41', 1800000);
+INSERT INTO `sys_user_online` VALUES ('a071b9f3-1c92-46c7-815e-f1230ee1764c', 'admin', '中国', '127.0.0.1', '内网IP', 'Firefox 7', 'Windows 10', 'on_line', '2019-11-27 12:19:29', '2019-11-27 12:19:52', 1800000);
+INSERT INTO `sys_user_online` VALUES ('b113bc58-7858-490c-a1ea-bc3a24e6e8d5', 'admin', '中国', '127.0.0.1', '内网IP', 'Firefox 7', 'Windows 10', 'on_line', '2019-11-24 20:17:20', '2019-11-24 20:17:34', 1800000);
+INSERT INTO `sys_user_online` VALUES ('b3a646ba-cf61-4bb4-8cfb-fb083c1bb733', 'admin', '中国', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', 'on_line', '2019-11-17 20:51:32', '2019-11-17 21:11:46', 1800000);
+INSERT INTO `sys_user_online` VALUES ('b43e8dd0-ed02-4726-828d-541b6bfc1188', 'admin', '中国', '127.0.0.1', '内网IP', 'Firefox 7', 'Windows 10', 'on_line', '2019-12-05 12:18:32', '2019-12-05 12:28:41', 1800000);
 INSERT INTO `sys_user_online` VALUES ('bc55849a-a8f7-48dd-9077-719e510b7d50', 'admin', '中国', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', 'on_line', '2019-09-29 18:35:52', '2019-09-29 19:36:26', 1800000);
+INSERT INTO `sys_user_online` VALUES ('bf9d7ef6-9828-41a7-833c-0e73ba7de4f8', 'admin', '中国', '127.0.0.1', '内网IP', 'Internet Explorer 11', 'Windows 10', 'on_line', '2019-11-16 16:15:26', '2019-11-16 16:29:03', 1800000);
+INSERT INTO `sys_user_online` VALUES ('bfcf9c84-8072-4053-9006-aef5ff6d6870', 'admin', '中国', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', 'on_line', '2019-10-12 18:45:20', '2019-10-12 19:05:58', 1800000);
+INSERT INTO `sys_user_online` VALUES ('c01ba834-35dc-486f-947a-692f7baef0b9', 'admin', '中国', '127.0.0.1', '内网IP', 'Firefox', 'Windows 10', 'on_line', '2019-11-20 19:18:27', '2019-11-20 19:21:38', 1800000);
 INSERT INTO `sys_user_online` VALUES ('c2706365-4289-40e4-bd06-c18d8c3bdbf5', 'admin', '中国', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', 'on_line', '2019-09-26 18:36:33', '2019-09-26 19:20:17', 1800000);
+INSERT INTO `sys_user_online` VALUES ('cc8bf582-09ba-489b-b761-a4494df351e6', 'admin', '中国', '127.0.0.1', '内网IP', 'Microsoft Edge', 'Windows 10', 'on_line', '2019-11-17 20:55:21', '2019-11-17 21:01:55', 1800000);
+INSERT INTO `sys_user_online` VALUES ('ceaac6aa-cdab-4e77-8601-22f7642e6d19', 'admin', '中国', '127.0.0.1', '内网IP', 'Firefox 7', 'Windows 10', 'on_line', '2019-12-02 19:10:04', '2019-12-02 19:10:23', 1800000);
 INSERT INTO `sys_user_online` VALUES ('d0cc9fda-2ca9-4b92-af38-cf66459a027d', 'admin', '中国', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', 'on_line', '2019-09-27 19:51:50', '2019-09-27 20:55:20', 1800000);
+INSERT INTO `sys_user_online` VALUES ('dba8f9de-2eed-4450-bbf2-1f163cac774d', 'admin', '中国', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', 'on_line', '2019-11-19 20:12:35', '2019-11-19 20:38:23', 1800000);
+INSERT INTO `sys_user_online` VALUES ('dbb2012f-8197-4b1e-8ec1-49441b0bf2ca', 'admin', '中国', '127.0.0.1', '内网IP', 'Internet Explorer 11', 'Windows 10', 'on_line', '2019-11-18 20:22:33', '2019-11-18 20:33:45', 1800000);
+INSERT INTO `sys_user_online` VALUES ('dffe484b-fa7a-455e-86f4-a0ec5f6acdc4', 'admin', '中国', '127.0.0.1', '内网IP', 'Firefox 7', 'Windows 10', 'on_line', '2019-11-25 20:31:29', '2019-11-25 20:33:22', 1800000);
 INSERT INTO `sys_user_online` VALUES ('e3ce3704-2e97-40e6-afe9-7bdc41d2f6c8', 'admin', '中国', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', 'on_line', '2019-09-24 20:23:03', '2019-09-24 20:34:12', 1800000);
 INSERT INTO `sys_user_online` VALUES ('f0a90723-fe98-4d39-8c54-bf56e4ac5199', 'admin', '中国', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', 'on_line', '2019-09-21 17:57:20', '2019-09-21 18:06:36', 1800000);
+INSERT INTO `sys_user_online` VALUES ('f7355235-db58-4cf5-9ad6-d656397d4773', 'admin', '中国', '127.0.0.1', '内网IP', 'Firefox 7', 'Windows 10', 'on_line', '2019-12-04 17:09:53', '2019-12-04 17:27:56', 1800000);
 
 -- ----------------------------
 -- Table structure for sys_user_post
